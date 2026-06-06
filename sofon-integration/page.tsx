@@ -88,11 +88,12 @@ export default function AiNewsPage() {
     <main className="ainm-wrap" style={{ color: "var(--foreground,#c8e6ff)", fontFamily: "var(--font-sans)" }}>
       <style>{`
         @import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css');
-        .ainm-wrap{max-width:1480px;margin:0 auto;padding:40px clamp(16px,4vw,48px) 90px;}
-        .ainm-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));}
-        @media (max-width:680px){
-          .ainm-wrap{padding:22px 15px 60px;}
-          .ainm-grid{grid-template-columns:1fr;gap:10px;}
+        .ainm-wrap{max-width:none;width:100%;margin:0;padding:40px clamp(18px,3vw,64px) 90px;}
+        .ainm-grid{display:grid;gap:14px;grid-template-columns:repeat(4,1fr);}
+        @media (max-width:800px){ .ainm-grid{grid-template-columns:repeat(2,1fr);} }
+        @media (max-width:500px){
+          .ainm-wrap{padding:22px 14px 60px;}
+          .ainm-grid{gap:10px;}
           .ainm-counter{font-size:30px !important;}
         }
       `}</style>
