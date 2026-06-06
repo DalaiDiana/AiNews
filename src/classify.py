@@ -1,11 +1,13 @@
-"""Krok 6 — Zaradenie do JEDNEJ kategorie.
+"""Krok 6 — Zaradenie do JEDNEJ kategorie (tej najblizsej).
 
-Dva rezimy:
-  * keyword (default, bez API) — lacny pred-MVP fallback, skore podla klucovych slov.
-  * gemini (ked je nastaveny kluc) — davkove triedenie cez Gemini Flash-Lite
-    podla definicii kategorii. Kod je pripraveny, aktivuje sa az s klucom.
+Rezimy:
+  * keyword  — bez API, skore podla klucovych slov (zalozny).
+  * gemini   — Gemini Flash-Lite, davkove triedenie podla definicii.
+               Aktivuje sa, ak je nastaveny GEMINI_API_KEY.
 
-Pravidlo: kazdy clanok = prave jedna kategoria (tá najblizsia).
+Pozn.: kategoria 'github' sa sem NEpridelluje — repozitare prichadzaju
+priamo z GitHub zdroja (fetch_github_all). Triedic ostatne zdroje nezaradi
+do githubu, takze do GitHubu uz nepadaju omylom clanky (napr. arXiv).
 """
 import os
 import json
@@ -22,82 +24,75 @@ def load_categories():
 
 
 CATS, FALLBACK = load_categories()
+# triedic nepouziva github (repá maju vlastny zdroj)
+CLS_CATS = [c for c in CATS if c["id"] != "github"]
 
 
-# ---------- Rezim 1: keyword fallback (bez API) ----------
+# ---------- keyword fallback ----------
 def classify_keyword(item):
+    if item.get("region") in ("SK", "CZ"):
+        return "skcz"
     text = (item["title"] + " " + item["summary"]).lower()
     best, best_score = None, 0
-    for c in CATS:
+    for c in CLS_CATS:
         score = sum(1 for k in c.get("keywords", []) if k.lower() in text)
         if score > best_score:
             best, best_score = c["id"], score
-    # SK/CZ ma prioritu podla regionu zdroja
-    if item.get("region") in ("SK", "CZ"):
-        return "skcz"
     return best or FALLBACK
 
 
-# ---------- Rezim 2: Gemini Flash-Lite (davkovo) ----------
+# ---------- Gemini Flash-Lite (davkovo) ----------
 GEMINI_MODEL = "gemini-flash-lite-latest"
 
 
 def _rubric():
-    lines = ["Kategórie (vráť presne jedno id pre každý článok):"]
-    for c in CATS:
+    lines = []
+    for c in CLS_CATS:
         lines.append(f'- {c["id"]}: {c["definition"]}')
     return "\n".join(lines)
 
 
-def classify_gemini_batch(items, batch_size=40):
-    """Aktivne len ak je nastavena Gemini autentifikacia.
-    GOOGLE_APPLICATION_CREDENTIALS (service account) alebo GEMINI_API_KEY.
-    """
-    try:
-        import google.generativeai as genai
-    except ImportError:
-        raise RuntimeError("Chyba balík google-generativeai (pozri requirements.txt)")
-
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if api_key:
-        genai.configure(api_key=api_key)
-    # (service account cesta cez GOOGLE_APPLICATION_CREDENTIALS rieši Vertex variant)
-
-    model = genai.GenerativeModel(GEMINI_MODEL)
+def classify_gemini(items, batch_size=40):
+    from google import genai
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     rubric = _rubric()
-    results = {}
+    valid = {c["id"] for c in CLS_CATS}
+    out = [FALLBACK] * len(items)
     for i in range(0, len(items), batch_size):
         chunk = items[i:i + batch_size]
         listing = "\n".join(
-            f'{j}. {it["title"]} :: {it["summary"][:200]}' for j, it in enumerate(chunk)
-        )
+            f'{j}. {it["title"]} :: {it["summary"][:200]}' for j, it in enumerate(chunk))
         prompt = (
-            "Si presný klasifikátor AI správ. Pre každý článok vyber NAJBLIŽŠIU jednu kategóriu.\n\n"
-            f"{rubric}\n\n"
-            "Články:\n" + listing + "\n\n"
-            'Vráť IBA JSON pole v tvare [{"i":0,"id":"models"}, ...] bez ďalšieho textu.'
-        )
-        resp = model.generate_content(prompt)
+            "You are a precise AI-news classifier. For each article pick the SINGLE closest category id.\n\n"
+            "Categories:\n" + rubric + "\n\n"
+            "Articles:\n" + listing + "\n\n"
+            'Return ONLY a JSON array like [{"i":0,"id":"models"}, ...] — no other text.')
+        resp = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
         txt = resp.text.strip().strip("`")
-        if txt.startswith("json"):
+        if txt.lower().startswith("json"):
             txt = txt[4:].strip()
-        for row in json.loads(txt):
-            results[i + int(row["i"])] = row["id"]
-    valid = {c["id"] for c in CATS}
-    return [results.get(k, FALLBACK) if results.get(k) in valid else FALLBACK
-            for k in range(len(items))]
+        try:
+            for row in json.loads(txt):
+                idx = i + int(row["i"])
+                if 0 <= idx < len(items) and row.get("id") in valid:
+                    out[idx] = row["id"]
+        except Exception:
+            pass
+    return out
 
 
 def classify_all(items, mode="auto"):
-    """mode: auto | keyword | gemini. auto = gemini ak je kluc, inak keyword."""
-    has_key = bool(os.environ.get("GEMINI_API_KEY") or
-                   os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"))
+    """mode: auto | keyword | gemini. auto = gemini ak je GEMINI_API_KEY."""
+    has_key = bool(os.environ.get("GEMINI_API_KEY"))
     use = mode if mode != "auto" else ("gemini" if has_key else "keyword")
     if use == "gemini":
-        cats = classify_gemini_batch(items)
-        for it, cid in zip(items, cats):
-            it["category"] = cid
-        return items, "gemini"
+        try:
+            cats = classify_gemini(items)
+            for it, cid in zip(items, cats):
+                it["category"] = cid
+            return items, "gemini"
+        except Exception as ex:
+            print(f"   ! Gemini zlyhal ({str(ex)[:80]}), padam na keyword")
     for it in items:
         it["category"] = classify_keyword(it)
     return items, "keyword"
