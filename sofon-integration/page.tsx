@@ -14,22 +14,23 @@ type Item = {
 type Cat = { items: Item[]; new: number };
 type Data = { generated: string; today: string; total_new: number; total_items: number; categories: Record<string, Cat> };
 
-const META: Record<string, [string, string]> = {
-  bigplayers: ["Big Players", "Corporate news from major labs and vendors — OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia, plus Chinese and other players."],
-  models: ["Models & Releases", "New model launches and updates: LLMs, image, video, audio and multimodal — plus text-to-speech, speech-to-text and translators."],
-  agents: ["Agents & Frameworks", "Agentic systems and dev tooling — MCP, LangChain, agent frameworks and consumer bots like Hermes and OpenClaw."],
-  robotics: ["Robotics", "Humanoid and general robotics powered by AI — new robots, demos, research and deployments."],
-  autonomous: ["Autonomous Transport", "Self-driving cars, drones and autonomous mobility — technology, pilots and regulation-adjacent news."],
-  gadgets: ["Gadgets", "AI-powered hardware — smart glasses, wearables and data-collection devices, plus new chips and sensors."],
-  memory: ["Memory", "Advances in AI memory — long-term and context memory, memory products and research on how models store and recall information."],
-  github: ["GitHub", "Trending and most-starred AI/ML repositories — new open-source projects, libraries and tools gaining traction."],
-  infra: ["Infrastructure & Compute", "Data centers, GPUs and accelerators, cloud and the hardware and energy backbone behind AI."],
-  benchmarks: ["Benchmarks & Evaluations", "New benchmarks, leaderboards and eval methods — how models are measured and compared."],
-  research: ["Science & Research", "Real-world applications of AI across science and industry, plus notable papers and use-cases."],
-  business: ["Business & Funding", "Investments, funding rounds, acquisitions and market moves — including funding calls and grants."],
-  legislation: ["Legislation", "Laws, regulations and policy on AI worldwide — the EU AI Act, national rules and enforcement."],
-  ethics: ["Philosophy, Ethics & Safety", "Alignment, AI safety, ethics and the broader philosophical debate."],
-  skcz: ["Slovakia & Czechia", "The most important AI news from Slovakia and the Czech Republic."],
+// [icon (Tabler), name, description]
+const META: Record<string, [string, string, string]> = {
+  bigplayers: ["ti-building-skyscraper", "Big Players", "Corporate news from major labs and vendors — OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia, plus Chinese and other players."],
+  models: ["ti-box-multiple", "Models & Releases", "New model launches and updates: LLMs, image, video, audio and multimodal — plus text-to-speech, speech-to-text and translators."],
+  agents: ["ti-robot", "Agents & Frameworks", "Agentic systems and dev tooling — MCP, LangChain, agent frameworks and consumer bots like Hermes and OpenClaw."],
+  robotics: ["ti-robot-face", "Robotics", "Humanoid and general robotics powered by AI — new robots, demos, research and deployments."],
+  autonomous: ["ti-car", "Autonomous Transport", "Self-driving cars, drones and autonomous mobility — technology, pilots and regulation-adjacent news."],
+  gadgets: ["ti-device-watch", "Gadgets", "AI-powered hardware — smart glasses, wearables and data-collection devices, plus new chips and sensors."],
+  memory: ["ti-brain", "Memory", "Advances in AI memory — long-term and context memory, memory products and research on how models store and recall information."],
+  github: ["ti-brand-github", "GitHub", "Trending and most-starred AI/ML repositories — new open-source projects, libraries and tools gaining traction."],
+  infra: ["ti-server-2", "Infrastructure & Compute", "Data centers, GPUs and accelerators, cloud and the hardware and energy backbone behind AI."],
+  benchmarks: ["ti-chart-bar", "Benchmarks & Evaluations", "New benchmarks, leaderboards and eval methods — how models are measured and compared."],
+  research: ["ti-flask", "Science & Research", "Real-world applications of AI across science and industry, plus notable papers and use-cases."],
+  business: ["ti-coin", "Business & Funding", "Investments, funding rounds, acquisitions and market moves — including funding calls and grants."],
+  legislation: ["ti-gavel", "Legislation", "Laws, regulations and policy on AI worldwide — the EU AI Act, national rules and enforcement."],
+  ethics: ["ti-scale", "Philosophy, Ethics & Safety", "Alignment, AI safety, ethics and the broader philosophical debate."],
+  skcz: ["ti-map-pin", "Slovakia & Czechia", "The most important AI news from Slovakia and the Czech Republic."],
 };
 const ORDER = ["bigplayers","models","agents","robotics","autonomous","gadgets","memory","github","infra","benchmarks","research","business","legislation","ethics","skcz"];
 const REGIONS: [string, string][] = [["ALL","ALL"],["US","US"],["EU","EU"],["CN","CN"],["IN","IN"],["SK / CZ","SKCZ"]];
@@ -84,7 +85,17 @@ export default function AiNewsPage() {
   const sync = new Date(data.generated).toISOString().slice(0, 16).replace("T", " ");
 
   return (
-    <main style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 26px 80px", color: "var(--foreground,#c8e6ff)", fontFamily: "var(--font-sans)" }}>
+    <main className="ainm-wrap" style={{ color: "var(--foreground,#c8e6ff)", fontFamily: "var(--font-sans)" }}>
+      <style>{`
+        @import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css');
+        .ainm-wrap{max-width:1480px;margin:0 auto;padding:40px clamp(16px,4vw,48px) 90px;}
+        .ainm-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));}
+        @media (max-width:680px){
+          .ainm-wrap{padding:22px 15px 60px;}
+          .ainm-grid{grid-template-columns:1fr;gap:10px;}
+          .ainm-counter{font-size:30px !important;}
+        }
+      `}</style>
       <header style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 20, paddingBottom: 18, borderBottom: "1px solid rgba(0,195,255,.18)" }}>
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -122,7 +133,7 @@ export default function AiNewsPage() {
         })}
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 13, marginTop: 16 }}>
+      <div className="ainm-grid" style={{ marginTop: 16 }}>
         {ORDER.map(id => {
           const meta = META[id]; if (!meta) return null;
           const c = data.categories[id] || { items: [], new: 0 };
@@ -130,7 +141,8 @@ export default function AiNewsPage() {
           return (
             <div key={id} onClick={() => setOpen(id)}
               style={{ background: "rgba(0,15,40,.55)", border: "1px solid rgba(0,195,255,.16)", borderRadius: 12, padding: "17px 17px 15px", cursor: "pointer", position: "relative" }}>
-              <div style={{ fontSize: 13.5, fontWeight: 600, color: "#dff3ff" }}>{meta[0]}</div>
+              <i className={"ti " + meta[0]} aria-hidden="true" style={{ fontSize: 21, color: CY, opacity: .9 }} />
+              <div style={{ fontSize: 13.5, fontWeight: 600, color: "#dff3ff", marginTop: 11 }}>{meta[1]}</div>
               <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "rgba(184,232,255,.45)", marginTop: 4 }}>{items.length} items</div>
               <div style={{ position: "absolute", top: 15, right: 15, fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 600, padding: "3px 9px", borderRadius: 7,
                 color: c.new ? CORAL : "rgba(184,232,255,.4)", background: c.new ? "rgba(232,114,106,.13)" : "transparent",
@@ -144,8 +156,8 @@ export default function AiNewsPage() {
         const meta = META[open]; const items = visible(open);
         return (
           <div style={{ marginTop: 24, border: "1px solid rgba(0,195,255,.2)", borderRadius: 12, background: "rgba(0,15,40,.5)", padding: "22px 24px" }}>
-            <h2 style={{ fontFamily: "var(--font-mono)", margin: 0, fontSize: 16, fontWeight: 600, color: "#eaf7ff" }}>{meta[0]} <span style={{ color: "rgba(184,232,255,.4)", fontSize: 11, fontWeight: 400 }}>· {items.length} shown</span></h2>
-            <p style={{ fontSize: 12.5, color: "rgba(184,232,255,.6)", margin: "9px 0 14px", maxWidth: 800 }}>{meta[1]}</p>
+            <h2 style={{ fontFamily: "var(--font-mono)", margin: 0, fontSize: 16, fontWeight: 600, color: "#eaf7ff", display: "flex", alignItems: "center", gap: 9 }}><i className={"ti " + meta[0]} aria-hidden="true" style={{ color: CY }} />{meta[1]} <span style={{ color: "rgba(184,232,255,.4)", fontSize: 11, fontWeight: 400 }}>· {items.length} shown</span></h2>
+            <p style={{ fontSize: 12.5, color: "rgba(184,232,255,.6)", margin: "9px 0 14px", maxWidth: 800 }}>{meta[2]}</p>
             {items.slice(0, 60).map((it, k) => {
               const isNew = it.added === data.today; const desc = cleanDesc(it.summary);
               return (
