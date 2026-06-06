@@ -113,10 +113,11 @@ export default function AiNewsClient({ data: initial, initialOpen = null }: { da
             {ORDER.map(id => { const meta = META[id]; if (!meta) return null;
               const c = data.categories[id] || { items: [], new: 0 }; const items = visible(id);
               return (
-                <a key={id} href={"?topic=" + id} onClick={(e) => { e.preventDefault(); openCat(id); }} className="ainm-tile" style={{ display: "block", textDecoration: "none", color: "inherit" }}>
+                <a key={id} href={"https://sofon.diusai.org/ainews?topic=" + id} onClick={(e) => { e.preventDefault(); openCat(id); }} className="ainm-tile" style={{ display: "block", textDecoration: "none", color: "inherit" }}>
                   <i className={"ti " + meta[0]} aria-hidden="true" style={{ fontSize: 36, color: CY, opacity: .9 }} />
                   <div style={{ fontSize: 20, fontWeight: 600, color: "#dff3ff", marginTop: 14 }}>{meta[1]}</div>
                   <div style={{ fontFamily: "var(--font-mono)", fontSize: 14, color: "rgba(184,232,255,.45)", marginTop: 6 }}>{items.length} items</div>
+                  <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "rgba(0,195,255,.5)", marginTop: 8, wordBreak: "break-all" }}>https://sofon.diusai.org/ainews?topic={id}</div>
                   <div style={{ position: "absolute", top: 15, right: 15, fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 600, padding: "4px 10px", borderRadius: 7, color: c.new ? CORAL : "rgba(184,232,255,.4)", background: c.new ? "rgba(232,114,106,.13)" : "transparent", border: `1px solid ${c.new ? "rgba(232,114,106,.3)" : "rgba(0,195,255,.16)"}` }}>{c.new} new</div>
                 </a>
               ); })}
@@ -142,6 +143,7 @@ export default function AiNewsClient({ data: initial, initialOpen = null }: { da
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 13.5, color: "rgba(184,232,255,.45)", marginLeft: "auto", whiteSpace: "nowrap", paddingLeft: 12 }}>{it.source} · {ago(it.published)}</span>
                   </div>
                   {desc && <div style={{ fontSize: 16, color: "rgba(184,232,255,.64)", lineHeight: 1.55, margin: "8px 0 0 54px" }}>{desc}</div>}
+                  <div style={{ fontFamily: "var(--font-mono)", fontSize: 11.5, color: "rgba(0,195,255,.5)", margin: "6px 0 0 54px", wordBreak: "break-all" }}>{it.url}</div>
                 </div>
               );
             })}
