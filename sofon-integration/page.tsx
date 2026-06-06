@@ -1,11 +1,12 @@
 // AI News Monitor — SERVER komponent (sofon.diusai.org/ainews)
-// Načíta dáta na serveri a vykreslí ich do HTML => stránku prečítajú aj roboty/LLM/Google.
-// Interaktivitu (filtre, rozbalenie, späť) rieši klientská časť ainews-client.tsx.
-// Umiestnenie v Sofone: src/app/ainews/page.tsx (+ ainews-client.tsx, + opengraph-image.png)
+// Načíta dáta na serveri a vykreslí HTML => prečítajú to roboti/LLM/Google.
+// Kategórie majú vlastnú adresu: /ainews?topic=robotics — server ju vyrenderuje aj s článkami,
+// takže robot sa "preklikne" cez odkazy a prečíta obsah každej kategórie.
+// Súbory v Sofone: src/app/ainews/page.tsx + ainews-client.tsx + opengraph-image.png
 
 import AiNewsClient from "./ainews-client";
 
-export const revalidate = 300; // server si dáta obnoví max. raz za 5 min (bez redeployu)
+export const revalidate = 300;
 
 export const metadata = {
   title: "AI News Monitor — everything new in AI",
@@ -26,7 +27,12 @@ async function getData() {
   }
 }
 
-export default async function Page() {
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ topic?: string }>;
+}) {
+  const sp = await searchParams;
   const data = await getData();
-  return <AiNewsClient data={data} />;
+  return <AiNewsClient data={data} initialOpen={sp?.topic ?? null} />;
 }

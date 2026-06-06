@@ -50,34 +50,36 @@ def _parse_date(entry):
     return None
 
 
+def _fetch_one(src):
+    out = []
+    try:
+        feed = feedparser.parse(_fetch_url(src["url"]))
+        for e in feed.entries[:60]:
+            title = (e.get("title") or "").strip()
+            link = (e.get("link") or "").strip()
+            if not title or not link:
+                continue
+            out.append({
+                "title": title, "url": link,
+                "summary": clean_summary(e.get("summary") or e.get("description") or ""),
+                "source": src["name"], "region": src.get("region", "GLOBAL"),
+                "published": (_parse_date(e) or dt.datetime.now(UTC)).isoformat(),
+            })
+        return (src["name"], out, None)
+    except Exception as ex:
+        return (src["name"], [], str(ex)[:50])
+
+
 def fetch_rss_all(verbose=True):
-    """Normalizovane polozky zo vsetkych RSS/API zdrojov (bez GitHubu)."""
+    """Normalizovane polozky zo vsetkych RSS/API zdrojov (bez GitHubu), paralelne."""
+    import concurrent.futures
+    srcs = [s for s in load_sources() if s.get("type") != "github"]
     items = []
-    for src in load_sources():
-        if src.get("type") == "github":
-            continue
-        try:
-            feed = feedparser.parse(_fetch_url(src["url"]))
-            n = 0
-            for e in feed.entries[:80]:
-                title = (e.get("title") or "").strip()
-                link = (e.get("link") or "").strip()
-                if not title or not link:
-                    continue
-                items.append({
-                    "title": title,
-                    "url": link,
-                    "summary": clean_summary(e.get("summary") or e.get("description") or ""),
-                    "source": src["name"],
-                    "region": src.get("region", "GLOBAL"),
-                    "published": (_parse_date(e) or dt.datetime.now(UTC)).isoformat(),
-                })
-                n += 1
+    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as pool:
+        for name, got, err in pool.map(_fetch_one, srcs):
             if verbose:
-                print(f"  OK  {src['name']:26} {n:3}")
-        except Exception as ex:
-            if verbose:
-                print(f"  ERR {src['name']:26} {str(ex)[:55]}")
+                print(f"  {'OK ' if not err else 'ERR'} {name:26} {len(got) if not err else err}")
+            items.extend(got)
     return items
 
 

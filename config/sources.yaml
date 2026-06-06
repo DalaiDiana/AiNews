@@ -1,89 +1,102 @@
-# AI News Monitor — register zdrojov (MVP, overené RSS feedy)
-# type: rss | api  (scrapery doplníme neskôr)
+# AI News Monitor — register zdrojov (KOMPLETNÝ podľa dohodnutého zoznamu)
+# type: rss (priame RSS) alebo gnews (Google News RSS pre firmy bez vlastného RSS)
 # region: US | EU | CN | IN | SK | CZ | GLOBAL
-# Zdroje su "spolocny bazen" - clanok sa zaradi podla obsahu, nie podla zdroja.
 
 sources:
-  # --- Veľkí hráči / modely ---
-  - name: "Google AI Blog"
-    url: "https://blog.google/technology/ai/rss/"
-    type: rss
-    region: US
-  - name: "Google DeepMind"
-    url: "https://deepmind.google/blog/rss.xml"
-    type: rss
-    region: EU
-  - name: "Hugging Face Blog"
-    url: "https://huggingface.co/blog/feed.xml"
-    type: rss
-    region: US
-
-  # --- Výskum ---
-  - name: "arXiv cs.AI"
-    url: "http://export.arxiv.org/rss/cs.AI"
-    type: rss
-    region: GLOBAL
-  - name: "arXiv cs.LG"
-    url: "http://export.arxiv.org/rss/cs.LG"
-    type: rss
-    region: GLOBAL
-
-  # --- Veľké tech / AI médiá ---
-  - name: "TechCrunch AI"
-    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
-    type: rss
-    region: US
-  - name: "The Verge"
-    url: "https://www.theverge.com/rss/index.xml"
-    type: rss
-    region: US
-  - name: "MIT Technology Review"
-    url: "https://www.technologyreview.com/feed/"
-    type: rss
-    region: US
-  - name: "Ars Technica"
-    url: "https://arstechnica.com/ai/feed/"
-    type: rss
-    region: US
-  - name: "Wired AI"
-    url: "https://www.wired.com/feed/tag/ai/latest/rss"
-    type: rss
-    region: US
-  - name: "VentureBeat AI"
-    url: "https://venturebeat.com/category/ai/feed/"
-    type: rss
-    region: US
-
-  # --- Spravodajské médiá (general) ---
-  - name: "BBC Technology"
-    url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
-    type: rss
-    region: EU
-  - name: "The Guardian Technology"
-    url: "https://www.theguardian.com/technology/rss"
-    type: rss
-    region: EU
-
-  # --- Robotika ---
-  - name: "The Robot Report"
-    url: "https://www.therobotreport.com/feed/"
-    type: rss
-    region: US
-  - name: "IEEE Spectrum"
-    url: "https://spectrum.ieee.org/feeds/feed.rss"
-    type: rss
-    region: US
-
-  # --- Čína / India ---
-  - name: "TechNode"
-    url: "https://technode.com/feed/"
-    type: rss
-    region: CN
-  - name: "Pandaily"
-    url: "https://pandaily.com/feed/"
-    type: rss
-    region: CN
-  - name: "Analytics India Magazine"
-    url: "https://analyticsindiamag.com/feed/"
-    type: rss
-    region: IN
+  - {name: "OpenAI", url: "https://openai.com/news/rss.xml", type: rss, region: US}
+  - {name: "Google AI Blog", url: "https://blog.google/technology/ai/rss/", type: rss, region: US}
+  - {name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml", type: rss, region: EU}
+  - {name: "Google Research", url: "https://research.google/blog/rss/", type: rss, region: US}
+  - {name: "Microsoft AI", url: "https://blogs.microsoft.com/ai/feed/", type: rss, region: US}
+  - {name: "AWS Machine Learning", url: "https://aws.amazon.com/blogs/machine-learning/feed/", type: rss, region: US}
+  - {name: "Nvidia Blog", url: "https://blogs.nvidia.com/feed/", type: rss, region: US}
+  - {name: "Apple Machine Learning", url: "https://machinelearning.apple.com/rss.xml", type: rss, region: US}
+  - {name: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", type: rss, region: US}
+  - {name: "arXiv cs.AI", url: "http://export.arxiv.org/rss/cs.AI", type: rss, region: GLOBAL}
+  - {name: "arXiv cs.LG", url: "http://export.arxiv.org/rss/cs.LG", type: rss, region: GLOBAL}
+  - {name: "BAIR Berkeley", url: "https://bair.berkeley.edu/blog/feed.xml", type: rss, region: US}
+  - {name: "MIT News AI", url: "https://news.mit.edu/rss/topic/artificial-intelligence2", type: rss, region: US}
+  - {name: "The Gradient", url: "https://thegradient.pub/rss/", type: rss, region: US}
+  - {name: "ScienceDaily AI", url: "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml", type: rss, region: US}
+  - {name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/", type: rss, region: US}
+  - {name: "The Verge", url: "https://www.theverge.com/rss/index.xml", type: rss, region: US}
+  - {name: "MIT Technology Review", url: "https://www.technologyreview.com/feed/", type: rss, region: US}
+  - {name: "Ars Technica", url: "https://arstechnica.com/ai/feed/", type: rss, region: US}
+  - {name: "Wired AI", url: "https://www.wired.com/feed/tag/ai/latest/rss", type: rss, region: US}
+  - {name: "ZDNet AI", url: "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", type: rss, region: US}
+  - {name: "Engadget", url: "https://www.engadget.com/rss.xml", type: rss, region: US}
+  - {name: "The Register AI", url: "https://www.theregister.com/software/ai_ml/headlines.atom", type: rss, region: EU}
+  - {name: "The Decoder", url: "https://the-decoder.com/feed/", type: rss, region: EU}
+  - {name: "AI News", url: "https://www.artificialintelligence-news.com/feed/", type: rss, region: EU}
+  - {name: "MarkTechPost", url: "https://www.marktechpost.com/feed/", type: rss, region: IN}
+  - {name: "Synced Review", url: "https://syncedreview.com/feed/", type: rss, region: CN}
+  - {name: "KDnuggets", url: "https://www.kdnuggets.com/feed", type: rss, region: US}
+  - {name: "Import AI", url: "https://importai.substack.com/feed", type: rss, region: US}
+  - {name: "Latent Space", url: "https://www.latent.space/feed", type: rss, region: US}
+  - {name: "smol.ai AINews", url: "https://buttondown.com/ainews/rss", type: rss, region: US}
+  - {name: "BBC Technology", url: "https://feeds.bbci.co.uk/news/technology/rss.xml", type: rss, region: EU}
+  - {name: "The Guardian Technology", url: "https://www.theguardian.com/technology/rss", type: rss, region: EU}
+  - {name: "NYT Technology", url: "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", type: rss, region: US}
+  - {name: "The Economist Sci/Tech", url: "https://www.economist.com/science-and-technology/rss.xml", type: rss, region: EU}
+  - {name: "Der Spiegel Netzwelt", url: "https://www.spiegel.de/netzwelt/index.rss", type: rss, region: EU}
+  - {name: "The Atlantic Technology", url: "https://www.theatlantic.com/feed/channel/technology/", type: rss, region: US}
+  - {name: "Rest of World", url: "https://restofworld.org/feed/latest/", type: rss, region: GLOBAL}
+  - {name: "The Robot Report", url: "https://www.therobotreport.com/feed/", type: rss, region: US}
+  - {name: "IEEE Spectrum", url: "https://spectrum.ieee.org/feeds/feed.rss", type: rss, region: US}
+  - {name: "Robohub", url: "https://robohub.org/feed/", type: rss, region: GLOBAL}
+  - {name: "TechNode", url: "https://technode.com/feed/", type: rss, region: CN}
+  - {name: "Pandaily", url: "https://pandaily.com/feed/", type: rss, region: CN}
+  - {name: "Analytics India Magazine", url: "https://analyticsindiamag.com/feed/", type: rss, region: IN}
+  - {name: "Inc42", url: "https://inc42.com/feed/", type: rss, region: IN}
+  - {name: "YourStory", url: "https://yourstory.com/feed", type: rss, region: IN}
+  - {name: "Analytics Insight", url: "https://www.analyticsinsight.net/feed", type: rss, region: IN}
+  - {name: "LessWrong", url: "https://www.lesswrong.com/feed.xml", type: rss, region: GLOBAL}
+  - {name: "Alignment Forum", url: "https://www.alignmentforum.org/feed.xml", type: rss, region: GLOBAL}
+  - {name: "Reddit r/MachineLearning", url: "https://www.reddit.com/r/MachineLearning/.rss", type: rss, region: GLOBAL}
+  - {name: "Reddit r/LocalLLaMA", url: "https://www.reddit.com/r/LocalLLaMA/.rss", type: rss, region: GLOBAL}
+  - {name: "Hacker News (AI)", url: "https://hnrss.org/newest?q=AI+OR+LLM", type: rss, region: GLOBAL}
+  - {name: "Startitup.sk", url: "https://www.startitup.sk/feed/", type: rss, region: SK}
+  - {name: "TechByte.sk", url: "https://www.techbyte.sk/feed/", type: rss, region: SK}
+  - {name: "Touchit.sk", url: "https://touchit.sk/feed/", type: rss, region: SK}
+  - {name: "Vosveteit.sk", url: "https://vosveteit.sk/feed/", type: rss, region: SK}
+  - {name: "Lupa.cz", url: "https://www.lupa.cz/rss/clanky/", type: rss, region: CZ}
+  - {name: "Zive.cz", url: "https://www.zive.cz/rss/sc-47/", type: rss, region: CZ}
+  - {name: "CzechCrunch", url: "https://cc.cz/feed/", type: rss, region: CZ}
+  - {name: "Root.cz", url: "https://www.root.cz/rss/clanky/", type: rss, region: CZ}
+  # ── firmy/entity cez Google News RSS ──
+  - {name: "Anthropic (Claude)", url: "https://news.google.com/rss/search?q=Anthropic%20Claude%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "xAI (Grok)", url: "https://news.google.com/rss/search?q=xAI%20Grok%20Musk&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Meta AI (Llama)", url: "https://news.google.com/rss/search?q=Meta%20AI%20Llama&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Mistral AI", url: "https://news.google.com/rss/search?q=Mistral%20AI%20model&hl=en-US&gl=US&ceid=US:en", type: rss, region: EU}
+  - {name: "Amazon AI (Nova/Bedrock)", url: "https://news.google.com/rss/search?q=Amazon%20AI%20Nova%20Bedrock&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "IBM watsonx", url: "https://news.google.com/rss/search?q=IBM%20watsonx%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Cohere", url: "https://news.google.com/rss/search?q=Cohere%20AI%20model&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Perplexity AI", url: "https://news.google.com/rss/search?q=Perplexity%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "DeepSeek", url: "https://news.google.com/rss/search?q=DeepSeek%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Alibaba Qwen", url: "https://news.google.com/rss/search?q=Alibaba%20Qwen%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Baidu Ernie", url: "https://news.google.com/rss/search?q=Baidu%20Ernie%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Tencent Hunyuan", url: "https://news.google.com/rss/search?q=Tencent%20Hunyuan%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "ByteDance Doubao", url: "https://news.google.com/rss/search?q=ByteDance%20Doubao%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Moonshot AI (Kimi)", url: "https://news.google.com/rss/search?q=Moonshot%20AI%20Kimi&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Zhipu AI (GLM)", url: "https://news.google.com/rss/search?q=Zhipu%20AI%20GLM&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "MiniMax AI", url: "https://news.google.com/rss/search?q=MiniMax%20AI%20China&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Huawei AI", url: "https://news.google.com/rss/search?q=Huawei%20AI%20Pangu%20Ascend&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Unitree Robotics", url: "https://news.google.com/rss/search?q=Unitree%20robot&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "AgiBot", url: "https://news.google.com/rss/search?q=AgiBot%20humanoid%20robot&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "UBTech", url: "https://news.google.com/rss/search?q=UBTech%20robot&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Fourier Intelligence", url: "https://news.google.com/rss/search?q=Fourier%20Intelligence%20robot&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Xiaomi Robotics", url: "https://news.google.com/rss/search?q=Xiaomi%20humanoid%20robot&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "WeRide", url: "https://news.google.com/rss/search?q=WeRide%20robotaxi&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Pony.ai", url: "https://news.google.com/rss/search?q=Pony.ai%20robotaxi&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "XPeng", url: "https://news.google.com/rss/search?q=XPeng%20AI%20car&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Baidu Apollo Go", url: "https://news.google.com/rss/search?q=Baidu%20Apollo%20Go%20robotaxi&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "Waymo", url: "https://news.google.com/rss/search?q=Waymo%20robotaxi&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Sarvam AI", url: "https://news.google.com/rss/search?q=Sarvam%20AI%20India&hl=en-US&gl=US&ceid=US:en", type: rss, region: IN}
+  - {name: "Krutrim", url: "https://news.google.com/rss/search?q=Krutrim%20Ola%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: IN}
+  - {name: "AI4Bharat", url: "https://news.google.com/rss/search?q=AI4Bharat&hl=en-US&gl=US&ceid=US:en", type: rss, region: IN}
+  - {name: "SCMP AI", url: "https://news.google.com/rss/search?q=South%20China%20Morning%20Post%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "36Kr AI", url: "https://news.google.com/rss/search?q=36Kr%20artificial%20intelligence%20China&hl=en-US&gl=US&ceid=US:en", type: rss, region: CN}
+  - {name: "LangChain / LangGraph", url: "https://news.google.com/rss/search?q=LangChain%20LangGraph&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Model Context Protocol", url: "https://news.google.com/rss/search?q=Model%20Context%20Protocol%20MCP%20Anthropic&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "EU AI Act", url: "https://news.google.com/rss/search?q=EU%20AI%20Act%20regulation&hl=en-US&gl=US&ceid=US:en", type: rss, region: EU}
+  - {name: "AI funding / VC", url: "https://news.google.com/rss/search?q=AI%20startup%20funding%20round&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}

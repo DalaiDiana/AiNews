@@ -1,14 +1,12 @@
 """Krok 3c — Deduplikacia. Ten isty clanok z viacerych zdrojov => necha originalovy.
 
-Cisto kodove (bez modelu): normalizacia URL + podobnost titulkov.
+Cisto kodove (bez modelu) a rychle (O(n)): normalizacia URL + kluc z titulku.
 """
 import re
 from urllib.parse import urlparse, parse_qsl, urlunparse
-from difflib import SequenceMatcher
 
-# parametre, ktore len sleduju kampane (vyhodime ich pri normalizacii URL)
 _TRACK = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-          "ref", "source", "fbclid", "gclid"}
+          "ref", "source", "fbclid", "gclid", "oc"}
 
 
 def canonical_url(url):
@@ -22,29 +20,25 @@ def canonical_url(url):
         return url
 
 
-def _norm_title(t):
-    return re.sub(r"[^a-z0-9 ]", "", t.lower()).strip()
+def _title_key(t):
+    # normalizovaný kľúč z titulku (prvých ~70 znakov) — zachytí rovnaké/skoro rovnaké titulky
+    return re.sub(r"[^a-z0-9 ]", "", t.lower()).strip()[:70]
 
 
-def _similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
-
-
-def dedup(items, title_threshold=0.85):
-    """Necha najstarsi (= najpravdepodobnejsi originalovy) z duplikatov."""
+def dedup(items):
+    """Necha najstarsi (= najpravdepodobnejsi originalovy) z duplikatov. O(n)."""
     items = sorted(items, key=lambda x: x["published"])  # od najstarsieho
     kept = []
     seen_urls = set()
-    norm_titles = []
+    seen_titles = set()
     for it in items:
         cu = canonical_url(it["url"])
-        if cu in seen_urls:
-            continue
-        nt = _norm_title(it["title"])
-        if any(_similar(nt, prev) >= title_threshold for prev in norm_titles):
+        tk = _title_key(it["title"])
+        if cu in seen_urls or (tk and tk in seen_titles):
             continue
         seen_urls.add(cu)
-        norm_titles.append(nt)
+        if tk:
+            seen_titles.add(tk)
         it["canonical_url"] = cu
         kept.append(it)
     return kept

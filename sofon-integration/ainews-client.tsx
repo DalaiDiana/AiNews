@@ -40,10 +40,10 @@ function cleanDesc(html: string) { if (!html) return "";
   t = t.replace(/\s+/g, " ").trim(); const parts = t.match(/[^.!?]+[.!?]+/g);
   if (parts && parts.length) t = parts.slice(0, 3).join(" ").trim(); if (t.length > 300) t = t.slice(0, 297).trim() + "…"; return t; }
 
-export default function AiNewsClient({ data: initial }: { data: Data | null }) {
+export default function AiNewsClient({ data: initial, initialOpen = null }: { data: Data | null; initialOpen?: string | null }) {
   const [data, setData] = useState<Data | null>(initial);
   const [region, setRegion] = useState("ALL");
-  const [open, setOpen] = useState<string | null>(null);
+  const [open, setOpen] = useState<string | null>(initialOpen);
 
   useEffect(() => { if (!data) fetch(EXT, { cache: "no-store" }).then(r => r.json()).then(setData).catch(() => {}); }, [data]);
 
@@ -58,7 +58,8 @@ export default function AiNewsClient({ data: initial }: { data: Data | null }) {
     if (region === "SKCZ") return items.filter(i => i.region === "SK" || i.region === "CZ");
     return items.filter(i => i.region === region);
   };
-  const openCat = (id: string) => { setOpen(id); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const openCat = (id: string) => { setOpen(id); if (typeof window !== "undefined") { window.history.pushState({}, "", "?topic=" + id); window.scrollTo({ top: 0, behavior: "smooth" }); } };
+  const closeCat = () => { setOpen(null); if (typeof window !== "undefined") window.history.pushState({}, "", window.location.pathname); };
 
   if (!data) return (<main style={{ minHeight: "60vh", display: "grid", placeItems: "center", color: "var(--foreground,#c8e6ff)", fontFamily: "var(--font-mono)" }}>loading AI News Monitor…</main>);
 
@@ -112,12 +113,12 @@ export default function AiNewsClient({ data: initial }: { data: Data | null }) {
             {ORDER.map(id => { const meta = META[id]; if (!meta) return null;
               const c = data.categories[id] || { items: [], new: 0 }; const items = visible(id);
               return (
-                <div key={id} className="ainm-tile" onClick={() => openCat(id)}>
+                <a key={id} href={"?topic=" + id} onClick={(e) => { e.preventDefault(); openCat(id); }} className="ainm-tile" style={{ display: "block", textDecoration: "none", color: "inherit" }}>
                   <i className={"ti " + meta[0]} aria-hidden="true" style={{ fontSize: 36, color: CY, opacity: .9 }} />
                   <div style={{ fontSize: 20, fontWeight: 600, color: "#dff3ff", marginTop: 14 }}>{meta[1]}</div>
                   <div style={{ fontFamily: "var(--font-mono)", fontSize: 14, color: "rgba(184,232,255,.45)", marginTop: 6 }}>{items.length} items</div>
                   <div style={{ position: "absolute", top: 15, right: 15, fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 600, padding: "4px 10px", borderRadius: 7, color: c.new ? CORAL : "rgba(184,232,255,.4)", background: c.new ? "rgba(232,114,106,.13)" : "transparent", border: `1px solid ${c.new ? "rgba(232,114,106,.3)" : "rgba(0,195,255,.16)"}` }}>{c.new} new</div>
-                </div>
+                </a>
               ); })}
           </div>
         </>
@@ -127,7 +128,7 @@ export default function AiNewsClient({ data: initial }: { data: Data | null }) {
         const meta = META[open]; const items = visible(open);
         return (
           <div style={{ marginTop: 22 }}>
-            <button className="ainm-back" onClick={() => setOpen(null)}><i className="ti ti-arrow-left" aria-hidden="true" /> Back to topics</button>
+            <button className="ainm-back" onClick={closeCat}><i className="ti ti-arrow-left" aria-hidden="true" /> Back to topics</button>
             <h2 style={{ fontFamily: "var(--font-mono)", margin: 0, fontSize: 26, fontWeight: 600, color: "#eaf7ff", display: "flex", alignItems: "center", gap: 12 }}><i className={"ti " + meta[0]} aria-hidden="true" style={{ color: CY, fontSize: 32 }} />{meta[1]} <span style={{ color: "rgba(184,232,255,.4)", fontSize: 14, fontWeight: 400 }}>· {items.length} shown</span></h2>
             <p style={{ fontSize: 16, color: "rgba(184,232,255,.62)", margin: "11px 0 18px", maxWidth: 900, lineHeight: 1.5 }}>{meta[2]}</p>
             {items.length === 0 && <p style={{ color: "rgba(184,232,255,.4)", fontSize: 14 }}>No items for this filter.</p>}
