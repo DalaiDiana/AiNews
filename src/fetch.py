@@ -81,18 +81,30 @@ def fetch_rss_all(verbose=True):
     return items
 
 
+def _github_token():
+    p = ROOT / "git-token.txt"
+    if p.exists():
+        return p.read_text().strip()
+    return None
+
+
 def fetch_github_all(verbose=True, days=21):
     """Trending AI repozitare cez GitHub Search API. Vzdy kategoria 'github'."""
     items, seen = [], set()
     since = (dt.datetime.now(UTC) - dt.timedelta(days=days)).strftime("%Y-%m-%d")
     queries = ["topic:llm", "topic:ai-agents", "topic:machine-learning",
                "topic:generative-ai", "topic:artificial-intelligence"]
+    tok = _github_token()
     for q in queries:
         full_q = urllib.parse.quote(f"{q} pushed:>={since}")
         url = (f"https://api.github.com/search/repositories?q={full_q}"
                f"&sort=stars&order=desc&per_page=8")
         try:
-            data = json.loads(_fetch_url(url, accept="application/vnd.github+json"))
+            headers = {"User-Agent": UA, "Accept": "application/vnd.github+json"}
+            if tok:
+                headers["Authorization"] = f"Bearer {tok}"
+            req = urllib.request.Request(url, headers=headers)
+            data = json.loads(urllib.request.urlopen(req, timeout=25).read())
             added = 0
             for repo in data.get("items", []):
                 fn = repo["full_name"]
@@ -115,7 +127,7 @@ def fetch_github_all(verbose=True, days=21):
                 added += 1
             if verbose:
                 print(f"  OK  GitHub {q:24} {added:3}")
-            time.sleep(2)  # rate-limit friendly
+            time.sleep(0.3)
         except Exception as ex:
             if verbose:
                 print(f"  ERR GitHub {q:24} {str(ex)[:55]}")

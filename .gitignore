@@ -13,5 +13,6 @@ venv/
 # vygenerované dáta (voliteľné — môžeš nechať verzované, ak chceš históriu)
 data/archive.json
 
-# lokálny token (nikdy necommitovať)
+# lokálne tokeny (nikdy necommitovať)
 git-token.txt
+sofon-token.txt

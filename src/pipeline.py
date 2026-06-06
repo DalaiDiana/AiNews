@@ -14,8 +14,16 @@ import classify
 import store
 
 
-def run(max_age_days=1, classify_mode="auto"):
-    print(f"== AI News Monitor — beh {dt.datetime.now():%Y-%m-%d %H:%M} ==")
+def run(max_age_days=None, classify_mode="auto"):
+    # prvy beh (prazdny archiv) = backfill 10 dni; dalsie denne behy = 1 den
+    if max_age_days is None:
+        import json as _json
+        try:
+            initial = len(_json.load(open(store.ARCHIVE))) == 0
+        except Exception:
+            initial = True
+        max_age_days = 10 if initial else 1
+    print(f"== AI News Monitor — beh {dt.datetime.now():%Y-%m-%d %H:%M} (okno {max_age_days} dní) ==")
     print("1) Zber RSS/API:")
     raw = fetch.fetch_rss_all()
     print(f"   stiahnuté: {len(raw)}")

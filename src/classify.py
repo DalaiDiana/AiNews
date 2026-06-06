@@ -59,7 +59,7 @@ def _rubric():
     return "\n".join(f'- {c["id"]}: {c["definition"]}' for c in CLS_CATS)
 
 
-def classify_gemini(items, batch_size=40):
+def classify_gemini(items, batch_size=90):
     client = _vertex_client()
     model = None
     for m in GEMINI_MODELS:
