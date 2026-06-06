@@ -59,7 +59,7 @@ def fetch_rss_all(verbose=True):
         try:
             feed = feedparser.parse(_fetch_url(src["url"]))
             n = 0
-            for e in feed.entries:
+            for e in feed.entries[:80]:
                 title = (e.get("title") or "").strip()
                 link = (e.get("link") or "").strip()
                 if not title or not link:

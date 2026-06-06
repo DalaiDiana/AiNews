@@ -15,25 +15,27 @@ zdrojov, zaradí ich do 15 kategórií a zobrazí na jednom dashboarde. Lokálne
 ## Spustenie
 
 ```bash
-pip install -r requirements.txt
-python src/pipeline.py          # vygeneruje dashboard/data.json
-# otvor dashboard/index.html v prehliadači
+pip3 install -r requirements.txt
+python3 src/pipeline.py         # vygeneruje dashboard/data.json + data.js
+# otvor dashboard/index.html v prehliadači (dvojklik)
 ```
 
 ## Triedič (krok 4)
 
-Bez kľúča beží **keyword** režim (lacný fallback). S Gemini kľúčom sa zapne
-presnejší **Gemini Flash-Lite** režim (dávkové triedenie podľa definícií):
+Ak je v koreni `credentials.json` (Google service account), zapne sa
+**Gemini** (Vertex AI, model `gemini-2.5-flash-lite`, región `global`) a triedi
+dávkovo podľa definícií kategórií. Bez neho beží záložný **keyword** režim.
 
-```bash
-export GEMINI_API_KEY=...        # alebo GOOGLE_APPLICATION_CREDENTIALS=credentials.json
-python src/pipeline.py
-```
+GitHub repá majú vlastný zdroj (GitHub Search API) a vždy idú do kategórie
+`github` — triedič ich nerieši, takže do GitHubu už nepadajú omylom články.
 
-Kľúč NIKDY necommituj — `credentials.json`, `.env` a `*.key` sú v `.gitignore`.
+Kľúče NIKDY necommituj — `credentials.json`, `.env`, `*.key` sú v `.gitignore`.
 
 ## Stav
 
-MVP: 18 overených RSS/API zdrojov. Ďalej: doplniť scraping zdroje (čínske firmy,
-xAI, DeepSeek…), zapnúť Gemini triedič, nastaviť denný beh o 4:00 (cron / GitHub Actions),
-doladiť sci-fi vizuál.
+- Pipeline: fetch → filter → dedup → **Gemini** triedenie → archív (10 dní) → dashboard
+- Zdroje: 17 overených RSS/API + GitHub trending repozitáre
+- Dashboard: DiusAi farby + plexus pozadie
+
+Ďalej: doplniť scraping zdroje (xAI, DeepSeek, čínske firmy), nastaviť denný
+beh o 4:00 (GitHub Actions), prípadne nasadiť na doménu.

@@ -1,6 +1,6 @@
 """Hlavny beh — spaja vsetky kroky. Spusta sa rano (cron / GitHub Actions).
 
-  python src/pipeline.py
+  python3 src/pipeline.py
 """
 import sys
 import datetime as dt
@@ -16,8 +16,8 @@ import store
 
 def run(max_age_days=1, classify_mode="auto"):
     print(f"== AI News Monitor — beh {dt.datetime.now():%Y-%m-%d %H:%M} ==")
-    print("1) Zber:")
-    raw = fetch.fetch_all()
+    print("1) Zber RSS/API:")
+    raw = fetch.fetch_rss_all()
     print(f"   stiahnuté: {len(raw)}")
 
     print("2) Filter (24h + AI relevancia):")
@@ -28,14 +28,20 @@ def run(max_age_days=1, classify_mode="auto"):
     uniq = dedup.dedup(fresh)
     print(f"   po dedupe: {len(uniq)}")
 
-    print("4) Zaradenie do kategórií:")
+    print("4) Zaradenie do kategórií (Gemini / keyword):")
     classified, mode = classify.classify_all(uniq, mode=classify_mode)
     print(f"   režim triediča: {mode}")
 
-    print("5) Uloženie + dashboard:")
-    new_count, total = store.update(classified)
+    print("5) GitHub trending repozitáre:")
+    gh = dedup.dedup(fetch.fetch_github_all())
+    print(f"   repozitárov: {len(gh)}")
+
+    all_items = classified + gh
+
+    print("6) Uloženie + dashboard:")
+    new_count, total = store.update(all_items)
     print(f"   nové: {new_count}, v archíve spolu: {total}")
-    print("Hotovo. dashboard/data.json aktualizovaný.")
+    print("Hotovo. dashboard/data.json + data.js aktualizované.")
     return new_count, total
 
 
