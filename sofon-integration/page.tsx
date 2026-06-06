@@ -61,7 +61,11 @@ export default function AiNewsPage() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/ainews-data.json").then(r => r.json()).then(setData).catch(() => {});
+    // primárne ťaháme čerstvé dáta z AiNews repa (denne aktualizované),
+    // fallback na zabudované public/ainews-data.json
+    const EXT = "https://raw.githubusercontent.com/DalaiDiana/AiNews/main/dashboard/data.json";
+    fetch(EXT, { cache: "no-store" }).then(r => r.json()).then(setData)
+      .catch(() => fetch("/ainews-data.json").then(r => r.json()).then(setData).catch(() => {}));
   }, []);
 
   const visible = useMemo(() => (cat: string): Item[] => {
@@ -145,7 +149,10 @@ export default function AiNewsPage() {
             {items.slice(0, 60).map((it, k) => {
               const isNew = it.added === data.today; const desc = cleanDesc(it.summary);
               return (
-                <div key={k} style={{ padding: "14px 0", borderTop: "1px solid rgba(0,195,255,.1)" }}>
+                <div key={k} style={{ padding: isNew ? "14px 12px" : "14px 0", borderTop: "1px solid rgba(0,195,255,.1)",
+                  background: isNew ? "rgba(232,114,106,.09)" : "transparent",
+                  borderLeft: isNew ? `3px solid ${CORAL}` : "3px solid transparent",
+                  borderRadius: isNew ? 6 : 0 }}>
                   <div style={{ display: "flex", gap: 13, alignItems: "baseline" }}>
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 9.5, letterSpacing: .8, color: regColor(it.region), border: `1px solid ${regColor(it.region)}55`, padding: "2px 7px", borderRadius: 5, minWidth: 34, textAlign: "center", whiteSpace: "nowrap" }}>{it.region}</span>
                     <a href={it.url} target="_blank" rel="noopener noreferrer" style={{ color: "#eaf7ff", textDecoration: "none", fontSize: 14, fontWeight: 500, lineHeight: 1.45 }}>

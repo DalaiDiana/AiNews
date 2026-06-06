@@ -1,0 +1,41 @@
+name: Daily AI News refresh
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 04:00 času Diany (leto, CEST). V zime = 03:00.
+  workflow_dispatch:        # umožní spustiť aj ručne tlačidlom
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Write Gemini credentials
+        env:
+          GEMINI_CREDENTIALS: ${{ secrets.GEMINI_CREDENTIALS }}
+        run: printf '%s' "$GEMINI_CREDENTIALS" > credentials.json
+
+      - name: Run pipeline
+        run: python src/pipeline.py
+
+      - name: Commit refreshed data
+        run: |
+          rm -f credentials.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/data.json dashboard/data.js data/archive.json
+          git commit -m "Daily AI News refresh ($(date -u +%Y-%m-%d))" || echo "Žiadne zmeny"
+          git push
