@@ -1,0 +1,17 @@
+# NIKDY necommitovať tajné kľúče
+credentials.json
+*.key
+.env
+service-account*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# vygenerované dáta (voliteľné — môžeš nechať verzované, ak chceš históriu)
+data/archive.json
+
+# lokálny token (nikdy necommitovať)
+git-token.txt

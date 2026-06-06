@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI News Monitor</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.7.0/dist/tabler-icons.min.css"/>
+<style>
+  :root{
+    --bg:#05070d; --panel:#0b1020; --panel2:#0e1428;
+    --cyan:#00e5ff; --mag:#ff2bd6; --grid:rgba(0,229,255,.06);
+    --txt:#cfe3f2; --dim:#5d7591; --line:rgba(0,229,255,.18);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--txt);
+    font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:42px 42px; min-height:100vh;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:28px 22px 60px;}
+  header{display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:18px; border-bottom:1px solid var(--line); padding-bottom:18px;}
+  .logo{font-size:26px; font-weight:700; letter-spacing:2px; color:#eafaff; text-shadow:0 0 14px rgba(0,229,255,.55);}
+  .logo b{color:var(--cyan)}
+  .cursor{display:inline-block; width:11px; background:var(--mag); margin-left:3px; animation:blink 1s steps(1) infinite; box-shadow:0 0 10px var(--mag);}
+  @keyframes blink{50%{opacity:0}}
+  .sub{font-size:12px; color:var(--dim); margin-top:7px; letter-spacing:1px;}
+  .counter{text-align:right}
+  .counter .big{font-size:40px; font-weight:700; color:var(--mag); text-shadow:0 0 18px rgba(255,43,214,.6); line-height:1;}
+  .counter .lbl{font-size:11px; color:var(--dim); letter-spacing:2px;}
+  .filters{display:flex; gap:8px; flex-wrap:wrap; margin:22px 0 6px;}
+  .chip{font-size:11px; letter-spacing:1px; padding:6px 12px; border:1px solid var(--line); border-radius:4px; color:var(--dim); cursor:pointer; background:transparent; transition:.15s;}
+  .chip:hover{color:var(--cyan); border-color:var(--cyan);}
+  .chip.on{color:var(--bg); background:var(--cyan); border-color:var(--cyan); box-shadow:0 0 14px rgba(0,229,255,.5);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; margin-top:18px;}
+  .tile{background:linear-gradient(160deg,var(--panel),var(--panel2)); border:1px solid var(--line); border-radius:8px; padding:16px; cursor:pointer; position:relative; overflow:hidden; transition:.18s; min-height:118px;}
+  .tile:hover{border-color:var(--cyan); transform:translateY(-2px); box-shadow:0 0 22px rgba(0,229,255,.18);}
+  .tile .ico{font-size:24px; color:var(--cyan); opacity:.9}
+  .tile .nm{font-size:13px; letter-spacing:.5px; margin-top:12px; color:#dcefff;}
+  .tile .ct{font-size:11px; color:var(--dim); margin-top:4px;}
+  .badge{position:absolute; top:13px; right:13px; font-size:11px; font-weight:700; padding:3px 9px; border-radius:20px; color:var(--bg); background:var(--mag); box-shadow:0 0 12px rgba(255,43,214,.7);}
+  .badge.zero{background:transparent; color:var(--dim); box-shadow:none; border:1px solid var(--line); font-weight:400;}
+  .panel{margin-top:22px; border:1px solid var(--line); border-radius:8px; background:rgba(11,16,32,.7); padding:20px; display:none;}
+  .panel.show{display:block; animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .panel h2{margin:0 0 4px; font-size:18px; color:var(--cyan); letter-spacing:1px; display:flex; align-items:center; gap:10px;}
+  .panel .def{font-size:12px; color:var(--dim); margin:0 0 16px; max-width:760px; line-height:1.6;}
+  .item{display:flex; gap:14px; align-items:baseline; padding:12px 0; border-top:1px solid rgba(0,229,255,.08);}
+  .item a{color:#e8f6ff; text-decoration:none; font-size:14px; line-height:1.5;}
+  .item a:hover{color:var(--cyan); text-shadow:0 0 8px rgba(0,229,255,.5);}
+  .reg{font-size:10px; letter-spacing:1px; color:var(--bg); background:var(--cyan); padding:2px 7px; border-radius:3px; white-space:nowrap;}
+  .reg.CN{background:var(--mag)} .reg.EU{background:#7c5cff} .reg.IN{background:#ffb020} .reg.SK,.reg.CZ{background:#27d97f}
+  .meta{font-size:11px; color:var(--dim); margin-left:auto; white-space:nowrap; padding-left:12px;}
+  .new-dot{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--mag); box-shadow:0 0 7px var(--mag); margin-right:6px;}
+  footer{margin-top:40px; font-size:11px; color:var(--dim); text-align:center; letter-spacing:1px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="logo">AI<b>_</b>NEWS<b>_</b>MONITOR<span class="cursor">&nbsp;</span></div>
+      <div class="sub" id="sub">booting radar…</div>
+    </div>
+    <div class="counter"><div class="big" id="newcount">0</div><div class="lbl">NEW TODAY</div></div>
+  </header>
+
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+  <div class="panel" id="panel"></div>
+  <footer>AI News Monitor · DiusAi · local build · refresh data via <code>python3 src/pipeline.py</code></footer>
+</div>
+
+<script src="./data.js"></script>
+<script>
+const META = {
+  github:["ti-brand-github","GitHub"], models:["ti-box-multiple","Models & Releases"],
+  agents:["ti-robot","Agents & Frameworks"], memory:["ti-brain","Memory"],
+  gadgets:["ti-device-watch","Gadgets"], robotics:["ti-robot-face","Robotics"],
+  autonomous:["ti-car","Autonomous Transport"], bigplayers:["ti-building-skyscraper","Big Players"],
+  infra:["ti-server-2","Infrastructure & Compute"], business:["ti-coin","Business & Funding"],
+  benchmarks:["ti-chart-bar","Benchmarks & Evaluations"], research:["ti-flask","Science & Research"],
+  legislation:["ti-gavel","Legislation"], ethics:["ti-scale","Philosophy, Ethics & Safety"],
+  skcz:["ti-map-pin","Slovakia & Czechia"]
+};
+const ORDER = ["bigplayers","models","agents","robotics","autonomous","gadgets","memory","github","infra","benchmarks","research","business","legislation","ethics","skcz"];
+let DATA=null, region="ALL";
+
+function ago(iso){
+  const s=(Date.now()-new Date(iso))/1000;
+  if(s<3600) return Math.max(1,Math.round(s/60))+"m";
+  if(s<86400) return Math.round(s/3600)+"h";
+  return Math.round(s/86400)+"d";
+}
+function countUp(el,to){let n=0,step=Math.max(1,Math.round(to/30));const t=setInterval(()=>{n+=step;if(n>=to){n=to;clearInterval(t);}el.textContent=n;},25);}
+
+function visibleItems(cat){
+  const items=(DATA.categories[cat]?.items)||[];
+  return region==="ALL"?items:items.filter(i=>region==="SKCZ"?(i.region==="SK"||i.region==="CZ"):i.region===region);
+}
+
+function render(){
+  const grid=document.getElementById("grid"); grid.innerHTML="";
+  ORDER.forEach(id=>{
+    const meta=META[id]; if(!meta) return;
+    const c=DATA.categories[id]||{items:[],new:0};
+    const items=visibleItems(id);
+    const tile=document.createElement("div"); tile.className="tile"; tile.onclick=()=>openCat(id);
+    tile.innerHTML=`<i class="ti ${meta[0]} ico"></i>
+      <div class="nm">${meta[1]}</div>
+      <div class="ct">${items.length} items</div>
+      <div class="badge ${c.new?'':'zero'}">${c.new} new</div>`;
+    grid.appendChild(tile);
+  });
+}
+function openCat(id){
+  const meta=META[id], c=DATA.categories[id]||{items:[]};
+  const items=visibleItems(id);
+  const p=document.getElementById("panel"); p.className="panel show";
+  let html=`<h2><i class="ti ${meta[0]}"></i> ${meta[1]} <span style="color:var(--dim);font-size:12px;font-weight:400">· ${items.length} shown</span></h2>`;
+  if(!items.length){html+=`<p class="def">No items for this filter.</p>`;}
+  items.slice(0,60).forEach(it=>{
+    const isNew=it.added===DATA.today;
+    html+=`<div class="item">
+      <span class="reg ${it.region}">${it.region}</span>
+      <a href="${it.url}" target="_blank" rel="noopener">${isNew?'<span class="new-dot"></span>':''}${it.title}</a>
+      <span class="meta">${it.source} · ${ago(it.published)}</span></div>`;
+  });
+  p.innerHTML=html; p.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function buildFilters(){
+  const f=document.getElementById("filters");
+  [["ALL","ALL"],["US","US"],["EU","EU"],["CN","CN"],["IN","IN"],["SK / CZ","SKCZ"]].forEach(([lbl,val])=>{
+    const b=document.createElement("button"); b.className="chip"+(val==="ALL"?" on":""); b.textContent=lbl;
+    b.onclick=()=>{region=val;[...f.children].forEach(x=>x.classList.remove("on"));b.classList.add("on");render();document.getElementById("panel").classList.remove("show");};
+    f.appendChild(b);
+  });
+}
+function init(d){
+  DATA=d;
+  const dt=new Date(d.generated);
+  document.getElementById("sub").textContent=`last sync ${dt.toISOString().slice(0,16).replace('T',' ')} UTC · ${d.total_items} items archived · 18 sources`;
+  countUp(document.getElementById("newcount"),d.total_new);
+  buildFilters(); render();
+}
+if(window.AINM_DATA){ init(window.AINM_DATA); }
+else{ fetch("./data.json").then(r=>r.json()).then(init)
+  .catch(e=>{document.getElementById("sub").textContent="data.js not found — run python3 src/pipeline.py first";}); }
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+# AI News Monitor — register zdrojov (MVP, overené RSS feedy)
+# type: rss | api  (scrapery doplníme neskôr)
+# region: US | EU | CN | IN | SK | CZ | GLOBAL
+# Zdroje su "spolocny bazen" - clanok sa zaradi podla obsahu, nie podla zdroja.
+
+sources:
+  # --- Veľkí hráči / modely ---
+  - name: "Google AI Blog"
+    url: "https://blog.google/technology/ai/rss/"
+    type: rss
+    region: US
+  - name: "Google DeepMind"
+    url: "https://deepmind.google/blog/rss.xml"
+    type: rss
+    region: EU
+  - name: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/feed.xml"
+    type: rss
+    region: US
+
+  # --- Výskum ---
+  - name: "arXiv cs.AI"
+    url: "http://export.arxiv.org/rss/cs.AI"
+    type: rss
+    region: GLOBAL
+  - name: "arXiv cs.LG"
+    url: "http://export.arxiv.org/rss/cs.LG"
+    type: rss
+    region: GLOBAL
+
+  # --- Veľké tech / AI médiá ---
+  - name: "TechCrunch AI"
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    type: rss
+    region: US
+  - name: "The Verge"
+    url: "https://www.theverge.com/rss/index.xml"
+    type: rss
+    region: US
+  - name: "MIT Technology Review"
+    url: "https://www.technologyreview.com/feed/"
+    type: rss
+    region: US
+  - name: "Ars Technica"
+    url: "https://arstechnica.com/ai/feed/"
+    type: rss
+    region: US
+  - name: "Wired AI"
+    url: "https://www.wired.com/feed/tag/ai/latest/rss"
+    type: rss
+    region: US
+  - name: "VentureBeat AI"
+    url: "https://venturebeat.com/category/ai/feed/"
+    type: rss
+    region: US
+
+  # --- Spravodajské médiá (general) ---
+  - name: "BBC Technology"
+    url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    type: rss
+    region: EU
+  - name: "The Guardian Technology"
+    url: "https://www.theguardian.com/technology/rss"
+    type: rss
+    region: EU
+
+  # --- Robotika ---
+  - name: "The Robot Report"
+    url: "https://www.therobotreport.com/feed/"
+    type: rss
+    region: US
+  - name: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/feeds/feed.rss"
+    type: rss
+    region: US
+
+  # --- Čína / India ---
+  - name: "TechNode"
+    url: "https://technode.com/feed/"
+    type: rss
+    region: CN
+  - name: "Pandaily"
+    url: "https://pandaily.com/feed/"
+    type: rss
+    region: CN
+  - name: "Analytics India Magazine"
+    url: "https://analyticsindiamag.com/feed/"
+    type: rss
+    region: IN

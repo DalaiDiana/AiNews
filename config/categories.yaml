@@ -1,0 +1,81 @@
+# AI News Monitor — definície kategórií (15)
+# definition = text pre triedič (Gemini), keywords = pomôcka pre pred-filter a fallback
+
+categories:
+  - id: github
+    name: "GitHub"
+    definition: "Trending and most-starred AI/ML repositories: new open-source projects, libraries, and tools gaining traction."
+    keywords: [github, repository, repo, open-source, open source, stars, trending repo, library, sdk]
+
+  - id: models
+    name: "Models & Releases"
+    definition: "New AI model launches and version updates (LLMs, image/video/audio, multimodal), including open-weight releases. Also generative media: image generation, video generation, text-to-speech, speech-to-text, translators."
+    keywords: [model, release, launch, gpt, claude, gemini, llama, qwen, mistral, open-weight, multimodal, image generation, video generation, text-to-speech, speech-to-text, translator, diffusion]
+
+  - id: agents
+    name: "Agents & Frameworks"
+    definition: "Agentic systems, orchestration and dev tooling: MCP, LangChain, LangSmith, agent frameworks, and consumer bots like Hermes and OpenClaw."
+    keywords: [agent, agentic, mcp, model context protocol, langchain, langsmith, llamaindex, crewai, autogen, orchestration, hermes, openclaw, tool use, workflow]
+
+  - id: memory
+    name: "Memory"
+    definition: "Advances in AI memory: long-term/context memory for LLMs, memory products, research on how models store and recall information."
+    keywords: [memory, long-term memory, context window, retrieval, recall, mem0, letta, memgpt, persistent memory]
+
+  - id: gadgets
+    name: "Gadgets"
+    definition: "AI-powered hardware: smart glasses, wearables, data-collection devices, plus new chips and sensors."
+    keywords: [gadget, wearable, smart glasses, glasses, device, chip, sensor, hardware, headset, pin, ar glasses]
+
+  - id: robotics
+    name: "Robotics"
+    definition: "Humanoid and general robotics powered by AI: new robots, demos, research, and deployments."
+    keywords: [robot, robotics, humanoid, unitree, agibot, ubtech, fourier, optimus, embodied, manipulation, quadruped]
+
+  - id: autonomous
+    name: "Autonomous Transport"
+    definition: "Self-driving cars, drones, and autonomous mobility: tech, pilots, and regulation-adjacent news."
+    keywords: [autonomous, self-driving, robotaxi, waymo, weride, pony.ai, xpeng, apollo, driverless, drone, lidar]
+
+  - id: bigplayers
+    name: "Big Players"
+    definition: "Corporate news from major labs and vendors: OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia, xAI, Amazon, Apple, plus Chinese (Baidu, Tencent, ByteDance, Alibaba, DeepSeek) and others."
+    keywords: [openai, anthropic, google, deepmind, meta, microsoft, nvidia, xai, amazon, apple, baidu, tencent, bytedance, alibaba, deepseek, huawei, partnership, ceo]
+
+  - id: infra
+    name: "Infrastructure & Compute"
+    definition: "Data centers, GPUs/accelerators, cloud and the hardware/energy backbone behind AI."
+    keywords: [data center, datacenter, gpu, accelerator, compute, cluster, cloud, tpu, h100, b200, rubin, power, energy]
+
+  - id: business
+    name: "Business & Funding"
+    definition: "Investments, funding rounds, acquisitions, partnerships, market moves, and funding calls/grants (EU calls, Horizon Europe, accelerators)."
+    keywords: [funding, raise, round, valuation, acquisition, ipo, investment, venture, grant, call, accelerator, revenue, billion]
+
+  - id: benchmarks
+    name: "Benchmarks & Evaluations"
+    definition: "New benchmarks, leaderboards, eval methods, and how models are measured and compared."
+    keywords: [benchmark, evaluation, eval, leaderboard, sota, arena, score, mmlu, swe-bench, test]
+
+  - id: research
+    name: "Science & Research"
+    definition: "Real-world applications of AI across science and industry; notable papers and use-cases."
+    keywords: [research, paper, study, science, arxiv, breakthrough, discovery, healthcare, biology, physics, application]
+
+  - id: legislation
+    name: "Legislation"
+    definition: "Laws, regulations, and policy on AI worldwide (EU AI Act, national rules, enforcement)."
+    keywords: [law, regulation, policy, ai act, eu ai act, legislation, regulator, compliance, ban, governance, court]
+
+  - id: ethics
+    name: "Philosophy, Ethics & Safety"
+    definition: "Alignment, AI safety, ethics, and the broader philosophical debate."
+    keywords: [safety, alignment, ethics, philosophy, risk, existential, bias, fairness, interpretability, responsible ai]
+
+  - id: skcz
+    name: "Slovakia & Czech Republic"
+    definition: "The most important AI news from Slovakia and Czechia."
+    keywords: [slovensko, slovak, slovensk, česko, czech, čr, bratislava, praha]
+
+# fallback kategória, ak triedič nevie zaradiť
+fallback: research
