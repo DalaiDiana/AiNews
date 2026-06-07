@@ -7,7 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 
 type Item = { title: string; url: string; summary: string; source: string; region: string; published: string; added?: string; category: string; };
 type Cat = { items: Item[]; new: number };
-type Data = { generated: string; today: string; total_new: number; total_items: number; categories: Record<string, Cat> };
+type Data = { generated: string; today: string; total_new: number; total_items: number; sources_total?: number; categories: Record<string, Cat> };
 
 const META: Record<string, [string, string, string]> = {
   bigplayers: ["ti-building-skyscraper", "Big Players", "Corporate news from major labs and vendors — OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia, plus Chinese and other players."],
@@ -47,7 +47,7 @@ export default function AiNewsClient({ data: initial, initialOpen = null }: { da
 
   useEffect(() => { if (!data) fetch(EXT, { cache: "no-store" }).then(r => r.json()).then(setData).catch(() => {}); }, [data]);
 
-  const sourceCount = useMemo(() => {
+  const activeSources = useMemo(() => {
     if (!data) return 0; const s = new Set<string>();
     Object.values(data.categories || {}).forEach(c => c.items.forEach(i => s.add(i.source))); return s.size;
   }, [data]);
@@ -87,7 +87,7 @@ export default function AiNewsClient({ data: initial, initialOpen = null }: { da
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, letterSpacing: 1, color: "#eaf7ff", textShadow: "0 0 16px rgba(0,195,255,.4)" }}>AI NEWS <span style={{ color: CY }}>MONITOR</span></span>
           </div>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 13.5, color: "rgba(184,232,255,.55)", marginTop: 10, letterSpacing: .5 }}>
-            last sync {sync} UTC · {data.total_items} archived · {sourceCount} sources · powered by Gemini
+            last sync {sync} UTC · {data.total_items} archived · {data.sources_total ?? activeSources} sources monitored ({activeSources} active) · powered by Gemini
           </div>
         </div>
         <div style={{ textAlign: "right", lineHeight: 1.1 }}>

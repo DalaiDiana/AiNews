@@ -2,7 +2,17 @@
 import json
 import re
 import datetime as dt
+import yaml
 from pathlib import Path
+
+
+def _sources_total():
+    """Počet sledovaných zdrojov (zo sources.yaml) + GitHub."""
+    try:
+        n = len(yaml.safe_load(open(Path(__file__).resolve().parent.parent / "config" / "sources.yaml"))["sources"])
+        return n + 1  # +GitHub repá
+    except Exception:
+        return 0
 
 
 def _tkey(t):
@@ -95,6 +105,7 @@ def _write_dashboard(archive, fresh_total):
         "today": today,
         "total_new": sum(c["new"] for c in cats.values()),
         "total_items": len(archive),
+        "sources_total": _sources_total(),
         "categories": cats,
     }
     DASHBOARD_DATA.parent.mkdir(exist_ok=True)

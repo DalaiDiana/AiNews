@@ -114,3 +114,29 @@ sources:
   - {name: "Model Context Protocol", url: "https://news.google.com/rss/search?q=Model%20Context%20Protocol%20MCP%20Anthropic&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
   - {name: "EU AI Act", url: "https://news.google.com/rss/search?q=EU%20AI%20Act%20regulation&hl=en-US&gl=US&ceid=US:en", type: rss, region: EU}
   - {name: "AI funding / VC", url: "https://news.google.com/rss/search?q=AI%20startup%20funding%20round&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}
+  # ── doplnené väčšie zdroje ──
+  - {name: "arXiv cs.CL", url: "http://export.arxiv.org/rss/cs.CL", type: rss, region: GLOBAL}
+  - {name: "arXiv cs.CV", url: "http://export.arxiv.org/rss/cs.CV", type: rss, region: GLOBAL}
+  - {name: "arXiv cs.RO", url: "http://export.arxiv.org/rss/cs.RO", type: rss, region: GLOBAL}
+  - {name: "TLDR AI", url: "https://tldr.tech/api/rss/ai", type: rss, region: US}
+  - {name: "Ben's Bites", url: "https://www.bensbites.com/feed", type: rss, region: US}
+  - {name: "Last Week in AI", url: "https://lastweekin.ai/feed", type: rss, region: US}
+  - {name: "Platformer", url: "https://www.platformer.news/rss/", type: rss, region: US}
+  - {name: "Big Technology", url: "https://www.bigtechnology.com/feed", type: rss, region: US}
+  - {name: "One Useful Thing", url: "https://www.oneusefulthing.org/feed", type: rss, region: US}
+  - {name: "CNBC Tech", url: "https://www.cnbc.com/id/19854910/device/rss/rss.html", type: rss, region: US}
+  - {name: "Axios", url: "https://api.axios.com/feed/", type: rss, region: US}
+  - {name: "Semafor", url: "https://www.semafor.com/rss.xml", type: rss, region: US}
+  - {name: "Financial Times AI", url: "https://www.ft.com/artificial-intelligence?format=rss", type: rss, region: EU}
+  - {name: "The Batch (DeepLearning.AI)", url: "https://news.google.com/rss/search?q=The%20Batch%20DeepLearning.AI%20Andrew%20Ng&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Papers with Code", url: "https://news.google.com/rss/search?q=Papers%20with%20Code%20state%20of%20the%20art&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}
+  - {name: "LMArena", url: "https://news.google.com/rss/search?q=LMArena%20Chatbot%20Arena%20LLM%20ranking&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}
+  - {name: "Artificial Analysis", url: "https://news.google.com/rss/search?q=Artificial%20Analysis%20AI%20benchmark&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}
+  - {name: "HF Open LLM Leaderboard", url: "https://news.google.com/rss/search?q=Hugging%20Face%20Open%20LLM%20Leaderboard&hl=en-US&gl=US&ceid=US:en", type: rss, region: GLOBAL}
+  - {name: "Reuters AI", url: "https://news.google.com/rss/search?q=Reuters%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Bloomberg AI", url: "https://news.google.com/rss/search?q=Bloomberg%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "VentureBeat AI", url: "https://news.google.com/rss/search?q=VentureBeat%20artificial%20intelligence&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "ElevenLabs", url: "https://news.google.com/rss/search?q=ElevenLabs%20AI%20voice&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Runway / Pika / Luma", url: "https://news.google.com/rss/search?q=Runway%20Pika%20Luma%20AI%20video&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Midjourney", url: "https://news.google.com/rss/search?q=Midjourney%20AI%20image&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
+  - {name: "Suno / Udio", url: "https://news.google.com/rss/search?q=Suno%20Udio%20AI%20music&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}

@@ -75,7 +75,7 @@ def classify_gemini(items, batch_size=40):
         raise RuntimeError("žiaden Gemini model nedostupný")
 
     rubric = _rubric()
-    valid = {c["id"] for c in CLS_CATS}
+    valid = {c["id"] for c in CLS_CATS} | {"none"}
     out = [FALLBACK] * len(items)
     for i in range(0, len(items), batch_size):
         chunk = items[i:i + batch_size]
@@ -89,7 +89,9 @@ def classify_gemini(items, batch_size=40):
             "- Company/lab corporate news (leadership, strategy, partnerships) -> bigplayers.\n"
             "- Agents/MCP/LangChain/dev frameworks -> agents. Chips/GPU/datacenter/energy -> infra.\n"
             "- Benchmarks/leaderboards/evals -> benchmarks. Laws/regulation/policy -> legislation.\n"
-            "- Safety/alignment/ethics -> ethics. Robots/humanoids -> robotics. Self-driving/drones -> autonomous.\n\n"
+            "- Safety/alignment/ethics -> ethics. Robots/humanoids -> robotics. Self-driving/drones -> autonomous.\n"
+            "- If an article is NOT really about artificial intelligence at all (general movies, sport, "
+            "lifestyle, politics, gadgets review without AI, milliliters/medicine, etc.), use id \"none\" so it is discarded.\n\n"
             "Categories:\n" + rubric + "\n\n"
             "Articles:\n" + listing + "\n\n"
             'Return ONLY a JSON array like [{"i":0,"id":"models"}, ...] — no other text, one entry per article.')
@@ -143,5 +145,7 @@ def classify_all(items, mode="auto"):
     else:
         for it in items:
             it["category"] = classify_keyword(it)
+    # Gemini mohol označiť nepatriace ako "none" -> zahodíme (kontextové rozhodnutie)
+    items = [it for it in items if it.get("category") != "none"]
     _force_skcz(items)
     return items, mode_used

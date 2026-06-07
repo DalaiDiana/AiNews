@@ -6,6 +6,8 @@
 # substring:     dlhšie/jednoznačné pojmy a názvy — stačí výskyt kdekoľvek (EN + SK/CZ).
 
 word_boundary:
+  # Toto sú len MARKERY kandidátov (hrubý pred-filter, aby sa neztratilo nič
+  # potenciálne AI). Finálne rozhoduje Gemini kontextom — nepatriace zahodí.
   - ai
   - a.i
   - agi
