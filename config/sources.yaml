@@ -52,8 +52,6 @@ sources:
   - {name: "Analytics Insight", url: "https://www.analyticsinsight.net/feed", type: rss, region: IN}
   - {name: "LessWrong", url: "https://www.lesswrong.com/feed.xml", type: rss, region: GLOBAL}
   - {name: "Alignment Forum", url: "https://www.alignmentforum.org/feed.xml", type: rss, region: GLOBAL}
-  - {name: "Reddit r/MachineLearning", url: "https://www.reddit.com/r/MachineLearning/.rss", type: rss, region: GLOBAL}
-  - {name: "Reddit r/LocalLLaMA", url: "https://www.reddit.com/r/LocalLLaMA/.rss", type: rss, region: GLOBAL}
   - {name: "Hacker News (AI)", url: "https://hnrss.org/newest?q=AI+OR+LLM", type: rss, region: GLOBAL}
   - {name: "Startitup.sk", url: "https://www.startitup.sk/feed/", type: rss, region: SK}
   - {name: "TechByte.sk", url: "https://www.techbyte.sk/feed/", type: rss, region: SK}
@@ -63,6 +61,22 @@ sources:
   - {name: "Zive.cz", url: "https://www.zive.cz/rss/sc-47/", type: rss, region: CZ}
   - {name: "CzechCrunch", url: "https://cc.cz/feed/", type: rss, region: CZ}
   - {name: "Root.cz", url: "https://www.root.cz/rss/clanky/", type: rss, region: CZ}
+  # SK/CZ hlavné spravodajské
+  - {name: "SME Tech", url: "https://tech.sme.sk/rss", type: rss, region: SK}
+  - {name: "SME", url: "https://www.sme.sk/rss-title", type: rss, region: SK}
+  - {name: "Denník N", url: "https://dennikn.sk/feed/", type: rss, region: SK}
+  - {name: "Aktuality.sk", url: "https://www.aktuality.sk/rss/", type: rss, region: SK}
+  - {name: "Pravda", url: "https://spravy.pravda.sk/rss/xml/", type: rss, region: SK}
+  - {name: "Pravda Veda/Tech", url: "https://vat.pravda.sk/rss/xml/", type: rss, region: SK}
+  - {name: "HNonline.sk", url: "https://hnonline.sk/feed", type: rss, region: SK}
+  - {name: "Forbes.sk", url: "https://www.forbes.sk/feed/", type: rss, region: SK}
+  - {name: "iDNES Technet", url: "https://servis.idnes.cz/rss.aspx?c=technet", type: rss, region: CZ}
+  - {name: "Novinky.cz", url: "https://www.novinky.cz/rss", type: rss, region: CZ}
+  - {name: "Seznam Zprávy", url: "https://www.seznamzpravy.cz/rss", type: rss, region: CZ}
+  - {name: "ČT24", url: "https://ct24.ceskatelevize.cz/rss", type: rss, region: CZ}
+  - {name: "Hospodárske noviny CZ", url: "https://hn.cz/?m=rss", type: rss, region: CZ}
+  - {name: "Forbes.cz", url: "https://forbes.cz/feed/", type: rss, region: CZ}
+  - {name: "E15", url: "https://www.e15.cz/rss", type: rss, region: CZ}
   # ── firmy/entity cez Google News RSS ──
   - {name: "Anthropic (Claude)", url: "https://news.google.com/rss/search?q=Anthropic%20Claude%20AI&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}
   - {name: "xAI (Grok)", url: "https://news.google.com/rss/search?q=xAI%20Grok%20Musk&hl=en-US&gl=US&ceid=US:en", type: rss, region: US}

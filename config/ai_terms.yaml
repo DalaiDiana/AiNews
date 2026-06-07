@@ -1,0 +1,120 @@
+# Slovník AI pojmov — určuje, či článok je o AI.
+# Sem pridávaj nové pojmy/skratky, keď ti niečo prepadne alebo naopak preniká šum.
+#
+# word_boundary: krátke skratky — musia byť ako samostatné slovo (nie podreťazec),
+#                aby "ai" nechytalo napr. "naivný". Pridávaj len jednoznačné AI skratky.
+# substring:     dlhšie/jednoznačné pojmy a názvy — stačí výskyt kdekoľvek (EN + SK/CZ).
+
+word_boundary:
+  - ai
+  - a.i
+  - agi
+  - asi
+  - ml
+  - llm
+  - llms
+  - slm
+  - vlm
+  - vla
+  - nlp
+  - rag
+  - rlhf
+  - gan
+  - gans
+  - vae
+  - lstm
+  - gpt
+  - bert
+  - tpu
+  - moe
+  - mcp
+  - sota
+  - asr
+  - ocr
+  - tts
+  - stt
+
+substring:
+  # všeobecné AI pojmy (EN)
+  - artificial intelligence
+  - machine learning
+  - deep learning
+  - reinforcement learning
+  - neural network
+  - neural net
+  - large language model
+  - language model
+  - foundation model
+  - generative ai
+  - generative model
+  - computer vision
+  - natural language
+  - speech recognition
+  - text-to-speech
+  - speech-to-text
+  - fine-tuning
+  - fine-tune
+  - pretrained
+  - transformer
+  - diffusion
+  - multimodal
+  - chatbot
+  - agentic
+  - ai agent
+  - prompt engineering
+  - embeddings
+  - vector database
+  - inference
+  - hallucinat
+  - humanoid
+  - robotaxi
+  - robotic
+  - self-driving
+  - autonomous vehicle
+  - autonomous driving
+  # modely / firmy / produkty
+  - chatgpt
+  - openai
+  - anthropic
+  - claude
+  - gemini
+  - deepmind
+  - hugging face
+  - llama
+  - mistral
+  - deepseek
+  - qwen
+  - grok
+  - copilot
+  - midjourney
+  - stable diffusion
+  - perplexity
+  - ernie
+  - hunyuan
+  - doubao
+  - kimi
+  # slovensky / cesky
+  - umelá inteligenc
+  - umelej inteligenc
+  - umelú inteligenc
+  - umelou inteligenc
+  - umela inteligenc
+  - umělá inteligen
+  - umělé inteligen
+  - umělou inteligen
+  - umělá inteligence
+  - strojové učeni
+  - strojového učeni
+  - strojové učení
+  - strojového učení
+  - hlboké učenie
+  - hluboké učení
+  - jazykový model
+  - jazykové model
+  - neurón
+  - neuronov
+  - neurónov
+  - generatívn
+  - generativní
+  - robotik
+  - čet bot

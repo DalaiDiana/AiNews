@@ -10,6 +10,7 @@ Pozn.: kategoria 'github' sa sem NEpridelluje — repozitare prichadzaju
 priamo z GitHub zdroja, takze do GitHubu uz nepadaju omylom clanky.
 """
 import os
+import re
 import json
 import yaml
 from pathlib import Path
@@ -27,7 +28,8 @@ def load_categories():
 
 
 CATS, FALLBACK = load_categories()
-CLS_CATS = [c for c in CATS if c["id"] != "github"]
+# triedič nepoužíva github (repá majú vlastný zdroj) ani skcz (to sa určuje regiónom)
+CLS_CATS = [c for c in CATS if c["id"] not in ("github", "skcz")]
 
 
 # ---------- keyword fallback ----------
@@ -59,7 +61,7 @@ def _rubric():
     return "\n".join(f'- {c["id"]}: {c["definition"]}' for c in CLS_CATS)
 
 
-def classify_gemini(items, batch_size=90):
+def classify_gemini(items, batch_size=40):
     client = _vertex_client()
     model = None
     for m in GEMINI_MODELS:
@@ -80,10 +82,17 @@ def classify_gemini(items, batch_size=90):
         listing = "\n".join(
             f'{j}. {it["title"]} :: {it["summary"][:200]}' for j, it in enumerate(chunk))
         prompt = (
-            "You are a precise AI-news classifier. For each article pick the SINGLE closest category id.\n\n"
+            "You are a precise AI-news classifier. Assign each article to the SINGLE best-fitting "
+            "category by its MAIN subject. Use the exact id from the list. Rules:\n"
+            "- Pick the dominant topic, not a side mention.\n"
+            "- A new/updated model or its capabilities -> models. Funding/acquisition/revenue -> business.\n"
+            "- Company/lab corporate news (leadership, strategy, partnerships) -> bigplayers.\n"
+            "- Agents/MCP/LangChain/dev frameworks -> agents. Chips/GPU/datacenter/energy -> infra.\n"
+            "- Benchmarks/leaderboards/evals -> benchmarks. Laws/regulation/policy -> legislation.\n"
+            "- Safety/alignment/ethics -> ethics. Robots/humanoids -> robotics. Self-driving/drones -> autonomous.\n\n"
             "Categories:\n" + rubric + "\n\n"
             "Articles:\n" + listing + "\n\n"
-            'Return ONLY a JSON array like [{"i":0,"id":"models"}, ...] — no other text.')
+            'Return ONLY a JSON array like [{"i":0,"id":"models"}, ...] — no other text, one entry per article.')
         resp = client.models.generate_content(model=model, contents=prompt)
         txt = (resp.text or "").strip().strip("`")
         if txt.lower().startswith("json"):
@@ -98,18 +107,41 @@ def classify_gemini(items, batch_size=90):
     return out, model
 
 
+_CZSK_CHARS = re.compile(r"[ěřůľĺŕ]", re.I)  # znaky typické pre češtinu/slovenčinu
+
+
+def _is_czsk(it):
+    if it.get("region") in ("SK", "CZ"):
+        return True
+    # jazyková detekcia: 3+ česko/slovenských znakov => je to CZ/SK článok
+    text = (it.get("title", "") + " " + it.get("summary", ""))
+    return len(_CZSK_CHARS.findall(text)) >= 3
+
+
+def _force_skcz(items):
+    # SK/CZ (podľa regiónu ALEBO jazyka) ide VŽDY len do kategórie skcz
+    for it in items:
+        if _is_czsk(it):
+            it["category"] = "skcz"
+
+
 def classify_all(items, mode="auto"):
     """mode: auto | keyword | gemini. auto = gemini ak je credentials.json."""
     has_creds = CREDS_PATH.exists() or bool(os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"))
     use = mode if mode != "auto" else ("gemini" if has_creds else "keyword")
+    mode_used = "keyword"
     if use == "gemini":
         try:
             cats, model = classify_gemini(items)
             for it, cid in zip(items, cats):
                 it["category"] = cid
-            return items, f"gemini:{model}"
+            mode_used = f"gemini:{model}"
         except Exception as ex:
             print(f"   ! Gemini zlyhal ({str(ex)[:90]}), padám na keyword")
-    for it in items:
-        it["category"] = classify_keyword(it)
-    return items, "keyword"
+            for it in items:
+                it["category"] = classify_keyword(it)
+    else:
+        for it in items:
+            it["category"] = classify_keyword(it)
+    _force_skcz(items)
+    return items, mode_used

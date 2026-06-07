@@ -14,22 +14,23 @@ import classify
 import store
 
 
-def run(max_age_days=None, classify_mode="auto"):
-    # prvy beh (prazdny archiv) = backfill 10 dni; dalsie denne behy = 1 den
-    if max_age_days is None:
-        import json as _json
-        try:
-            initial = len(_json.load(open(store.ARCHIVE))) == 0
-        except Exception:
-            initial = True
-        max_age_days = 10 if initial else 1
-    print(f"== AI News Monitor — beh {dt.datetime.now():%Y-%m-%d %H:%M} (okno {max_age_days} dní) ==")
+def run(classify_mode="auto"):
+    UTC = dt.timezone.utc
+    now = dt.datetime.now(UTC)
+    # okno = od posledného behu po teraz (≈12 h). Prvý beh (bez stavu) = posledných 12 h.
+    last = store.get_last_run()
+    try:
+        since = dt.datetime.fromisoformat(last) if last else now - dt.timedelta(hours=12)
+    except Exception:
+        since = now - dt.timedelta(hours=12)
+    hrs = round((now - since).total_seconds() / 3600, 1)
+    print(f"== AI News Monitor — beh {now:%Y-%m-%d %H:%M} UTC (okno od {since:%Y-%m-%d %H:%M} UTC, {hrs} h) ==")
     print("1) Zber RSS/API:")
     raw = fetch.fetch_rss_all()
     print(f"   stiahnuté: {len(raw)}")
 
-    print("2) Filter (24h + AI relevancia):")
-    fresh = flt.filter_items(raw, max_age_days=max_age_days)
+    print("2) Filter (nové od posledného behu + AI relevancia):")
+    fresh = flt.filter_since(raw, since)
     print(f"   po filtri: {len(fresh)}")
 
     print("3) Deduplikácia:")
@@ -48,6 +49,7 @@ def run(max_age_days=None, classify_mode="auto"):
 
     print("6) Uloženie + dashboard:")
     new_count, total = store.update(all_items)
+    store.set_last_run(now.isoformat())  # zapamätaj čas behu pre ďalšie okno
     print(f"   nové: {new_count}, v archíve spolu: {total}")
     print("Hotovo. dashboard/data.json + data.js aktualizované.")
     return new_count, total

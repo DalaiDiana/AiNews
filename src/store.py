@@ -1,7 +1,14 @@
 """Krok 7 — Ulozisko. JSON archiv, expirovanie po N dnoch, pocty 'N new'."""
 import json
+import re
 import datetime as dt
 from pathlib import Path
+
+
+def _tkey(t):
+    # normalizovaný kľúč z titulku — rozpozná tú istú správu aj keď sa zmení URL
+    # (napr. rotujúce Google News odkazy)
+    return re.sub(r"[^a-z0-9 ]", "", (t or "").lower()).strip()[:70]
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -9,6 +16,19 @@ ARCHIVE = DATA / "archive.json"           # vsetky polozky za poslednych N dni
 DASHBOARD_DATA = ROOT / "dashboard" / "data.json"  # to, co cita web
 
 RETENTION_DAYS = 10
+STATE = DATA / "state.json"  # pamätá si čas posledného behu (UTC)
+
+
+def get_last_run():
+    try:
+        return json.load(open(STATE)).get("last_run")
+    except Exception:
+        return None
+
+
+def set_last_run(iso):
+    DATA.mkdir(exist_ok=True)
+    json.dump({"last_run": iso}, open(STATE, "w"))
 
 
 def _load_archive():
@@ -34,16 +54,20 @@ def update(new_items):
     """Prida nove polozky do archivu (bez duplikatov podla canonical_url),
     odstrani stare a zapise archive.json aj dashboard/data.json."""
     archive = _load_archive()
-    seen = {it.get("canonical_url", it["url"]) for it in archive}
+    seen_urls = {it.get("canonical_url", it["url"]) for it in archive}
+    seen_titles = {_tkey(it["title"]) for it in archive}
     fresh = 0
     today = dt.date.today().isoformat()
     for it in new_items:
         key = it.get("canonical_url", it["url"])
-        if key in seen:
-            continue
+        tk = _tkey(it["title"])
+        if key in seen_urls or (tk and tk in seen_titles):
+            continue  # už ho máme (podľa URL alebo titulku) -> nie je nový
         it["added"] = today
         archive.append(it)
-        seen.add(key)
+        seen_urls.add(key)
+        if tk:
+            seen_titles.add(tk)
         fresh += 1
 
     archive = _prune(archive)

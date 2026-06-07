@@ -2,7 +2,8 @@ name: Daily AI News refresh
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # 04:00 času Diany (leto, CEST). V zime = 03:00.
+    - cron: "10 2 * * *"    # 04:10 času Diany (leto, CEST)
+    - cron: "10 14 * * *"   # 16:10 času Diany (leto, CEST). V zime oba o hodinu skôr.
   workflow_dispatch:        # umožní spustiť aj ručne tlačidlom
 
 permissions:
@@ -25,8 +26,15 @@ jobs:
 
       - name: Write Gemini credentials
         env:
+          GEMINI_CREDENTIALS_B64: ${{ secrets.GEMINI_CREDENTIALS_B64 }}
           GEMINI_CREDENTIALS: ${{ secrets.GEMINI_CREDENTIALS }}
-        run: printf '%s' "$GEMINI_CREDENTIALS" > credentials.json
+        run: |
+          if [ -n "$GEMINI_CREDENTIALS_B64" ]; then
+            printf '%s' "$GEMINI_CREDENTIALS_B64" | base64 -d > credentials.json
+          else
+            printf '%s' "$GEMINI_CREDENTIALS" > credentials.json
+          fi
+          python -c "import json; json.load(open('credentials.json')); print('credentials.json je platný JSON')"
 
       - name: Run pipeline
         run: python src/pipeline.py
@@ -36,6 +44,6 @@ jobs:
           rm -f credentials.json
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard/data.json dashboard/data.js data/archive.json
+          git add dashboard/data.json dashboard/data.js data/archive.json data/state.json
           git commit -m "Daily AI News refresh ($(date -u +%Y-%m-%d))" || echo "Žiadne zmeny"
           git push

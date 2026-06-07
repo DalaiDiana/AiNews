@@ -10,8 +10,9 @@ __pycache__/
 .venv/
 venv/
 
-# archív sa verzuje — denný GitHub Action z neho pozná, čo je nové
-# (preto NIE je ignorovaný)
+# archív a stav sa verzujú — denný GitHub Action z nich pozná, čo je nové
+# (preto NIE sú ignorované)
+data/_pool.json
 
 # lokálne tokeny (nikdy necommitovať)
 git-token.txt

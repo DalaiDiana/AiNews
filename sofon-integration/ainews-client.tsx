@@ -136,10 +136,10 @@ export default function AiNewsClient({ data: initial, initialOpen = null }: { da
             {items.slice(0, 80).map((it, k) => {
               const isNew = it.added === data.today; const desc = cleanDesc(it.summary);
               return (
-                <div key={k} style={{ padding: isNew ? "16px 14px" : "16px 0", borderTop: "1px solid rgba(0,195,255,.1)", background: isNew ? "rgba(232,114,106,.09)" : "transparent", borderLeft: isNew ? `3px solid ${CORAL}` : "3px solid transparent", borderRadius: isNew ? 6 : 0 }}>
+                <div key={k} style={{ padding: isNew ? "16px 14px" : "16px 0", borderTop: "1px solid rgba(0,195,255,.1)", background: isNew ? "rgba(0,195,255,.12)" : "transparent", borderLeft: isNew ? `3px solid ${CY}` : "3px solid transparent", borderRadius: isNew ? 6 : 0 }}>
                   <div style={{ display: "flex", gap: 13, alignItems: "baseline" }}>
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 12.5, letterSpacing: .8, color: regColor(it.region), border: `1px solid ${regColor(it.region)}55`, padding: "3px 9px", borderRadius: 5, minWidth: 40, textAlign: "center", whiteSpace: "nowrap" }}>{it.region}</span>
-                    <a className="ainm-a" href={it.url} target="_blank" rel="noopener noreferrer" style={{ color: "#eaf7ff", textDecoration: "none", fontSize: 19, fontWeight: 500, lineHeight: 1.45 }}>{isNew && <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: CORAL, marginRight: 8 }} />}{it.title}</a>
+                    <a className="ainm-a" href={it.url} target="_blank" rel="noopener noreferrer" style={{ color: "#eaf7ff", textDecoration: "none", fontSize: 19, fontWeight: 500, lineHeight: 1.45 }}>{isNew && <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: CY, boxShadow: `0 0 8px ${CY}`, marginRight: 8 }} />}{it.title}</a>
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 13.5, color: "rgba(184,232,255,.45)", marginLeft: "auto", whiteSpace: "nowrap", paddingLeft: 12 }}>{it.source} · {ago(it.published)}</span>
                   </div>
                   {desc && <div style={{ fontSize: 16, color: "rgba(184,232,255,.64)", lineHeight: 1.55, margin: "8px 0 0 54px" }}>{desc}</div>}
