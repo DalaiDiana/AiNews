@@ -37,12 +37,13 @@ def run(classify_mode="auto"):
     uniq = dedup.dedup(fresh)
     print(f"   po dedupe: {len(uniq)}")
 
-    print("4) Zaradenie do kategórií (Gemini / keyword):")
+    print("4) Zaradenie do kategórií + popisy (Gemini podľa definícií / keyword):")
     classified, mode = classify.classify_all(uniq, mode=classify_mode)
     print(f"   režim triediča: {mode}")
 
-    print("5) GitHub trending repozitáre:")
+    print("5) GitHub trending repozitáre (+ téma cez Gemini):")
     gh = dedup.dedup(fetch.fetch_github_all())
+    classify.topic_github(gh)
     print(f"   repozitárov: {len(gh)}")
 
     all_items = classified + gh

@@ -120,3 +120,64 @@ substring:
   - generativní
   - robotik
   - čet bot
+  # ── doplnené pojmy z definícií kategórií (jednoznačne AI) ──
+  # agents
+  - model context protocol
+  - langchain
+  - langsmith
+  - llamaindex
+  - crewai
+  - autogen
+  - openclaw
+  # memory
+  - long-term memory
+  - persistent memory
+  - context window
+  - retrieval-augmented generation
+  - vector db
+  - vector store
+  - mem0
+  - letta
+  - memgpt
+  # gadgets
+  - smart glasses
+  - ar glasses
+  - ai pin
+  # robotics
+  - embodied ai
+  - unitree
+  - optimus
+  - agibot
+  - ubtech
+  # autonomous
+  - weride
+  - pony.ai
+  - waymo
+  - xpeng
+  - driverless
+  - lidar
+  - adas
+  # big players (čínski + ďalší)
+  - baidu
+  - tencent
+  - bytedance
+  - alibaba
+  - huawei
+  - cohere
+  # benchmarks
+  - mmlu
+  - gpqa
+  - swe-bench
+  - lmarena
+  - artificial analysis
+  # research / legislation / ethics (jednoznačné)
+  - arxiv
+  - eu ai act
+  - ai act
+  - alignment
+  - interpretability
+  - responsible ai
+  # models / generatívne médiá
+  - image generation
+  - video generation
+  - generative media
