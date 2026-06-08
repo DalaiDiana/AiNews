@@ -2,8 +2,8 @@ name: Daily AI News refresh
 
 on:
   schedule:
-    - cron: "10 2 * * *"    # 04:10 času Diany (leto, CEST)
-    - cron: "10 14 * * *"   # 16:10 času Diany (leto, CEST). V zime oba o hodinu skôr.
+    - cron: "13 22 * * *"   # 00:13 času Diany (leto, CEST = UTC+2)
+    - cron: "13 10 * * *"   # 12:13 času Diany (leto, CEST = UTC+2). V zime oba o hodinu skôr.
   workflow_dispatch:        # umožní spustiť aj ručne tlačidlom
 
 permissions:
