@@ -60,12 +60,15 @@ def _prune(items):
     return out
 
 
-def update(new_items):
+def update(new_items, run_ts=None):
     """Prida nove polozky do archivu (bez duplikatov podla canonical_url),
-    odstrani stare a zapise archive.json aj dashboard/data.json."""
+    odstrani stare a zapise archive.json aj dashboard/data.json.
+    Polozky pridane v TOMTO behu dostanu znacku 'run' = run_ts; podla nej sa
+    na stranke urcuje, co je 'nove' (len posledny refresh, nie cely den)."""
     archive = _load_archive()
     seen_urls = {it.get("canonical_url", it["url"]) for it in archive}
     seen_titles = {_tkey(it["title"]) for it in archive}
+    run_ts = run_ts or dt.datetime.now(dt.timezone.utc).isoformat()
     fresh = 0
     today = dt.date.today().isoformat()
     for it in new_items:
@@ -74,6 +77,7 @@ def update(new_items):
         if key in seen_urls or (tk and tk in seen_titles):
             continue  # už ho máme (podľa URL alebo titulku) -> nie je nový
         it["added"] = today
+        it["run"] = run_ts   # značka behu -> "nové" = len posledný beh
         archive.append(it)
         seen_urls.add(key)
         if tk:
@@ -85,24 +89,27 @@ def update(new_items):
     with open(ARCHIVE, "w", encoding="utf-8") as f:
         json.dump(archive, f, ensure_ascii=False, indent=2)
 
-    _write_dashboard(archive, fresh)
+    _write_dashboard(archive, run_ts)
     return fresh, len(archive)
 
 
-def _write_dashboard(archive, fresh_total):
+def _write_dashboard(archive, run_ts=None):
+    """run_ts = časová značka posledného behu. 'nové' = položky s rovnakou
+    značkou 'run' (teda pridané pri poslednom refreshe), nie za celý deň."""
     today = dt.date.today().isoformat()
     cats = {}
     for it in archive:
         c = it.get("category", "research")
         cats.setdefault(c, {"items": [], "new": 0})
         cats[c]["items"].append(it)
-        if it.get("added") == today:
+        if run_ts and it.get("run") == run_ts:
             cats[c]["new"] += 1
     for c in cats:
         cats[c]["items"].sort(key=lambda x: x["published"], reverse=True)
     payload = {
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(),
         "today": today,
+        "last_run": run_ts,
         "total_new": sum(c["new"] for c in cats.values()),
         "total_items": len(archive),
         "sources_total": _sources_total(),
