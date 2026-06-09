@@ -1,13 +1,709 @@
 {
-  "generated": "2026-06-09T16:15:23.225223+00:00",
+  "generated": "2026-06-09T23:48:00.876291+00:00",
   "today": "2026-06-09",
-  "last_run": "2026-06-09T16:15:23.199072+00:00",
-  "total_new": 94,
-  "total_items": 2040,
+  "last_run": "2026-06-09T23:48:00.850029+00:00",
+  "total_new": 144,
+  "total_items": 2183,
   "sources_total": 135,
   "categories": {
     "models": {
       "items": [
+        {
+          "title": "Claude Fable 5 May Be Silently Sabotaging Your AI Work - Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOMFJvbmo2QzZIVTVxdWdNN3hPem1wUnRsU08wZldlV1FHYThWeXhMZ2RDemUxTjBlanRFc2JtdnZDcHpDQjVxQkNGOG5kUDZXdmVrTVZVTGU2akRZUndCQkNFT1M0bThWX0lrdktFbzJKb25i?oc=5",
+          "summary": "The article raises concerns that Anthropic's Claude Fable 5 model might be silently undermining AI work. This evaluates the performance and potential issues of a specific AI model.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T22:42:16+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOMFJvbmo2QzZIVTVxdWdNN3hPem1wUnRsU08wZldlV1FHYThWeXhMZ2RDemUxTjBlanRFc2JtdnZDcHpDQjVxQkNGOG5kUDZXdmVrTVZVTGU2akRZUndCQkNFT1M0bThWX0lrdktFbzJKb25i",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Three Labs With a Plan and A Memorandum",
+          "url": "https://www.lesswrong.com/posts/uWxW5KWnyHrGj6tpu/three-labs-with-a-plan-and-a-memorandum",
+          "summary": "The article discusses the release of Claude Fable 5, described as a new version of Anthropic's Claude Mythos model intended for safe distribution. This marks the launch of a specific AI model.",
+          "source": "LessWrong",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:40:28+00:00",
+          "canonical_url": "https://lesswrong.com/posts/uWxW5KWnyHrGj6tpu/three-labs-with-a-plan-and-a-memorandum",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Aspen – Local LLM for Mortals",
+          "url": "https://www.runonaspen.com/",
+          "summary": "Aspen is presented as a 'Local LLM for Mortals,' indicating a new specific large language model designed for local use by general users.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:27:10+00:00",
+          "canonical_url": "https://runonaspen.com",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic opens powerful Mythos AI model to public – with some safeguards - South China Morning Post",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQll0NWpiT0M2ZzBXLTFDYkVXeUp0WkM2MmZJd0ZqalpkM2h4RlRxbjB3Tk01em9JcGF6cVVSc3QxLVZEYnB6d2NpX3hSQWw0ck1HZkhkUENIbEozN2ttR0lGdkd0dl9zZHYtSjluSEtzdEwxWXQyU1h4ZGpqM3d1YmxJOHdjS2d5REZtLThvaXUtVXpxVUdsTVhLWVJCN2J1a3RTNm5RZ1BpTnpvZDNzRFJjekhJNm1vaktXbDZ4NEVfTEE2SXlrbmNhNHDSAcwBQVVfeXFMT2lmNjJ2SGlyam5uQTIyZzhPUkJfX0FtLW0tQVZOTThrNVVneWpIczNBNEZMR3VhRXdYa2hrLW5aZTRyRjdCZVNCWXZVZ1F0NEh4SE1ySkJQanFUUXlxZ2NUc21UX2JoQktqN2pEcXh2YjJURU83RG82ck9FcGI1MVJXMHhzWi1ROFdZTU42ejlpdkJZYXdSQU9BLWlWZ3BXSXpjSFVVRDk5b2VMMVd5cXRsOXBpazJDYk9FU2NicDE3U1IxdzlFVDMzdnox?oc=5",
+          "summary": "Anthropic has made its powerful Mythos AI model accessible to the public, incorporating certain safeguards.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:59:06+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQll0NWpiT0M2ZzBXLTFDYkVXeUp0WkM2MmZJd0ZqalpkM2h4RlRxbjB3Tk01em9JcGF6cVVSc3QxLVZEYnB6d2NpX3hSQWw0ck1HZkhkUENIbEozN2ttR0lGdkd0dl9zZHYtSjluSEtzdEwxWXQyU1h4ZGpqM3d1YmxJOHdjS2d5REZtLThvaXUtVXpxVUdsTVhLWVJCN2J1a3RTNm5RZ1BpTnpvZDNzRFJjekhJNm1vaktXbDZ4NEVfTEE2SXlrbmNhNHDSAcwBQVVfeXFMT2lmNjJ2SGlyam5uQTIyZzhPUkJfX0FtLW0tQVZOTThrNVVneWpIczNBNEZMR3VhRXdYa2hrLW5aZTRyRjdCZVNCWXZVZ1F0NEh4SE1ySkJQanFUUXlxZ2NUc21UX2JoQktqN2pEcXh2YjJURU83RG82ck9FcGI1MVJXMHhzWi1ROFdZTU42ejlpdkJZYXdSQU9BLWlWZ3BXSXpjSFVVRDk5b2VMMVd5cXRsOXBpazJDYk9FU2NicDE3U1IxdzlFVDMzdnox",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases Claude Fable 5, a locked-down, safer version of Mythos - Sherwood News",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd3RxU0FTOXB1b3NEYmtTYWcwSXFOSzk2ZUNYMTQxMnhGbTd0dmxIZWlCc1ZLSVNocjJkaVp4UXRSeDR0SlJzVzZtODg2aWlVYW5vcFRBamo2bURCazdrZ3Q2dnhWcDhLNTJXem5YUnZJZUdZXzduRHdwMG9hTlNNUlg5MHpPaHBaU0xCWTBadnREejJNUEctamJ0OWl2UWJV?oc=5",
+          "summary": "Anthropic has released Claude Fable 5, described as a more controlled and safer version of its Mythos AI model.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:57:09+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd3RxU0FTOXB1b3NEYmtTYWcwSXFOSzk2ZUNYMTQxMnhGbTd0dmxIZWlCc1ZLSVNocjJkaVp4UXRSeDR0SlJzVzZtODg2aWlVYW5vcFRBamo2bURCazdrZ3Q2dnhWcDhLNTJXem5YUnZJZUdZXzduRHdwMG9hTlNNUlg5MHpPaHBaU0xCWTBadnREejJNUEctamJ0OWl2UWJV",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Unveils Claude Fable 5, Keeps Mythos Restricted - Bank Info Security",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLUt3RWhNM3ByUFBMT0VHbVltS0g1TkpkSWlOUFkwNlVKbUJjaW5qQXRwTnBhS0dQbkR4LXB4QXpoMEhzMHZXeDgyTGgyY2c1U1gtTmRCd3RpTHZSZ1JaN1hOSTA3TnBOcVVkX3ZvSk1McHlMRm5paS0tQ0dELUxJTWxnQW1UMnhMT2Z2bHZreXEtSEhLS1VwcHlNMFNMQQ?oc=5",
+          "summary": "Anthropic has unveiled Claude Fable 5, while keeping its more powerful Mythos model under restricted access.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:44:37+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLUt3RWhNM3ByUFBMT0VHbVltS0g1TkpkSWlOUFkwNlVKbUJjaW5qQXRwTnBhS0dQbkR4LXB4QXpoMEhzMHZXeDgyTGgyY2c1U1gtTmRCd3RpTHZSZ1JaN1hOSTA3TnBOcVVkX3ZvSk1McHlMRm5paS0tQ0dELUxJTWxnQW1UMnhMT2Z2bHZreXEtSEhLS1VwcHlNMFNMQQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+          "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/",
+          "summary": "Anthropic's Fable 5 model is capable of creating video games easily, which is expected to be popular with developers.",
+          "source": "TechCrunch AI",
+          "region": "US",
+          "published": "2026-06-09T20:37:49+00:00",
+          "canonical_url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5 brings Mythos to the masses — Anthropic's new frontier model is 'state-of-the-art on nearly all tested benchmarks' - Tom's Hardware",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOVllLeWIyemxlSlJXSGU4ZGw4TzliSmtIRVE3eHNnLWNFZl9vR3Y4RmF4QVc4aFQwU0FvamY3Ym1EeEdIUE5KakdBMnJKMkxqd0tUdDAtNVV1cXkxeXRHQncwbHhJVUdvNkphZ0szdTJfdHVoVWgya1pJb25XUS1TUHExWkJTYTF2Z2IzZU1qSmhBTVRuM3FuemJpeGMtNnY4dUNwUm5qWXhXb1IwSk5vNkZCTzlDR0ttM0dYempNYV95QlhYWTd2WDZkVEpEUmZqTHNXdHFLWHdZUnlEUVFKcjB3ZU84Wlc3a3NHSGVwbW9SSlBQMDJxcWYzV0c0RTBQN2wtMXUzWWFaa2hzMkg1SDdIMUpJczNoaGh3Ug?oc=5",
+          "summary": "Anthropic has released Claude Fable 5, a new frontier model derived from Mythos, which reportedly achieves state-of-the-art performance on various benchmarks.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:34:10+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOVllLeWIyemxlSlJXSGU4ZGw4TzliSmtIRVE3eHNnLWNFZl9vR3Y4RmF4QVc4aFQwU0FvamY3Ym1EeEdIUE5KakdBMnJKMkxqd0tUdDAtNVV1cXkxeXRHQncwbHhJVUdvNkphZ0szdTJfdHVoVWgya1pJb25XUS1TUHExWkJTYTF2Z2IzZU1qSmhBTVRuM3FuemJpeGMtNnY4dUNwUm5qWXhXb1IwSk5vNkZCTzlDR0ttM0dYempNYV95QlhYWTd2WDZkVEpEUmZqTHNXdHFLWHdZUnlEUVFKcjB3ZU84Wlc3a3NHSGVwbW9SSlBQMDJxcWYzV0c0RTBQN2wtMXUzWWFaa2hzMkg1SDdIMUpJczNoaGh3Ug",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic's Claude Fable 5 Is the First Mythos-Level AI Model You Can Actually Use - CNET",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS1FhSm1OelFOVTBZeTFJNWYxaENtTDBlZXZFQUk2NUNhVzhUSVdDVGs5QW5yMVdzUE9PeTZfRFNwNDI2S2ZpZU5lZDY0WUwyczBRanI2eEczOEI3T2pqTzBIaDFwQlpHdVh0VWhkOVVCZGxwU0tHczM1dE5IMlhxenpZOE84cnUwOXFMSVNsZHg2c1hLRkRxeXoycjBiYU4wRmZZTlYtZGNfSzQ?oc=5",
+          "summary": "CNET reports that Anthropic's Claude Fable 5 is the first Mythos-level AI model made accessible for public use.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:25:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS1FhSm1OelFOVTBZeTFJNWYxaENtTDBlZXZFQUk2NUNhVzhUSVdDVGs5QW5yMVdzUE9PeTZfRFNwNDI2S2ZpZU5lZDY0WUwyczBRanI2eEczOEI3T2pqTzBIaDFwQlpHdVh0VWhkOVVCZGxwU0tHczM1dE5IMlhxenpZOE84cnUwOXFMSVNsZHg2c1hLRkRxeXoycjBiYU4wRmZZTlYtZGNfSzQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic's Fable AI brings the capabilities of its unreleased Mythos model to regular users",
+          "url": "https://www.engadget.com/2190934/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users/",
+          "summary": "Anthropic's Fable AI, based on its unreleased Mythos model, is now available to Claude subscribers for a limited time.",
+          "source": "Engadget",
+          "region": "US",
+          "published": "2026-06-09T20:23:39+00:00",
+          "canonical_url": "https://engadget.com/2190934/anthropic-fable-ai-brings-the-capabilities-of-its-unreleased-mythos-model-to-regular-users",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s Claude Fable 5, Mythos 5: What you need to know - Constellation Research",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYml0TzFpUWNYNU9HOHpxRU5MY3lWV2FQam5WcDZaeTFGX3RMamZSeGJ2VlAyZ2FweDZxdDJSQnp2TUN6d2MwOGRWdG9VZ2ZZQWN1YmJTZmh2QW9YZjBvdFQ3bGNERVotdTJpUmJVTXktLUNqZTBkMFljNUhSWDFWLV9ReU5WOERRaWYzZHVIUnFuNm5Cb3kyX1d3NVlGUms?oc=5",
+          "summary": "Constellation Research provides information on Anthropic's new AI models, Claude Fable 5 and Mythos 5.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:22:23+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYml0TzFpUWNYNU9HOHpxRU5MY3lWV2FQam5WcDZaeTFGX3RMamZSeGJ2VlAyZ2FweDZxdDJSQnp2TUN6d2MwOGRWdG9VZ2ZZQWN1YmJTZmh2QW9YZjBvdFQ3bGNERVotdTJpUmJVTXktLUNqZTBkMFljNUhSWDFWLV9ReU5WOERRaWYzZHVIUnFuNm5Cb3kyX1d3NVlGUms",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Cohere releases North Mini Code, a 30B parameter open-source coding model built for enterprise developers - Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zY1VWQTVJSktYY3Y1SmNlLUZjV1dSc0dYMjFza2dqSEstV0FiTHJ6X1BIVm82NEg3eU93aG82MTNzQXFLZ210eFpTWXZMSXhpTVBxSVlMUEhaY3h4MzdITXVNbV9MZUdmWkE?oc=5",
+          "summary": "Cohere has released North Mini Code, a 30-billion parameter open-source coding model designed for enterprise developers.",
+          "source": "Cohere",
+          "region": "US",
+          "published": "2026-06-09T20:17:45+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zY1VWQTVJSktYY3Y1SmNlLUZjV1dSc0dYMjFza2dqSEstV0FiTHJ6X1BIVm82NEg3eU93aG82MTNzQXFLZ210eFpTWXZMSXhpTVBxSVlMUEhaY3h4MzdITXVNbV9MZUdmWkE",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic shares timelapse video of Claude Fable 5 AI vision model beating Pokemon FireRed - Shacknews",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53Z0pWeWxHV2VzNmFZRkNrVlk1ZDNvcnpOQ0R0Sm1uSjlpam5HcDgzMlJ1RWcxZVdUVGxKc3hONkUzRlJGeEJSRjM4WjJCeTJncU56bjBFSGd2SDRjSndCOURqak90T0UtQUpaOEdMWEp0NG0xanhnOWd2czBMNlHSAYsBQVVfeXFMT2p0RXF3ZTNNTGk5ZmpFS2pkZXMwbnMwYmFJQ2dJYjFicmhVQjRVT2gyMFRERnVfQ1FMaEpFNnNZb0lDRC15aHdMOUk2LXRUa0puZmxEeGd6X1Z3QUVPMUllM1loN0RrMkhFcE1TQzRfY0hPbTJpODhxVHRWZjRZVXpYa2p1RGZaWlhoRQ?oc=5",
+          "summary": "Anthropic showcased a timelapse video of its Claude Fable 5 AI vision model successfully playing and beating the game Pokemon FireRed, highlighting the model's capabilities.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T20:10:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53Z0pWeWxHV2VzNmFZRkNrVlk1ZDNvcnpOQ0R0Sm1uSjlpam5HcDgzMlJ1RWcxZVdUVGxKc3hONkUzRlJGeEJSRjM4WjJCeTJncU56bjBFSGd2SDRjSndCOURqak90T0UtQUpaOEdMWEp0NG0xanhnOWd2czBMNlHSAYsBQVVfeXFMT2p0RXF3ZTNNTGk5ZmpFS2pkZXMwbnMwYmFJQ2dJYjFicmhVQjRVT2gyMFRERnVfQ1FMaEpFNnNZb0lDRC15aHdMOUk2LXRUa0puZmxEeGd6X1Z3QUVPMUllM1loN0RrMkhFcE1TQzRfY0hPbTJpODhxVHRWZjRZVXpYa2p1RGZaWlhoRQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Google Chrome Quietly Installs Google’s 4GB AI Model: Here’s How to Get Rid of it",
+          "url": "https://www.analyticsinsight.net/artificial-intelligence/google-chrome-quietly-installs-googles-4gb-ai-model-heres-how-to-get-rid-of-it",
+          "summary": "Google Chrome is reportedly installing a 4GB AI model from Google, with instructions provided on how users can remove it.",
+          "source": "Analytics Insight",
+          "region": "IN",
+          "published": "2026-06-09T19:45:00+00:00",
+          "canonical_url": "https://analyticsinsight.net/artificial-intelligence/google-chrome-quietly-installs-googles-4gb-ai-model-heres-how-to-get-rid-of-it",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic launches Claude Mythos/Fable 5, but you better try it soon - The New Stack",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43STJBdE9kUy1LZGV5MjNQdTdzOVFVQUswRkF4cEpUU3ZfTjJ1bGtKVVdoUTBkeGdYY2JLUU94eXlBSTdtczJXWF85bmFoWlJTcDFrcWlwSmg4d3A1M3FhRG9WOFc3Zw?oc=5",
+          "summary": "Anthropic launched its new Claude Mythos/Fable 5 model, encouraging users to try it soon, indicating a new model release.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T19:32:57+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43STJBdE9kUy1LZGV5MjNQdTdzOVFVQUswRkF4cEpUU3ZfTjJ1bGtKVVdoUTBkeGdYY2JLUU94eXlBSTdtczJXWF85bmFoWlJTcDFrcWlwSmg4d3A1M3FhRG9WOFc3Zw",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic says these topics are too dangerous to let its Fable 5 model talk about",
+          "url": "https://arstechnica.com/ai/2026/06/anthropic-says-these-topics-are-too-dangerous-to-let-its-fable-5-model-talk-about/",
+          "summary": "Anthropic states that its Fable 5 frontier model is designed to refuse queries related to cybersecurity, biology, and chemistry, describing a core capability and safety feature of the model.",
+          "source": "Ars Technica",
+          "region": "US",
+          "published": "2026-06-09T19:20:25+00:00",
+          "canonical_url": "https://arstechnica.com/ai/2026/06/anthropic-says-these-topics-are-too-dangerous-to-let-its-fable-5-model-talk-about",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude’s ‘too dangerous’ AI model is finally public. But there’s a catch - PCWorld",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeVhyT0tLbzNyenlLOVBxejcxQ3kyS24wRHBjQUlYcjE2bWRPSUJ5aFRqb0t0cEdwU0xabVAxRHZUeWJUcE5seWExRUNBYWRHWWlVdEtDd3V0Qi01UWR3XzBaalhUQUx2cGdEMENBOTIzWXJ0UVlmUGJJUU9yTFA0b1BGd1FEemRvS1hIbkFGaGlUejQ1WlV5MHhQQklZay10X1VUcmx2ajhOQmxfdU5xMQ?oc=5",
+          "summary": "Anthropic's Claude 'too dangerous' AI model is now public, with the article discussing its release and inherent limitations or 'catches'.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T19:16:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeVhyT0tLbzNyenlLOVBxejcxQ3kyS24wRHBjQUlYcjE2bWRPSUJ5aFRqb0t0cEdwU0xabVAxRHZUeWJUcE5seWExRUNBYWRHWWlVdEtDd3V0Qi01UWR3XzBaalhUQUx2cGdEMENBOTIzWXJ0UVlmUGJJUU9yTFA0b1BGd1FEemRvS1hIbkFGaGlUejQ1WlV5MHhQQklZay10X1VUcmx2ajhOQmxfdU5xMQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s Mythos Is One Step Closer to Rollout After Claude Fable 5 Release - Barron's",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUTRPRzJONy1paHM0TUV1MHFYRnpBV1RVcVB0REM1SDBRTGhRZE9IWTNWU2xhTkg4M255LVZjdUtveTFXMDZ1TXEyTzdGNjJsZnk3eFpkc1Y4b0F0Vm5DUVNHQ1hvRzZBNngyZ2hIYVV6TzdrRTVQYVRYSl9jZGJsN0hR?oc=5",
+          "summary": "Anthropic's Mythos model is progressing towards full rollout following the release of Claude Fable 5, indicating a new iteration or related model launch.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T19:15:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUTRPRzJONy1paHM0TUV1MHFYRnpBV1RVcVB0REM1SDBRTGhRZE9IWTNWU2xhTkg4M255LVZjdUtveTFXMDZ1TXEyTzdGNjJsZnk3eFpkc1Y4b0F0Vm5DUVNHQ1hvRzZBNngyZ2hIYVV6TzdrRTVQYVRYSl9jZGJsN0hR",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Just Released a Powerful Mythos-Class Model to the Public—With Some Key Safeguards - inc.com",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMk4tMDhQMnhpNUFkR09waWFBdGdOMVZfOVNLR1dzTnI1b0NIV3VRNEZ1QzRMVlJuRmNRSjFqckNNVXJsSXlGNzktR1FrWElyM0lLNkxzUW9fcFZyUHliM0p1Z0U0ZXAxUDlmTEpUNjFNb3Rsem1DcHpCMTI5ZkJQTFlONVJJazd5SnphMkJ3b194X2dFbG0tQ3RVV2Y3WndGazRNYlg4aVU2RVl4ZGt0M0FVaWpZa0pGSHhqdEFzWmhMVWxyS25od21ob1E3QQ?oc=5",
+          "summary": "Anthropic has publicly released a powerful Mythos-class AI model, emphasizing its capabilities while also mentioning key integrated safeguards.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T19:09:07+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMk4tMDhQMnhpNUFkR09waWFBdGdOMVZfOVNLR1dzTnI1b0NIV3VRNEZ1QzRMVlJuRmNRSjFqckNNVXJsSXlGNzktR1FrWElyM0lLNkxzUW9fcFZyUHliM0p1Z0U0ZXAxUDlmTEpUNjFNb3Rsem1DcHpCMTI5ZkJQTFlONVJJazd5SnphMkJ3b194X2dFbG0tQ3RVV2Y3WndGazRNYlg4aVU2RVl4ZGt0M0FVaWpZa0pGSHhqdEFzWmhMVWxyS25od21ob1E3QQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic rolls out public version of Mythos without cybersecurity capability - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNclJjVzlnSzJ4M3c1WkdyY19SUVFrQXhlWTF1VWExeVhXSXp2czEzbGMtaEpDV0Ezc045bzBTUFhRNzUzTkhKOS0tbU54X2M5YWw2RWZZSUFrWjJvTElhMFlVMndfUF9yTUptX1QtbXd1UzVMR29FZUN5cEJ0T2RZTC1tUThTNE5QbS1VcEtWYkJNaFJpeHZlVVFoSXdkUG5IWFBWLXNOMGdwMzlHMnhtMjR0YmxzYXd5TlUwQnR3?oc=5",
+          "summary": "Anthropic has released a public version of its Mythos AI model, notably without cybersecurity capabilities, focusing on the model's availability and specific features.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T19:06:49+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNclJjVzlnSzJ4M3c1WkdyY19SUVFrQXhlWTF1VWExeVhXSXp2czEzbGMtaEpDV0Ezc045bzBTUFhRNzUzTkhKOS0tbU54X2M5YWw2RWZZSUFrWjJvTElhMFlVMndfUF9yTUptX1QtbXd1UzVMR29FZUN5cEJ0T2RZTC1tUThTNE5QbS1VcEtWYkJNaFJpeHZlVVFoSXdkUG5IWFBWLXNOMGdwMzlHMnhtMjR0YmxzYXd5TlUwQnR3",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Google announces Gemini 3.5 Live Translate for instant voice-to-voice translation",
+          "url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/",
+          "summary": "Google announced the Gemini 3.5 Live Translate feature, a new AI model capable of instant voice-to-voice translation while preserving speaker characteristics and including SynthID watermarks.",
+          "source": "Ars Technica",
+          "region": "US",
+          "published": "2026-06-09T18:57:25+00:00",
+          "canonical_url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases Mythos-like AI model to the public two months after private rollout rocked Wall Street",
+          "url": "https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html",
+          "summary": "Anthropic releases a Mythos-like AI model to the public, citing new safeguards that manage high-risk areas as enabling this release.",
+          "source": "CNBC Tech",
+          "region": "US",
+          "published": "2026-06-09T18:44:09+00:00",
+          "canonical_url": "https://cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Rolls Out Claude Mythos 5 AI Model—Along With the Safer Fable 5 for the Public - Decrypt",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWmp1MGZzWWhBNlU4SjNqNG1tV0dTTzFwMzhzQUZIS213LUhRWm8wNWZRdGEtVTk3dWJRaDgxVlBqU096WHBUcHNLS0k4MGN2QWZqcHFmUEZvclhJa1hxQkFOSkZFS21oY0xGR0JTN1ZCVkxHVXNCdlBQZW1XNTA2emJRbGItMm9lMGE5Qlh5Z1dCLWs?oc=5",
+          "summary": "Anthropic rolls out its Claude Mythos 5 AI model to the public, alongside a safer version called Fable 5.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T18:38:37+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWmp1MGZzWWhBNlU4SjNqNG1tV0dTTzFwMzhzQUZIS213LUhRWm8wNWZRdGEtVTk3dWJRaDgxVlBqU096WHBUcHNLS0k4MGN2QWZqcHFmUEZvclhJa1hxQkFOSkZFS21oY0xGR0JTN1ZCVkxHVXNCdlBQZW1XNTA2emJRbGItMm9lMGE5Qlh5Z1dCLWs",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic opens most powerful AI model to public with safeguards - France 24",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRFJMS21EX3IzUEhuWDQ5SWVlZXlUMy01OHlpdXRuX0Rnb2YwUW5VMFk5ejFzT0JFUjhtWWJTSWtJeFBNZGR0Q0VHc0lHdWdFNWdVWmZydnY2UVRNY05iZ3VTNzB5YmdfdUJiSThwZFprSEl0ck5PVm1hSkV6eHlGMEZ5RW1XWUVjcEpGYzVjeWJfVzJieUdLd2M4Qi1reWhUYU4tODRWU29COGQ2aGtNUg?oc=5",
+          "summary": "Anthropic makes its most powerful AI model available to the public, highlighting the implementation of new safeguards.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T18:37:11+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRFJMS21EX3IzUEhuWDQ5SWVlZXlUMy01OHlpdXRuX0Rnb2YwUW5VMFk5ejFzT0JFUjhtWWJTSWtJeFBNZGR0Q0VHc0lHdWdFNWdVWmZydnY2UVRNY05iZ3VTNzB5YmdfdUJiSThwZFprSEl0ck5PVm1hSkV6eHlGMEZ5RW1XWUVjcEpGYzVjeWJfVzJieUdLd2M4Qi1reWhUYU4tODRWU29COGQ2aGtNUg",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Version of AI tool 'too powerful for public' released to public",
+          "url": "https://www.bbc.com/news/articles/ckg701v1dp6o?at_medium=RSS&at_campaign=rss",
+          "summary": "Anthropic publicly releases Claude Fable 5, a version of its powerful Claude Mythos AI model, incorporating safeguards for broader use.",
+          "source": "BBC Technology",
+          "region": "EU",
+          "published": "2026-06-09T18:35:59+00:00",
+          "canonical_url": "https://bbc.com/news/articles/ckg701v1dp6o?at_medium=RSS&at_campaign=rss",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Mythos: Anthropic releases version of AI tool despite risk concerns - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE10UWltbU1VMDNEZkx2ZXB5djRGdG5jMkRiQmtuQUU2ZXhQRGUzTzNWUzB4cllPdlR1UUtmbWVZRzdock5INWhWSXlPUS1MUUpYcG52aW1BakEwdw?oc=5",
+          "summary": "Anthropic releases its Claude Mythos AI model to the public despite previously voiced concerns about its potential risks.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T18:35:59+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE10UWltbU1VMDNEZkx2ZXB5djRGdG5jMkRiQmtuQUU2ZXhQRGUzTzNWUzB4cllPdlR1UUtmbWVZRzdock5INWhWSXlPUS1MUUpYcG52aW1BakEwdw",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases Claude Fable 5 and Mythos 5 with major gains in coding and science",
+          "url": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science/",
+          "summary": "Anthropic releases its new Claude Fable 5 and Mythos 5 models, which show significant performance gains in coding and scientific applications.",
+          "source": "The Decoder",
+          "region": "EU",
+          "published": "2026-06-09T18:25:19+00:00",
+          "canonical_url": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "The revenge of Claude Mythos - Marcus on AI | Substack",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vVnZ3ZWlxYW10NlZfcnhtOWUxZTZ4QjVCZFNyNEhEQnF3SDBVay1EZk1CUk15RHllMDNtRjRYSGdKdkEtdnZ4LUlmOHRtY1MyWHJia0FQMW10LW9yYVM1WDVNSnhIX2o1SUFNQ3hGSQ?oc=5",
+          "summary": "An article discusses the Claude Mythos AI model, likely its impact or capabilities, following its public release.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:52:08+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vVnZ3ZWlxYW10NlZfcnhtOWUxZTZ4QjVCZFNyNEhEQnF3SDBVay1EZk1CUk15RHllMDNtRjRYSGdKdkEtdnZ4LUlmOHRtY1MyWHJia0FQMW10LW9yYVM1WDVNSnhIX2o1SUFNQ3hGSQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Mythos goes public in new Fable 5 model that’s ‘safe for general use’ - 9to5Google",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOajZCM3lrcWtCcmxTaEFTdWY5NjVNNk1ncUtya2JLeTAyVHZackVtRGVmQUF0QndBLXRCTlNFRFhrRTJOWDZWd1NvUjM2bEhuTEg2cDhwODlZNl9YWGlrSjltckJTMnBxQVpyOU03NTJFWDBveHFXbG85UjFISkpSWTh0VlRmVDg?oc=5",
+          "summary": "Anthropic releases the new Claude Fable 5 model, a safer version of Claude Mythos, for general public use.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:50:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOajZCM3lrcWtCcmxTaEFTdWY5NjVNNk1ncUtya2JLeTAyVHZackVtRGVmQUF0QndBLXRCTlNFRFhrRTJOWDZWd1NvUjM2bEhuTEg2cDhwODlZNl9YWGlrSjltckJTMnBxQVpyOU03NTJFWDBveHFXbG85UjFISkpSWTh0VlRmVDg",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic unveils Mythos-level AI model to consumers, Claude Fable 5 - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNm00bFo4WkdfWmJVbXVzWjFVSGdNcUJOcEJZR05JaTBLRm1RTGZYQ243Sy1GR18wQ0ZleElmWFV5aHlyNTh5YXN0Qi1adVJPdG40VVM3TEF1bVplTmQ0NUdLT1VJMHdMVDZRMWZaTk1NQURCdDJJeF9uTnVIWkdEX0xtdktmYV9lam1PM1FON1J0NVdORFlHVVZUSE5fTHhVRHA0R2ExTTNYdnlYMzdn?oc=5",
+          "summary": "Anthropic unveiled its \"Mythos-level\" AI model, Claude Fable 5, to consumers.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:46:44+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNm00bFo4WkdfWmJVbXVzWjFVSGdNcUJOcEJZR05JaTBLRm1RTGZYQ243Sy1GR18wQ0ZleElmWFV5aHlyNTh5YXN0Qi1adVJPdG40VVM3TEF1bVplTmQ0NUdLT1VJMHdMVDZRMWZaTk1NQURCdDJJeF9uTnVIWkdEX0xtdktmYV9lam1PM1FON1J0NVdORFlHVVZUSE5fTHhVRHA0R2ExTTNYdnlYMzdn",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases Claude Fable 5, a 'Mythos-class' AI model with safeguards - Business Insider",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcFRhZ09YbWgwbWhKYkVZRmVMUTJyMnpWeTR3SU5qRU45a1lWVV9GbVhzOEJ4ZUNLQzNLb3FMWUFxc1Q3dk9pMzlyTXNiaUtZcURKMW55dC03UlNwZEdzLUF1bDdqZUE4WmlCeGlLSTZEUHZaaHhFRDh1SFpmdGR3VEp1bFFhOTU1RTJkOTQ4YUxDUTVY?oc=5",
+          "summary": "Anthropic released Claude Fable 5, a \"Mythos-class\" AI model that incorporates safeguards.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:37:55+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcFRhZ09YbWgwbWhKYkVZRmVMUTJyMnpWeTR3SU5qRU45a1lWVV9GbVhzOEJ4ZUNLQzNLb3FMWUFxc1Q3dk9pMzlyTXNiaUtZcURKMW55dC03UlNwZEdzLUF1bDdqZUE4WmlCeGlLSTZEUHZaaHhFRDh1SFpmdGR3VEp1bFFhOTU1RTJkOTQ4YUxDUTVY",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Releases First Public Version Of Claude Mythos—With Major Safeguards - Forbes",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ2JCa3k4ZUczVThWSmNaalZBMVJld0dHdW5QUndaLVZCRndFV1hjMUIwZXFuTUhxMmFpM3BqTng3cDNHdnNYR2o5YlA4cktOVnZ4UE5pLVQ3RXlmT244TUJiWF9hbDZaYUs5Z3M1Mk5oMW9mLTRRVWVmdDZQR0lQT1g1cGk4TXo3cnozTHNKTTc2NUVydVNvNXdXWDJLemgwT0dyYkRyWi1OaFVLeWVZTjZSQkVMQXNBV1R0UUo4TndlM25QWDVtU04tYw?oc=5",
+          "summary": "Anthropic has released the first public version of its Claude Mythos AI model, which includes major safeguards.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:37:38+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ2JCa3k4ZUczVThWSmNaalZBMVJld0dHdW5QUndaLVZCRndFV1hjMUIwZXFuTUhxMmFpM3BqTng3cDNHdnNYR2o5YlA4cktOVnZ4UE5pLVQ3RXlmT244TUJiWF9hbDZaYUs5Z3M1Mk5oMW9mLTRRVWVmdDZQR0lQT1g1cGk4TXo3cnozTHNKTTc2NUVydVNvNXdXWDJLemgwT0dyYkRyWi1OaFVLeWVZTjZSQkVMQXNBV1R0UUo4TndlM25QWDVtU04tYw",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases a version of its vaunted Mythos model to developers - Fast Company",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14cWtBTGVqSFRDT1pZcXRBRWVoUHkzUDdWU2dFNDh0TmlOeGNqdWp5WjE1R294bGl2UEx1NEtaSnluUmtLblVKcWxtT3VlNDFiR2g2YjBiUVo4Y1lkQ1ZMdjBlamwtLTVxNndTaWphY3VaS2IzMXVUSkRpNA?oc=5",
+          "summary": "Anthropic released a version of its Mythos AI model for developers.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:23:59+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14cWtBTGVqSFRDT1pZcXRBRWVoUHkzUDdWU2dFNDh0TmlOeGNqdWp5WjE1R294bGl2UEx1NEtaSnluUmtLblVKcWxtT3VlNDFiR2g2YjBiUVo4Y1lkQ1ZMdjBlamwtLTVxNndTaWphY3VaS2IzMXVUSkRpNA",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Fable 5 Now Available - Harvey",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aSTM0YkZnWnpsXzJjTUN0NUhhREVOSzA5RDdmbGFONDhqcU9Nb2llMVRDbVp6MEpBejZ3TDl5dGx4TEFWRm9mRHZaZ0VOZWdYX0ZkRlR0LXFFb1M2RlNaV3RmU2lBSWg1S1E?oc=5",
+          "summary": "Anthropic's Claude Fable 5 AI model is now available.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:23:14+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aSTM0YkZnWnpsXzJjTUN0NUhhREVOSzA5RDdmbGFONDhqcU9Nb2llMVRDbVp6MEpBejZ3TDl5dGx4TEFWRm9mRHZaZ0VOZWdYX0ZkRlR0LXFFb1M2RlNaV3RmU2lBSWg1S1E",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic is releasing a public version of its Mythos AI model as Claude Fable 5 - qz.com",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBwNk9QZThwa1FBanpWOE5xbTVkOUNkNmJERHhQZkE3NVo1VU5fSHZ6ci01N2V2aFdSWkpxcDc0VFFQb0QtVENldUEzRkFXMnZCMElSQnl0SmdfQnY5akU1bWRXS0lETDd5YmpncVdwd1ltNkNZZ1Nz?oc=5",
+          "summary": "Anthropic is releasing a public version of its Mythos AI model, named Claude Fable 5.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:22:53+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBwNk9QZThwa1FBanpWOE5xbTVkOUNkNmJERHhQZkE3NVo1VU5fSHZ6ci01N2V2aFdSWkpxcDc0VFFQb0QtVENldUEzRkFXMnZCMElSQnl0SmdfQnY5akU1bWRXS0lETDd5YmpncVdwd1ltNkNZZ1Nz",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic brings Mythos to the masses with Claude Fable 5, its most powerful generally available model ever - Venturebeat",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON296bVlNQTJuY0RzMDdyV0dNTWhaNHVQak1wUGpKNWJsM21qWEZjQ1J5d0pIbEE4dWNFZURZWjFwVzUteHE0S2ZfQlQxYXQtVjlVc0hWeDlmVUUtVzhvSld4YldCYmJsclBxVnhrbTJza1ZZRXZxNHhzU1dfb1IyZVdCVzZZNHVTcGM1ZjhmWkV3dTBISXprMXJOUGF2dVR3MmNRWUJkVmduajRtYThXeTdaeW1XVWwyRDVFRnNNdHF3XzJiX2FiU0Z3QVppZXNPblJPT3BudnY?oc=5",
+          "summary": "Anthropic launched Claude Fable 5, described as its most powerful generally available \"Mythos-class\" model.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:19:29+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON296bVlNQTJuY0RzMDdyV0dNTWhaNHVQak1wUGpKNWJsM21qWEZjQ1J5d0pIbEE4dWNFZURZWjFwVzUteHE0S2ZfQlQxYXQtVjlVc0hWeDlmVUUtVzhvSld4YldCYmJsclBxVnhrbTJza1ZZRXZxNHhzU1dfb1IyZVdCVzZZNHVTcGM1ZjhmWkV3dTBISXprMXJOUGF2dVR3MmNRWUJkVmduajRtYThXeTdaeW1XVWwyRDVFRnNNdHF3XzJiX2FiU0Z3QVppZXNPblJPT3BudnY",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic just released public Mythos-class AI model called Claude Fable, details here - 9to5Mac",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQko0VXF0STJ1ZWZ0LW0xekZHbkZJVVIzZXNTYm9JUXFoXzVMbUdxVEpKTHVMTllCbDhjU05kaDU4Vl8xSGJwQjI4T1drLVYtdURQZV9PNGdhZ19TV2RERTNJQUowRHRSQUpNUk85UlQxTlg3dVJSdl9VZGNsdWktMHZvSTUxYnhPOV9HNWQzVWFBQk1CWEI0ZW11WVNEZENJNVBYakNMV1ZZZTRtQlZMdGhnaC0zYWFL?oc=5",
+          "summary": "Anthropic released its public \"Mythos-class\" AI model named Claude Fable.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:19:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQko0VXF0STJ1ZWZ0LW0xekZHbkZJVVIzZXNTYm9JUXFoXzVMbUdxVEpKTHVMTllCbDhjU05kaDU4Vl8xSGJwQjI4T1drLVYtdURQZV9PNGdhZ19TV2RERTNJQUowRHRSQUpNUk85UlQxTlg3dVJSdl9VZGNsdWktMHZvSTUxYnhPOV9HNWQzVWFBQk1CWEI0ZW11WVNEZENJNVBYakNMV1ZZZTRtQlZMdGhnaC0zYWFL",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Google's Gemini 3.5 Live Translate delivers real-time voice translation across 70+ languages",
+          "url": "https://the-decoder.com/googles-gemini-3-5-live-translate-delivers-real-time-voice-translation-across-70-languages/",
+          "summary": "Google releases Gemini 3.5 Live Translate, an audio model capable of real-time voice translation across over 70 languages while preserving speech nuances.",
+          "source": "The Decoder",
+          "region": "EU",
+          "published": "2026-06-09T17:18:59+00:00",
+          "canonical_url": "https://the-decoder.com/googles-gemini-3-5-live-translate-delivers-real-time-voice-translation-across-70-languages",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "What it feels like to work with Mythos",
+          "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+          "summary": "This article describes the experience of working with Anthropic's Claude Fable, highlighting its significant advancements in AI.",
+          "source": "One Useful Thing",
+          "region": "US",
+          "published": "2026-06-09T17:11:22+00:00",
+          "canonical_url": "https://oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5 and Claude Mythos 5 - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tNXJJQXNGZWM1d1VmMVRfOFZlYU9VUFcwdm03RFhDRE5uajJOY19mbUQ5ZVpXYW9IOWhzd3JOS3F2c0xIdFRYVUgtZF9RVVI1VW1KVExGb0RVRDBWdlpNTXN1cTA?oc=5",
+          "summary": "Anthropic releases its new AI models, Claude Fable 5 and a safe version of Claude Mythos 5, to the public.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:08:42+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tNXJJQXNGZWM1d1VmMVRfOFZlYU9VUFcwdm03RFhDRE5uajJOY19mbUQ5ZVpXYW9IOWhzd3JOS3F2c0xIdFRYVUgtZF9RVVI1VW1KVExGb0RVRDBWdlpNTXN1cTA",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases guardrailed version of Mythos for public use",
+          "url": "https://www.semafor.com/article/06/09/2026/anthropic-releases-guardrailed-version-of-mythos-for-public-use",
+          "summary": "Anthropic releases a safeguarded version of its Mythos model, also known as Fable 5, for public use, acknowledging its potential dangers without such protections.",
+          "source": "Semafor",
+          "region": "US",
+          "published": "2026-06-09T17:08:20+00:00",
+          "canonical_url": "https://semafor.com/article/06/09/2026/anthropic-releases-guardrailed-version-of-mythos-for-public-use",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic just launched Claude Fable 5, its first Mythos-class AI model – but it has new safeguards to prevent misuse and will ‘fall back’ to Opus 4.8 for ‘high risk’ queries - IT Pro",
+          "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOZWlxd0JTcTFvbUsxMUY1bHRKbnlIYks5d3lxTkktR1JtanRnbXUxdzNIbG1sWm0tazkwSWVTSndHTm1TOEhoTy1MMWprQmlPQjZjb1MtUXVWTGhMX0xMM21SVDNhcVVhbDRubnZwTEVTOHlucEJHZ0k2a3AzeXdCN0Y1Y3ZKdVRRdkFEMm11TnZ3MnoweTVLeUhkdmg4bVlFTVlleFZaTk1ScVZ3ZUNTeVY3TWFGMnM2b2RKT3NWQ2tvSkNCWVg1RzVhOWhNYWhBRWFMOFFEVmI0MUdkMmR1S0VNc2duZVRYdXduM1VocG5RQWxfeTQ4NGlyWUlYR0dxeTlmU0JKV1ZFZDNkNGF4Wk5DVWFTYVdjZHlxaldlYVNlV0wtR3B1bUdjZ3ZiblBYenZQbVA3SkFaaDlhR3FtNEp1SlZiSGM?oc=5",
+          "summary": "Anthropic launches Claude Fable 5, its first Mythos-class AI model, which includes new safeguards and will fall back to Opus 4.8 for high-risk queries.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:04:20+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOZWlxd0JTcTFvbUsxMUY1bHRKbnlIYks5d3lxTkktR1JtanRnbXUxdzNIbG1sWm0tazkwSWVTSndHTm1TOEhoTy1MMWprQmlPQjZjb1MtUXVWTGhMX0xMM21SVDNhcVVhbDRubnZwTEVTOHlucEJHZ0k2a3AzeXdCN0Y1Y3ZKdVRRdkFEMm11TnZ3MnoweTVLeUhkdmg4bVlFTVlleFZaTk1ScVZ3ZUNTeVY3TWFGMnM2b2RKT3NWQ2tvSkNCWVg1RzVhOWhNYWhBRWFMOFFEVmI0MUdkMmR1S0VNc2duZVRYdXduM1VocG5RQWxfeTQ4NGlyWUlYR0dxeTlmU0JKV1ZFZDNkNGF4Wk5DVWFTYVdjZHlxaldlYVNlV0wtR3B1bUdjZ3ZiblBYenZQbVA3SkFaaDlhR3FtNEp1SlZiSGM",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s Claude Fable 5 and Mythos 5 Launch: What To Know - BeInCrypto",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15LVVBcWc4bjNGTzFHczhUaEJPSXlqdk5RRjZGcHdKdWgwMkdXZjFLblZsdURWOHdVck11a1RqQ2EyZzNRU3Jrc3JpaWYxNVQxQ1FuMjEza0gtc1NQeGp4eXBpcTdmdVpFX3hXOVhyNA?oc=5",
+          "summary": "Anthropic launches its new AI models, Claude Fable 5 and Mythos 5, for public use.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:04:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15LVVBcWc4bjNGTzFHczhUaEJPSXlqdk5RRjZGcHdKdWgwMkdXZjFLblZsdURWOHdVck11a1RqQ2EyZzNRU3Jrc3JpaWYxNVQxQ1FuMjEza0gtc1NQeGp4eXBpcTdmdVpFX3hXOVhyNA",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s new model is Mythos on a leash - CyberScoop",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMZFcyNWs3Sld2amRoMW80b1ptQ0gtN0hzTy1JMzFGRVVDeE9ZUUxQc3lDNWt2amd3WERrUXkzV3J5SWxmbzZYbEo1bWEzcW1SSTViREg4cVFrUXhhQ18tdVdsZVp3YTBpUHZrcWxVdTlueUhmQ0NPWUhuLVhrUnM?oc=5",
+          "summary": "Anthropic releases a new, more controlled version of its Mythos model to the public.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:02:53+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMZFcyNWs3Sld2amRoMW80b1ptQ0gtN0hzTy1JMzFGRVVDeE9ZUUxQc3lDNWt2amd3WERrUXkzV3J5SWxmbzZYbEo1bWEzcW1SSTViREg4cVFrUXhhQ18tdVdsZVp3YTBpUHZrcWxVdTlueUhmQ0NPWUhuLVhrUnM",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Launches Claude Fable 5: Mythos-Class AI With Cybersecurity Guardrails - SecurityWeek",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZmdJT2RlSnlMVm5YeXVLcVJKOWhJb3NDUEl3LWphMXdmZnpYNC1tUDM5N0xHMlFmMVNwZERsTlEtT2JHajB6bmdrSmFWWC1palNYd3pFVlZRWnJCTmFqeUlhRUd6dVh2bTVQRGg2R0U0T3FlNnZJYmhHcGVOZTFBR1B1bHpyTjF0R3lQZ1ZkOERidlpWQkNvSUFWWnFXRW5rRlVCQmtKaHNYV0lMS2fSAbMBQVVfeXFMT0duMFFDcGN0Zk9DVHVaRWRRcE1lc1BDVTdESVpJZjFKM3VVVkVwVy1xaUZuRE0wbW5LRVFvYUFaUExLTkJuR1Q3OV82YWE4VW1iTnRuZnVNczhobjEzbnN4MnRjaVdPdXU3aTZRWjRVeWo1UjBqVkJyRWEzRExaZkZFU25aWGtPSWdJNnQxVmJSWW5vN0pNMng4MU1XVDE3bnRlaXZVQU1SRDBEZ0tTNktGMzg?oc=5",
+          "summary": "Anthropic launches Claude Fable 5, a Mythos-class AI model that includes cybersecurity guardrails.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:02:08+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZmdJT2RlSnlMVm5YeXVLcVJKOWhJb3NDUEl3LWphMXdmZnpYNC1tUDM5N0xHMlFmMVNwZERsTlEtT2JHajB6bmdrSmFWWC1palNYd3pFVlZRWnJCTmFqeUlhRUd6dVh2bTVQRGg2R0U0T3FlNnZJYmhHcGVOZTFBR1B1bHpyTjF0R3lQZ1ZkOERidlpWQkNvSUFWWnFXRW5rRlVCQmtKaHNYV0lMS2fSAbMBQVVfeXFMT0duMFFDcGN0Zk9DVHVaRWRRcE1lc1BDVTdESVpJZjFKM3VVVkVwVy1xaUZuRE0wbW5LRVFvYUFaUExLTkJuR1Q3OV82YWE4VW1iTnRuZnVNczhobjEzbnN4MnRjaVdPdXU3aTZRWjRVeWo1UjBqVkJyRWEzRExaZkZFU25aWGtPSWdJNnQxVmJSWW5vN0pNMng4MU1XVDE3bnRlaXZVQU1SRDBEZ0tTNktGMzg",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Releases a Safer Version of Its ‘Too Dangerous’ Mythos AI - Gizmodo",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX0J0ZEl3SGhMTkVlWS1yS1pGRFpoT1YzOUUzVFBJNkFSelB2X1g2LVh0Qnd6QlNmc2NDU3BodXdBN1F3bDFodXdMSkM2VWpobVlpU3I3bUJaS2VxTTd3eGxWbjEtMjFEcUQ3RDA4WlNvVDhXVks4QUk3a1BacHZxcm5UT1BFbmphZUlTc1d6bW5VY0lVRE53bGxFSHg?oc=5",
+          "summary": "Anthropic releases a new, safer version of its Mythos AI model, previously deemed \"too dangerous.\"",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:43+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX0J0ZEl3SGhMTkVlWS1yS1pGRFpoT1YzOUUzVFBJNkFSelB2X1g2LVh0Qnd6QlNmc2NDU3BodXdBN1F3bDFodXdMSkM2VWpobVlpU3I3bUJaS2VxTTd3eGxWbjEtMjFEcUQ3RDA4WlNvVDhXVks4QUk3a1BacHZxcm5UT1BFbmphZUlTc1d6bW5VY0lVRE53bGxFSHg",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Releases Mythos-Like Model Without Cyber Capabilities - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaXJxZVk4Vm1qdHkwUkg1d2xfRVNuY0dpaG5yeWw4Wklnb2I5ME01RGhYQ1huMDdpeTFjRFA4dFhRbmcwRFdMbEw4REFzV2ZsdFNtVlJCODNXdGlNRVpVOUZPMVhwMHN2RVIzM3QyTDVzRlNHUkxzLTc2T2xWQ1V4ZjY5TFZKN0JhcTI4LXExWXBSYjdDTThMZDNSQ2lsV3RVdG1wQm9rVTdfeEh3LUpQNURCQU4?oc=5",
+          "summary": "Anthropic releases a version of its Mythos-like model that does not include cyber capabilities.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:33+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaXJxZVk4Vm1qdHkwUkg1d2xfRVNuY0dpaG5yeWw4Wklnb2I5ME01RGhYQ1huMDdpeTFjRFA4dFhRbmcwRFdMbEw4REFzV2ZsdFNtVlJCODNXdGlNRVpVOUZPMVhwMHN2RVIzM3QyTDVzRlNHUkxzLTc2T2xWQ1V4ZjY5TFZKN0JhcTI4LXExWXBSYjdDTThMZDNSQ2lsV3RVdG1wQm9rVTdfeEh3LUpQNURCQU4",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+          "url": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/",
+          "summary": "Anthropic has released Claude Fable 5, its first Mythos-class AI model made available to the public, featuring guardrails to restrict responses in high-risk domains.",
+          "source": "TechCrunch AI",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases its first Mythos-class model Claude Fable",
+          "url": "https://www.theverge.com/news/946725/anthropic-releases-claude-fable-5-mythos",
+          "summary": "Anthropic announced the release of Claude Fable 5, a new Mythos-class AI model described as its most powerful widely available model, showing exceptional performance in various tasks including software engineering and vision.",
+          "source": "The Verge",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://theverge.com/news/946725/anthropic-releases-claude-fable-5-mythos",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic's new Claude Fable 5 is the same base model as Mythos but with guardrails attached",
+          "url": "https://www.zdnet.com/article/anthropiclaude-fable-5-nerfed-mythos-with-guardrails/",
+          "summary": "Anthropic's new Claude Fable 5 is presented as the Mythos base model equipped with cybersecurity guardrails, offering AI coding power to general users.",
+          "source": "ZDNet AI",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://zdnet.com/article/anthropiclaude-fable-5-nerfed-mythos-with-guardrails",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases Claude Fable, a version of Mythos, days after warning AI is becoming too dangerous - TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYjRHR3p3MFZXSVppbGxYUnNqMTdVR3BTNXNpYXh0bHhKMUptNDZVdDhPbVhHTEw5eElCLVBWazhsSXpQdFI2dGYzN1VnNjNhbEtlbHpodUtONndqUkY2d3dLQzRTRmV1aUVhMTlfUzhpM3lBZjJRdUI1UzJqWVBEZDZXNmFtVzZLSXJLTms1RXdlQmZLV1lFcGtNcmRDXzcyTEdBeUlPZWxRc0JDUld4MkdRNXdGLWNTUTgzZ3RESzhabHVINFp5YldDOWpEX3pmY3JUOXMzRjhYSEM2LVBmSlp3?oc=5",
+          "summary": "Anthropic has released Claude Fable, a public version of its Mythos AI model, shortly after the company issued warnings about the increasing dangers of AI.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYjRHR3p3MFZXSVppbGxYUnNqMTdVR3BTNXNpYXh0bHhKMUptNDZVdDhPbVhHTEw5eElCLVBWazhsSXpQdFI2dGYzN1VnNjNhbEtlbHpodUtONndqUkY2d3dLQzRTRmV1aUVhMTlfUzhpM3lBZjJRdUI1UzJqWVBEZDZXNmFtVzZLSXJLTms1RXdlQmZLV1lFcGtNcmRDXzcyTEdBeUlPZWxRc0JDUld4MkdRNXdGLWNTUTgzZ3RESzhabHVINFp5YldDOWpEX3pmY3JUOXMzRjhYSEM2LVBmSlp3",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic Offers Mythos Upgrade for Cyber Partners and a ‘Safe’ Version for the Rest of You - WIRED",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE55czl0bUUwQnFtVl80SXRyT1BUd3AtLXotTUJ1WVVlU3QyMndVMU1ReDIzblRhcV80Wmk3czdLTVhqb25HcUFFeEJjSjhKei1LM2JOb3ZvRzJTWmxVSVhwbVZ0WEt3eEpOOXNXblg5MGk1bkNnUlUtaDhmZw?oc=5",
+          "summary": "Anthropic releases an upgraded version of its Mythos model for cyber partners and a safeguarded version for the general public.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE55czl0bUUwQnFtVl80SXRyT1BUd3AtLXotTUJ1WVVlU3QyMndVMU1ReDIzblRhcV80Wmk3czdLTVhqb25HcUFFeEJjSjhKei1LM2JOb3ZvRzJTWmxVSVhwbVZ0WEt3eEpOOXNXblg5MGk1bkNnUlUtaDhmZw",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases its first Mythos-class model to the public - Fortune",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUFpQVTBXMTI4QmVkall2bkNfRnJTXzQ4RmJZSldZV1kyVDJWNFlRamNhRjN2dVlYR2dEQTNQN0ZsaTAtRXVfY0J3V0R4SFNZM3VtX2VxSWJuSjQzbU5rOU5raGF0THNyUE1YRXFwZGQ4dFU4a1MxOUlSMnJkOXdTZ091cUJQazJKRVVpVEYydkM?oc=5",
+          "summary": "Anthropic officially releases its first Mythos-class AI model to the public.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUFpQVTBXMTI4QmVkall2bkNfRnJTXzQ4RmJZSldZV1kyVDJWNFlRamNhRjN2dVlYR2dEQTNQN0ZsaTAtRXVfY0J3V0R4SFNZM3VtX2VxSWJuSjQzbU5rOU5raGF0THNyUE1YRXFwZGQ4dFU4a1MxOUlSMnJkOXdTZ091cUJQazJKRVVpVEYydkM",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents - Microsoft Azure",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSW5BNkhvSXNYVEpPcDdMTDlINGIzZVVsazh5bjcyYW0yMWdKaGZ2UHVHWmEybmpLRE5ZblppR0U0c0VWcUZFaUFhTkFxd29UbzRvbmFTc1M4TDNDZXNhTXdoNUJweGdwaERaN0M2ZlBlaFhkUWIwZDdJb2xFNTZYSlgzN2JQNVpTOEpaNVQ5Um81Zk5XQ3ZyeV9hM1hFclJrMHBCLTVFVDY1YkdqRHMtaVVIeTdicVBmdlQyWTZIN1dKT21XcTZiNWh2TU0xVWF3?oc=5",
+          "summary": "Anthropic's Claude Fable 5 model is now available in Microsoft Foundry, intended to power future autonomous agents.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSW5BNkhvSXNYVEpPcDdMTDlINGIzZVVsazh5bjcyYW0yMWdKaGZ2UHVHWmEybmpLRE5ZblppR0U0c0VWcUZFaUFhTkFxd29UbzRvbmFTc1M4TDNDZXNhTXdoNUJweGdwaERaN0M2ZlBlaFhkUWIwZDdJb2xFNTZYSlgzN2JQNVpTOEpaNVQ5Um81Zk5XQ3ZyeV9hM1hFclJrMHBCLTVFVDY1YkdqRHMtaVVIeTdicVBmdlQyWTZIN1dKT21XcTZiNWh2TU0xVWF3",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic launches Mythos-class Claude Fable 5 model, available to the public - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORXNFd050a3E2TWg3VWFuckhfN21iTUxtcU15VENRVmk0UE9VLWRfVExFN1M3ZWxURzduT25NWXMySDBfMmpQSG05dEV6M3lIZmxGXzJSRnJZb0UzZmpMWGVWTlIwTHBJaXdHV0R6Qm9VZ04wZFdtajkxeHlFNVFpcjNSR2xuc19fc01WaVlOSTFSb3JqR1BHak12YVNRNnhKLWJqWTg2Y0FyWUN6OWtSUlhWWTlQSTRQNE9fUm1uUlhYdkV0cXpYLWVEbldQRUY3d3g5SWp1dFZzeVBi?oc=5",
+          "summary": "Anthropic launches its Mythos-class Claude Fable 5 model, making it available to the public.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORXNFd050a3E2TWg3VWFuckhfN21iTUxtcU15VENRVmk0UE9VLWRfVExFN1M3ZWxURzduT25NWXMySDBfMmpQSG05dEV6M3lIZmxGXzJSRnJZb0UzZmpMWGVWTlIwTHBJaXdHV0R6Qm9VZ04wZFdtajkxeHlFNVFpcjNSR2xuc19fc01WaVlOSTFSb3JqR1BHak12YVNRNnhKLWJqWTg2Y0FyWUN6OWtSUlhWWTlQSTRQNE9fUm1uUlhYdkV0cXpYLWVEbldQRUY3d3g5SWp1dFZzeVBi",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic releases its first Mythos-class model Claude Fable - The Verge",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOWRBOHRkUWQwZ3BhMlBaOFAxdEE1Q1NXNElqT2FYTXEtN2poTUxKWUFuTXMzN24tWGU1Vi1nV0N1R3luMWhjU0gyWmRNZGJNcEJVQVRFVDlydnctN0w0aHBGSEdBOXBxQTFMZGhIZkNOSVNod0JEd1JONVg1YWZlOXdkVQ?oc=5",
+          "summary": "Anthropic releases its first Mythos-class model, named Claude Fable.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T17:00:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOWRBOHRkUWQwZ3BhMlBaOFAxdEE1Q1NXNElqT2FYTXEtN2poTUxKWUFuTXMzN24tWGU1Vi1nV0N1R3luMWhjU0gyWmRNZGJNcEJVQVRFVDlydnctN0w0aHBGSEdBOXBxQTFMZGhIZkNOSVNod0JEd1JONVg1YWZlOXdkVQ",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Siri AI first look: How Apple's rebuilt AI-powered assistant behaves across iPhone, iPad and Mac",
+          "url": "https://www.engadget.com/2190638/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac/",
+          "summary": "A first look reveals how Apple's rebuilt AI-powered assistant, Siri AI, functions across its various devices, including iPhone, iPad, and Mac.",
+          "source": "Engadget",
+          "region": "US",
+          "published": "2026-06-09T16:51:49+00:00",
+          "canonical_url": "https://engadget.com/2190638/siri-ai-first-look-how-apples-rebuilt-ai-powered-assistant-behaves-across-iphone-ipad-and-mac",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Apple is embracing the fantasy of AI photo editing",
+          "url": "https://www.theverge.com/tech/946850/apple-ai-photo-editing-tools-ios27-wwdc-2026-deepfakes",
+          "summary": "Apple announced new generative AI-powered photo editing tools at WWDC 2026, marking a shift in its stance on AI's role in image manipulation.",
+          "source": "The Verge",
+          "region": "US",
+          "published": "2026-06-09T16:13:14+00:00",
+          "canonical_url": "https://theverge.com/tech/946850/apple-ai-photo-editing-tools-ios27-wwdc-2026-deepfakes",
+          "category": "models",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "North Mini Code: Cohere's small coding-focused MoE model - LinkedIn",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTWdNaVBiUnN4Mm5jSW1EdDVOamhOaGhKQ044YlhSXzNyeGR0R3pVM0l0T2Z5bjlSeXg4UjFfMWY5N1VXX1cyYUZQRU9pR3E3TXhHSTFabWp3VFFNZ3RqYUZRdHJGMW80SHdET2p4dGR2WXFwMWZGaGlsUnlaNGltbUhGMHY5UDRUamk0OW9pbnRYWm1WWkE?oc=5",
@@ -1907,23 +2603,192 @@
           "canonical_url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOUnBiN3pZRGVncGxMeGRoT0F6UEszck42ZU54elNfcDBVd2pwMS1mR3FzRFlxbDNIbGNRTXktY3hSQmxYbGFSdjBIR3R0Ym1MU09aa1RQRDhFVG52T1hHTS1PV1NhUzR2eFdQWEEzaG9mNENkVjcxdlhrQWtiVmM5X3lTaVdVRUc4S1h2TFdoNmxVTDBxYlJUM05iLWptMkxsR0J6ZlJ4NHRSUlB3a29fNExlcTdEakFOQ3hfSGhVSE5YWnU3VE5oQm9ZTnd6RWxkQmpVVV9DNThLQUtmQV81SjBORW81WGczUnJCZEpZYVl1SGZWd19WaWRzMDZudmpuTUU4eDZYMEtGbG4wX2xfWW4ybjdzYnJ1STJEVnNUOFJScVdpa1NkdTJrckFrbGRETllRaHNXQXVabXlHRFdhcGtwb2V3RUVXM3JFNXZHWURoWUE",
           "category": "models",
           "added": "2026-05-31"
-        },
-        {
-          "title": "Muse Spark - Meta's NEW Llama Replacement Artificial Intelligence (eneevENrUT) - Mshale",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MMlhxcVRmeTFBeUNKYlJJbWJaXzJvb3Fad0wzckpZQ2RFQWl5S2NEZVpwSm56SExSTGxSX21uU2twYnRIYURhQ083REtGcW5tSDZ1TkE1N2M1Yzg?oc=5",
-          "summary": "Muse Spark is presented as Meta's new artificial intelligence model, positioned as a potential replacement for Llama.",
-          "source": "Meta AI (Llama)",
-          "region": "US",
-          "published": "2026-05-30T16:29:16+00:00",
-          "canonical_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MMlhxcVRmeTFBeUNKYlJJbWJaXzJvb3Fad0wzckpZQ2RFQWl5S2NEZVpwSm56SExSTGxSX21uU2twYnRIYURhQ083REtGcW5tSDZ1TkE1N2M1Yzg",
-          "category": "models",
-          "added": "2026-05-30"
         }
       ],
-      "new": 8
+      "new": 58
     },
     "business": {
       "items": [
+        {
+          "title": "Chinese AI startup StepFun seeks US$12 billion valuation in Hong Kong IPO - digitimes",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ1cxNWxvRkdVdTlJa1A5TGpRaWE0YUxVYW9uODBKNDg3cy1qZW1iSXZpOGNKMURGRFpsYjhKTHZGbHlzOHVhUjlRU3BXZmxITnphcmpoQWlTZlM3ai1sVVNEVTFhdUxSYlk0dDlXVFFib3YwUkc3VXZjaXZFa1BPRkF1WnhxOHpkczhQLWpxR3F3SXVfVUw1bVJra280cVlKZE42Q2hzbUNJZnhiWkE?oc=5",
+          "summary": "Chinese AI startup StepFun is reportedly seeking a US$12 billion valuation for its upcoming Initial Public Offering (IPO) in Hong Kong. This concerns financial market moves and valuation for an AI company.",
+          "source": "DeepSeek",
+          "region": "CN",
+          "published": "2026-06-09T23:18:12+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ1cxNWxvRkdVdTlJa1A5TGpRaWE0YUxVYW9uODBKNDg3cy1qZW1iSXZpOGNKMURGRFpsYjhKTHZGbHlzOHVhUjlRU3BXZmxITnphcmpoQWlTZlM3ai1sVVNEVTFhdUxSYlk0dDlXVFFib3YwUkc3VXZjaXZFa1BPRkF1WnhxOHpkczhQLWpxR3F3SXVfVUw1bVJra280cVlKZE42Q2hzbUNJZnhiWkE",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "How Justin Ernest invested nearly $400M into hot startups without a traditional VC fund",
+          "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-400m-into-hot-startups-without-a-traditional-vc-fund/",
+          "summary": "Justin Ernest invested nearly $400 million into various startups, including Anthropic, through a captive network of LPs rather than a traditional VC fund. This highlights an investment strategy in the startup ecosystem.",
+          "source": "TechCrunch AI",
+          "region": "US",
+          "published": "2026-06-09T23:17:51+00:00",
+          "canonical_url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-400m-into-hot-startups-without-a-traditional-vc-fund",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "The Price Enterprises Will Pay for Anthropic Claude Fable 5 - AI Business",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYzhHX3NHWU9taUp2VC1XamlXdG9WZHg2SjA1UFJ1SldEU3djVU1OejNxbVV1OW1JREEzZnN6N1h6NW43bWdRZ0xWa2hpS1ZvOHRySUtpZGhNakt5VG1zalg5Z2Z6VFJUWnJlZWhlcHk1M3RUNWRFZ203SjlKTmlpX1ItYnJkNDFzM3FYTU41emJkVXp5RDdV?oc=5",
+          "summary": "The article discusses the pricing structure and costs that enterprises can expect to pay for Anthropic's Claude Fable 5 model. This focuses on the business and market strategy surrounding a specific AI product.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T23:09:06+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYzhHX3NHWU9taUp2VC1XamlXdG9WZHg2SjA1UFJ1SldEU3djVU1OejNxbVV1OW1JREEzZnN6N1h6NW43bWdRZ0xWa2hpS1ZvOHRySUtpZGhNakt5VG1zalg5Z2Z6VFJUWnJlZWhlcHk1M3RUNWRFZ203SjlKTmlpX1ItYnJkNDFzM3FYTU41emJkVXp5RDdV",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Super Micro stock tumbles on $7 billion financing plans as company touts AI server orders",
+          "url": "https://www.cnbc.com/2026/06/09/super-micro-stock-tumbles-on-7-billion-financing-plans.html",
+          "summary": "Super Micro's stock fell after announcing plans to raise $7 billion, with the company noting strong demand for AI server orders. This financial move reflects its capital market activities tied to the AI sector.",
+          "source": "CNBC Tech",
+          "region": "US",
+          "published": "2026-06-09T22:29:25+00:00",
+          "canonical_url": "https://cnbc.com/2026/06/09/super-micro-stock-tumbles-on-7-billion-financing-plans.html",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "The 24-year-old AI Wiz who counts Jane Street as an investor",
+          "url": "https://www.msn.com/en-us/money/markets/the-24-year-old-ai-wiz-who-counts-jane-street-as-an-investor/ar-AA256QfS",
+          "summary": "A human interest story features a young AI entrepreneur who has secured investment from Jane Street, highlighting their success and funding.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:07:26+00:00",
+          "canonical_url": "https://msn.com/en-us/money/markets/the-24-year-old-ai-wiz-who-counts-jane-street-as-an-investor/ar-AA256QfS",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Super Micro Plans to Raise $7 Billion in Equity for AI Equipment - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcy1oS3FVU3pHTF9ET0hweE1CSWV0eE5acndLbEZRV2JTVGhjeGtMb3BDWXJVZWNObWxiWW9NenNJblJqTGZtalRvWWc2aWpaZG5XZUZ0M2tCdkdBWjJYNlNHcXhPaVhkZ2NlVF9XcmFGRzgtYlBnXzJsOUpIYnFpeFlqVG4zMG5hcUlSMjc2VGdCMVBueUxwNjJtYjI0cDB2d0J3Y1h1cUpfNnlXbTNmMTJqYno?oc=5",
+          "summary": "Super Micro plans to raise $7 billion in equity to fund its operations and expansion in AI equipment.",
+          "source": "Bloomberg AI",
+          "region": "US",
+          "published": "2026-06-09T21:24:50+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcy1oS3FVU3pHTF9ET0hweE1CSWV0eE5acndLbEZRV2JTVGhjeGtMb3BDWXJVZWNObWxiWW9NenNJblJqTGZtalRvWWc2aWpaZG5XZUZ0M2tCdkdBWjJYNlNHcXhPaVhkZ2NlVF9XcmFGRzgtYlBnXzJsOUpIYnFpeFlqVG4zMG5hcUlSMjc2VGdCMVBueUxwNjJtYjI0cDB2d0J3Y1h1cUpfNnlXbTNmMTJqYno",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Morgan Stanley Raises Apple Stock Price Target to $360 After WWDC AI Strategy Update",
+          "url": "https://www.analyticsinsight.net/news/morgan-stanley-raises-apple-stock-price-target-to-360-after-wwdc-ai-strategy-update",
+          "summary": "Morgan Stanley has increased its stock price target for Apple to $360 following the company's AI strategy update at WWDC.",
+          "source": "Analytics Insight",
+          "region": "IN",
+          "published": "2026-06-09T20:30:00+00:00",
+          "canonical_url": "https://analyticsinsight.net/news/morgan-stanley-raises-apple-stock-price-target-to-360-after-wwdc-ai-strategy-update",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Can tech companies learn to love cheaper AI models?",
+          "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/",
+          "summary": "The article discusses the potential for cheaper AI models to significantly alter the economic landscape and market dynamics of the artificial intelligence industry.",
+          "source": "TechCrunch AI",
+          "region": "US",
+          "published": "2026-06-09T18:56:09+00:00",
+          "canonical_url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Google’s Backstops Underpin $35 Billion Chip Deal for Anthropic - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNlJxREZCMUtTU0FaYmt0bDd3Ty1Kd0FyLXAyZzNfNm84YklFXzExakVmSmp1Z2pveklIQWVnQ1FuR2xVdDJueExXR24tdUhzMmNjTUtYRnBwLXhmVEVCbUdsWFRadmUyTnktcXBCZjluZHhSNklVdFZ5ejBoOXpFRnNtZmRSU2gxWGo5Q3R3Y0kxMzNjYTJRTGtfOEgzUlJSU1ZMbWVYWncta3k3NVdWOTFNOA?oc=5",
+          "summary": "Google is providing financial backing for a $35 billion chip deal to support Anthropic's AI development and operations.",
+          "source": "Bloomberg AI",
+          "region": "US",
+          "published": "2026-06-09T18:26:09+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNlJxREZCMUtTU0FaYmt0bDd3Ty1Kd0FyLXAyZzNfNm84YklFXzExakVmSmp1Z2pveklIQWVnQ1FuR2xVdDJueExXR24tdUhzMmNjTUtYRnBwLXhmVEVCbUdsWFRadmUyTnktcXBCZjluZHhSNklVdFZ5ejBoOXpFRnNtZmRSU2gxWGo5Q3R3Y0kxMzNjYTJRTGtfOEgzUlJSU1ZMbWVYWncta3k3NVdWOTFNOA",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Physical AI ETF KOID: NVIDIA, Unitree, Sharpa, and the Next Leg of the Humanoid Trade - KraneShares",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOGNOWW1pcWNKRHpHMkRLRXYwU2hMZjYwazhQYkpuTnFiQ2paV2Z2bmMxUThkNmtQT3Zqdk5uc2stQlpzeHZCSU80U2Z1WURNV3RLX042T293T1dHQl9IV01NdTRfWUZBZkFVSVMybnlDZ1RmREk1bXBmQWU4bzY0a1kyUjlfQ0sxTndPRWdsLWtzRFRsU2FmNkFsTmQzVjZVSWRTdkFsdWFpUQ?oc=5",
+          "summary": "An Exchange Traded Fund (ETF) named KOID is launched, focused on investing in 'physical AI' companies like NVIDIA and Unitree.",
+          "source": "Unitree Robotics",
+          "region": "CN",
+          "published": "2026-06-09T18:18:49+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOGNOWW1pcWNKRHpHMkRLRXYwU2hMZjYwazhQYkpuTnFiQ2paV2Z2bmMxUThkNmtQT3Zqdk5uc2stQlpzeHZCSU80U2Z1WURNV3RLX042T293T1dHQl9IV01NdTRfWUZBZkFVSVMybnlDZ1RmREk1bXBmQWU4bzY0a1kyUjlfQ0sxTndPRWdsLWtzRFRsU2FmNkFsTmQzVjZVSWRTdkFsdWFpUQ",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Waymo Pays $220M for Apple’s Abandoned Self-Driving Car Test Ground - AI Business",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmhseGRab2VBVUNGQThfWW5ZcEdGY3poeGRDdDI2Z29BWEc3WE1LQVo1R3JQTEJPUHFPeTFFSVNDSDZ4NzJtZW1pZndaR0h6SVlfUkpOUFN4WXN5R25RNEgyYVZrMDRHLTlmb19pa0lDSFpvMFRHc0M2dGxBX2FtTDhjTmc3a3YwQ0wybVJ5VS14OThfQUQ4TlFmOVZDUjVv?oc=5",
+          "summary": "Waymo paid $220 million to acquire Apple's abandoned self-driving car test ground.",
+          "source": "Waymo",
+          "region": "US",
+          "published": "2026-06-09T17:46:59+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmhseGRab2VBVUNGQThfWW5ZcEdGY3poeGRDdDI2Z29BWEc3WE1LQVo1R3JQTEJPUHFPeTFFSVNDSDZ4NzJtZW1pZndaR0h6SVlfUkpOUFN4WXN5R25RNEgyYVZrMDRHLTlmb19pa0lDSFpvMFRHc0M2dGxBX2FtTDhjTmc3a3YwQ0wybVJ5VS14OThfQUQ4TlFmOVZDUjVv",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI startups race to IPO",
+          "url": "https://www.semafor.com/article/06/09/2026/ai-startups-race-to-ipo",
+          "summary": "AI startups are racing to go public, raising concerns that the large capital requirements of AI giants could crowd out smaller companies.",
+          "source": "Semafor",
+          "region": "US",
+          "published": "2026-06-09T17:44:30+00:00",
+          "canonical_url": "https://semafor.com/article/06/09/2026/ai-startups-race-to-ipo",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Can the OpenAI and Anthropic IPOs Live Up to Expectations? - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQV3BhbTRTaXItVTRnb1hHRVlocGthSVQ0TU9oaFRnSDNYTnFGOTc5TkFyTXdZcDRPVVljbjVzNDhGUU1nenozWklxOHBlTmc0M1VIMFRObjN4azUtVTljVW5HTEl0eF9fcThqaTFjcF9ubTk3cHkwR0sxa0lFMzdrZmZGYjRIRnJ5VlQtcVRwckdweUNuQVd2NG5GcGhDU1B0ZFAzUVp4RU1tbzc0ZTRJbA?oc=5",
+          "summary": "The article discusses whether the potential Initial Public Offerings (IPOs) of OpenAI and Anthropic can meet market expectations.",
+          "source": "Bloomberg AI",
+          "region": "US",
+          "published": "2026-06-09T17:27:11+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQV3BhbTRTaXItVTRnb1hHRVlocGthSVQ0TU9oaFRnSDNYTnFGOTc5TkFyTXdZcDRPVVljbjVzNDhGUU1nenozWklxOHBlTmc0M1VIMFRObjN4azUtVTljVW5HTEl0eF9fcThqaTFjcF9ubTk3cHkwR0sxa0lFMzdrZmZGYjRIRnJ5VlQtcVRwckdweUNuQVd2NG5GcGhDU1B0ZFAzUVp4RU1tbzc0ZTRJbA",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Perplexity Files to Go Public - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdExueXRLM1JGNTRoTWdFLS1xOUtOb1hyMmRwZHg5Wk5kSm9HUmpXeEVXWUQzcnYtdWRxT1lQSHM3emZ2TWQ0Qk4yX2tGSlNpN3ZLc1VBWVdaXzNyTEExZWtQMVpvQ0JUSjdleXZjekVCbTM3cVBjek9SZW5sWldYeVJMTFM4Qkd3eWFIMGxyU1YwZw?oc=5",
+          "summary": "Perplexity AI has filed to go public, indicating a significant market move for the AI search company.",
+          "source": "Perplexity AI",
+          "region": "US",
+          "published": "2026-06-09T16:36:07+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdExueXRLM1JGNTRoTWdFLS1xOUtOb1hyMmRwZHg5Wk5kSm9HUmpXeEVXWUQzcnYtdWRxT1lQSHM3emZ2TWQ0Qk4yX2tGSlNpN3ZLc1VBWVdaXzNyTEExZWtQMVpvQ0JUSjdleXZjekVCbTM3cVBjek9SZW5sWldYeVJMTFM4Qkd3eWFIMGxyU1YwZw",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "This AI agent startup ditched Anthropic for DeepSeek — and says it’s saving millions - The New Stack",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QZHZkY2JNaGRnbkpIRUlDTjVjWWd5Y3JOYzEtdm04UW1DZXVqdVFVSDRKRmwwWjF2OGg5ZzI5VFAtYXZRQ290UzRRU2ptVnBIb1hkdW1keU91WmNPckFQWHNlZUthZw?oc=5",
+          "summary": "An AI agent startup switched from Anthropic to DeepSeek, reportedly saving millions of dollars on operational costs.",
+          "source": "DeepSeek",
+          "region": "CN",
+          "published": "2026-06-09T16:17:57+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QZHZkY2JNaGRnbkpIRUlDTjVjWWd5Y3JOYzEtdm04UW1DZXVqdVFVSDRKRmwwWjF2OGg5ZzI5VFAtYXZRQ290UzRRU2ptVnBIb1hkdW1keU91WmNPckFQWHNlZUthZw",
+          "category": "business",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "It’s not FAANG anymore. It’s MANGOS.",
           "url": "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/",
@@ -5703,10 +6568,58 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 16
+      "new": 15
     },
     "bigplayers": {
       "items": [
+        {
+          "title": "DeepSeek V4 and Huawei Ascend: A powerful day 0 partnership that shows the future of AI - Huawei Central",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OVFpWYzJvWjl2bEVlblQ0Z3dCVDR5NlVJZjFic21hell5U2JVb3VFYkpJX2tTNFR5RUpVbVhDd2ttRkFoTXk5al9BV0prR1cwMGFYSER1Z04xQjZIX1FaN3VUUVRLamtfbXQ0Y3pyOXnSAXZBVV95cUxOaHd1R1BTd05rME5kVllreDBiOUpHMjlFdFoxUXdYVFV0cm9uMG1FNDVZYWZiSFZ6cFFOdUZiTU8xN2MxREtpNnpCZVdYN2x1NENMUzNjMl91U3pyUzVIS3Y1VUxFQUFuNktmZGI1YTRzaFpqOUh3?oc=5",
+          "summary": "Huawei announces a partnership with DeepSeek to integrate its V4 AI model with Huawei's Ascend accelerators, signaling future AI development.",
+          "source": "DeepSeek",
+          "region": "CN",
+          "published": "2026-06-09T18:23:44+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OVFpWYzJvWjl2bEVlblQ0Z3dCVDR5NlVJZjFic21hell5U2JVb3VFYkpJX2tTNFR5RUpVbVhDd2ttRkFoTXk5al9BV0prR1cwMGFYSER1Z04xQjZIX1FaN3VUUVRLamtfbXQ0Y3pyOXnSAXZBVV95cUxOaHd1R1BTd05rME5kVllreDBiOUpHMjlFdFoxUXdYVFV0cm9uMG1FNDVZYWZiSFZ6cFFOdUZiTU8xN2MxREtpNnpCZVdYN2x1NENMUzNjMl91U3pyUzVIS3Y1VUxFQUFuNktmZGI1YTRzaFpqOUh3",
+          "category": "bigplayers",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic and OpenAI spark new race for frontier AI access",
+          "url": "https://www.axios.com/2026/06/09/anthropic-openai-mythos-ai-model-access",
+          "summary": "Anthropic and OpenAI are pursuing new strategies for selective access and commercialization of their frontier AI models.",
+          "source": "Axios",
+          "region": "US",
+          "published": "2026-06-09T17:47:43+00:00",
+          "canonical_url": "https://axios.com/2026/06/09/anthropic-openai-mythos-ai-model-access",
+          "category": "bigplayers",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Meta reskills as AI job fears grow",
+          "url": "https://www.semafor.com/article/06/09/2026/meta-reskills-as-ai-job-fears-grow",
+          "summary": "Meta is implementing reskilling programs amid growing concerns about AI-related job fears, while also building new data centers.",
+          "source": "Semafor",
+          "region": "US",
+          "published": "2026-06-09T17:46:17+00:00",
+          "canonical_url": "https://semafor.com/article/06/09/2026/meta-reskills-as-ai-job-fears-grow",
+          "category": "bigplayers",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Cohere signs exploratory MOU with Québec government - Let's Data Science",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY3RXMDdSUzRSQm12ejNyWlpHa1hqbGhCLTlGV0ZOY2tKeTFfbGRBUFNlczJwX2JHay1XODFlaXhRUy1HYmJqbHRMdVlSNm5sdmFlYmd3Tkt0bkdnUW8xOG5UWUY5NDVwTGpaeDdiRmZaUnFQV1pORTIwMHdTUTZqQVB4N2JIZEVGd1BjclhyekVxSUxKYzR4Nw?oc=5",
+          "summary": "Cohere signed an exploratory Memorandum of Understanding (MOU) with the Québec government.",
+          "source": "Cohere",
+          "region": "US",
+          "published": "2026-06-09T17:40:09+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY3RXMDdSUzRSQm12ejNyWlpHa1hqbGhCLTlGV0ZOY2tKeTFfbGRBUFNlczJwX2JHay1XODFlaXhRUy1HYmJqbHRMdVlSNm5sdmFlYmd3Tkt0bkdnUW8xOG5UWUY5NDVwTGpaeDdiRmZaUnFQV1pORTIwMHdTUTZqQVB4N2JIZEVGd1BjclhyekVxSUxKYzR4Nw",
+          "category": "bigplayers",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "'Sloppenheimer:' Amazon Employees Mock the Company's AI on Slack",
           "url": "https://www.404media.co/sloppenheimer-amazon-employees-mock-the-companys-ai-on-slack/",
@@ -8426,10 +9339,70 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 12
+      "new": 4
     },
     "autonomous": {
       "items": [
+        {
+          "title": "The Apple Car Is Dead, and Waymo Just Bought Its Gravesite - Gizmodo",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNXzBnT0xCRmgxTlR3ajM3U1hoZXVtWms1Z1hRR0thZWJMcUJwUTZOMVp4V1NLMDVQZldjaDBoSkkteHcyUHlOLUdmREJWNUNTMmlhYWd1SzRBakZ6T0tpdDE2MHZYX2tSRV9tVW9BRVlUVW9wWFRrbnJxdmVieXNkLXNBTWw2ZTF3UHIxSmU3RlROQQ?oc=5",
+          "summary": "The article reports that Waymo acquired assets related to Apple's defunct self-driving car project. This highlights developments in the autonomous mobility sector.",
+          "source": "Waymo",
+          "region": "US",
+          "published": "2026-06-09T22:37:30+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNXzBnT0xCRmgxTlR3ajM3U1hoZXVtWms1Z1hRR0thZWJMcUJwUTZOMVp4V1NLMDVQZldjaDBoSkkteHcyUHlOLUdmREJWNUNTMmlhYWd1SzRBakZ6T0tpdDE2MHZYX2tSRV9tVW9BRVlUVW9wWFRrbnJxdmVieXNkLXNBTWw2ZTF3UHIxSmU3RlROQQ",
+          "category": "autonomous",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Waymo’s new Ojai robotaxi arrives in Los Angeles, and the cheaper autonomous vehicle could decide how fast the service expands - OkDiario",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONFN0UGNuYkRHNFJ2aGJ6eHhSQ1AybVNzTWpTaWhZeTZFMWR1N0J0d0x3d0pndG5xU2Y5UkJuMDJHaXVLZjJROXFSUVd6dXFiMEtSaWs0N3pxcGFPbjZMaFg5NjhqMVlQQnVLR2VWZUQ4Rnc0NVhOUUNRLWlYcnozeGFQREdWaTl0akw0Y21pOVkwbDNINTU3TUhVNUpYSGlhM2VYcnp3elUwUFpWVXhWQmdTaG1uZUt6Q0JSR0lKRkdtcU5LbjFXdUs5dVhlQ005S1laTUotNzVpNG9BY1JFR2RQRHVwZlRxM3htamk2REszZw?oc=5",
+          "summary": "Waymo's new Ojai robotaxi has arrived in Los Angeles, with its cost potentially influencing the expansion speed of the service.",
+          "source": "Waymo",
+          "region": "US",
+          "published": "2026-06-09T17:30:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONFN0UGNuYkRHNFJ2aGJ6eHhSQ1AybVNzTWpTaWhZeTZFMWR1N0J0d0x3d0pndG5xU2Y5UkJuMDJHaXVLZjJROXFSUVd6dXFiMEtSaWs0N3pxcGFPbjZMaFg5NjhqMVlQQnVLR2VWZUQ4Rnc0NVhOUUNRLWlYcnozeGFQREdWaTl0akw0Y21pOVkwbDNINTU3TUhVNUpYSGlhM2VYcnp3elUwUFpWVXhWQmdTaG1uZUt6Q0JSR0lKRkdtcU5LbjFXdUs5dVhlQ005S1laTUotNzVpNG9BY1JFR2RQRHVwZlRxM3htamk2REszZw",
+          "category": "autonomous",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Drone boat rescues U.S. helicopter crew shot down by Iran",
+          "url": "https://www.axios.com/2026/06/09/drone-boat-helicopter-rescue-iran-saronic",
+          "summary": "A U.S. helicopter crew was rescued by an autonomous drone-boat named Corsair, marking a first-of-its-kind operation.",
+          "source": "Axios",
+          "region": "US",
+          "published": "2026-06-09T17:29:03+00:00",
+          "canonical_url": "https://axios.com/2026/06/09/drone-boat-helicopter-rescue-iran-saronic",
+          "category": "autonomous",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Waymo bought Apple's car proving ground to test its robotaxis - How-To Geek",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNS09oVE9sbnRCNkN0eHhxU0c3UXh6OEt4M2I3UXNmWUpSU1RacUM3VGlWOS1zWFd1Y0NSSzYwQUpIU0xFc2l6OFRNTmI0NjB3Y1RIbXo5NklHZXdfWGtjQU9RVDNKOW1EWXg1aW1KMlk4TTlPQWoxc3JfLTFhdWxtb1NkMFpVaXcwU2MzaFZmMXM?oc=5",
+          "summary": "Waymo acquired Apple's former car proving ground to expand testing for its robotaxi fleet.",
+          "source": "Waymo",
+          "region": "US",
+          "published": "2026-06-09T17:14:58+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNS09oVE9sbnRCNkN0eHhxU0c3UXh6OEt4M2I3UXNmWUpSU1RacUM3VGlWOS1zWFd1Y0NSSzYwQUpIU0xFc2l6OFRNTmI0NjB3Y1RIbXo5NklHZXdfWGtjQU9RVDNKOW1EWXg1aW1KMlk4TTlPQWoxc3JfLTFhdWxtb1NkMFpVaXcwU2MzaFZmMXM",
+          "category": "autonomous",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Burglary Suspect Makes A Clean Getaway In A Waymo - Jalopnik",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUlLZ3o4YTMzby1IOG5xT1hLOWVEMVpuNDRYa3U2c3c1NDM2enBuMDVJRWxEQVUyZlkyVi1lMjh5aDhMbzJweEF5ZHhpbkxQRElRc3Y4T2Jwb1lPc0RuWFdTa1F5ZXhJVVhDVzdYM3ZTRG1rUTZRM0RKTVk0VXZIX3ZpZ3lxek5p?oc=5",
+          "summary": "A burglary suspect reportedly used a Waymo autonomous vehicle to make a getaway.",
+          "source": "Waymo",
+          "region": "US",
+          "published": "2026-06-09T16:25:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUlLZ3o4YTMzby1IOG5xT1hLOWVEMVpuNDRYa3U2c3c1NDM2enBuMDVJRWxEQVUyZlkyVi1lMjh5aDhMbzJweEF5ZHhpbkxQRElRc3Y4T2Jwb1lPc0RuWFdTa1F5ZXhJVVhDVzdYM3ZTRG1rUTZRM0RKTVk0VXZIX3ZpZ3lxek5p",
+          "category": "autonomous",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "Uber to launch robotaxis in Madrid with WeRide - Business Travel News Europe",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa3NVdWFlVl9pRkhXeE1GeUtXcEVHLUx3Y0JRa1laRWNmQzVzaHNpaFBZWm1lcy1RTHlNTEF5RzFRUmVNOF94dzNtNmNNT0dDbUdDOHJkU2NzSmZ0dUVDRzctTWdTSWJsRnlnNGl5bk5qSDJ4TE9uZzBvMzJLMk03U1h5OENncVFWMElPQW1hNkoyTXhTUlV3dUhRcUhYbDVUUzVpTHdROA?oc=5",
@@ -9687,10 +10660,46 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 2
+      "new": 5
     },
     "robotics": {
       "items": [
+        {
+          "title": "YY Group Holding Limited Launches Deployment of Unitree G1 Edu Ultimate Humanoid Robots to Enhance AI Integration in Facility Management - Quiver Quantitative",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbDlTZWd6eTBHMnU0WnJnaWNRZlFWcHJRcTJoaElLRWhkdzZrMng3WVN3c3BMN2NoWUlpVi1xVVZrVzlBTFF4SkkybllSVm9jYkV5Y084Nlo4aGxjMXlBNTBucEJweVh3bGhfVWVaTFNhT2Jhc3lWSnNmRVkzamZpRlZuMTZpTGxFdVgtV1JTODM5NzZRRXJBWnRRREZzSHI2ZVFKSGd3ejZJcUxJLVRIUUVFRDlta3NfLU80YnhPYjE3cDlpM2tRQWF6eWlkNVFta3pjV1NVUHhHcVVmdGl1RVdhMWhGckxycWcyb2FQMzZHd2pQOWlrUWtSd0JiUQ?oc=5",
+          "summary": "YY Group Holding Limited is deploying Unitree G1 Edu Ultimate Humanoid Robots to integrate AI into facility management operations.",
+          "source": "Unitree Robotics",
+          "region": "CN",
+          "published": "2026-06-09T20:30:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbDlTZWd6eTBHMnU0WnJnaWNRZlFWcHJRcTJoaElLRWhkdzZrMng3WVN3c3BMN2NoWUlpVi1xVVZrVzlBTFF4SkkybllSVm9jYkV5Y084Nlo4aGxjMXlBNTBucEJweVh3bGhfVWVaTFNhT2Jhc3lWSnNmRVkzamZpRlZuMTZpTGxFdVgtV1JTODM5NzZRRXJBWnRRREZzSHI2ZVFKSGd3ejZJcUxJLVRIUUVFRDlta3NfLU80YnhPYjE3cDlpM2tRQWF6eWlkNVFta3pjV1NVUHhHcVVmdGl1RVdhMWhGckxycWcyb2FQMzZHd2pQOWlrUWtSd0JiUQ",
+          "category": "robotics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai/",
+          "summary": "The article demonstrates how to train robot policies for the Unitree H1 humanoid using NVIDIA Isaac Lab on Amazon SageMaker AI, focusing on AI-powered physical robots.",
+          "source": "AWS Machine Learning",
+          "region": "US",
+          "published": "2026-06-09T20:07:24+00:00",
+          "canonical_url": "https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai",
+          "category": "robotics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design - Robotics & Automation News",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONjNtdmpJeFN3ZzNHTzc5V3AtUTk2REJ0NzdNbExsRzJPZEZlbEFyQlBRaV9jVU5ES3B2QjBmWTlzajJGTFp4RHdaZE5pNTdTMnhfc3VwaFVyUmZpempQTXVkUjJIalVXVEQzOEsyZmdJdmRyM2wycEY3a3oyUkRROTFqbE5SaUJuekNZMi1aMGFxbFBVY2ZtTGZSWURtMk9xNUZyeVY3TWQya2FMbVFlSEQwemc1eVRxcXlNOTR3SVhGUjJuWUtvVUlTS0NVWTRfbU9tZEtBNA?oc=5",
+          "summary": "Sharpa develops dexterous robot hands for humanoid robot reference designs, collaborating with Nvidia and Unitree.",
+          "source": "Unitree Robotics",
+          "region": "CN",
+          "published": "2026-06-09T18:51:20+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONjNtdmpJeFN3ZzNHTzc5V3AtUTk2REJ0NzdNbExsRzJPZEZlbEFyQlBRaV9jVU5ES3B2QjBmWTlzajJGTFp4RHdaZE5pNTdTMnhfc3VwaFVyUmZpempQTXVkUjJIalVXVEQzOEsyZmdJdmRyM2wycEY3a3oyUkRROTFqbE5SaUJuekNZMi1aMGFxbFBVY2ZtTGZSWURtMk9xNUZyeVY3TWQya2FMbVFlSEQwemc1eVRxcXlNOTR3SVhGUjJuWUtvVUlTS0NVWTRfbU9tZEtBNA",
+          "category": "robotics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "AGIBOT Brings APC 2026 to Indonesia, Accelerating Local Deployment of Embodied AI - Thailand Business News",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcTI0R0VlSFpGQTVWRHZHNk1mOFFlS18weUhxc2VZNVg3LWlteUlIMTkxTmVQeXdHekppbzlMMzJicVlDSUxiZTdlelZBSW43WVAtQ2c1NWo5aThQQVFuLTdsdkJ4R1ZWa2IyeWlRR1hVUXl3eUI3VU5CU0gzSGplQm1xS0N5T2hEcFJXalFUS2gxQjF3cVFvYnIwd2p1Z1N0YVpVUnpTMlIxcHQ5VndSTGpJenBuQkpFMzlSVUVleG5tZ3FtZXc?oc=5",
@@ -11357,10 +12366,106 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 4
+      "new": 3
     },
     "research": {
       "items": [
+        {
+          "title": "Building an AI-Native Engineering Team",
+          "url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+          "summary": "OpenAI provides a guide on how to build an 'AI-Native Engineering Team,' discussing practical applications of AI within organizational structures and workflows.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:54:02+00:00",
+          "canonical_url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AppFolio launches connector for Realm-X AI suite and Anthropic’s Claude - HousingWire",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdlc2SHZwaHU0eFA2dlNSOV9paUdmd2hGbmVONHhfbjhDaHM3dlZZY2dMUHNKY0MzcWIzWnA1ZWF0bk94anZBbWE1YVdTSGtQZlMxdnE5NjBmSko3NVdFQ1VLbzduOEVKMXNMb3pvVGlHUVF3SU1aTFNzeXlPNHRERXllVExabnZOYUgtU2pleHZFZEhLMnFwVzhENUQ2R1NlNUd2OFdpV3FhRVpw?oc=5",
+          "summary": "AppFolio has launched a connector to integrate its Realm-X AI suite with Anthropic's Claude, demonstrating a real-world application of AI in the housing industry.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T21:22:15+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdlc2SHZwaHU0eFA2dlNSOV9paUdmd2hGbmVONHhfbjhDaHM3dlZZY2dMUHNKY0MzcWIzWnA1ZWF0bk94anZBbWE1YVdTSGtQZlMxdnE5NjBmSko3NVdFQ1VLbzduOEVKMXNMb3pvVGlHUVF3SU1aTFNzeXlPNHRERXllVExabnZOYUgtU2pleHZFZEhLMnFwVzhENUQ2R1NlNUd2OFdpV3FhRVpw",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Strava goes full AI (if you want) with Claude integration - Canadian Cycling Magazine",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeldsRGxvWVk4T3RtNV80UXh0amVvbmVmTmhIRWV6dDBhcmNSRGo3Vk1IczRXcEczVGFKV3dwOW9MWXFfQ2VpOHNTNFhQeXdLdDZMYjdxdUg2ZDkzdlRTejF6RFhYdkZqbHR6X0tYTTRmcDNJbnkwSG05OHZHSy1vdDY0YkdJQW45R1B4R1AwXzNZc1BfMFJWTXRSSldRUQ?oc=5",
+          "summary": "Strava has integrated AI, specifically Claude, into its platform, offering new functionalities to users who opt-in, representing a real-world application of AI.",
+          "source": "Model Context Protocol",
+          "region": "US",
+          "published": "2026-06-09T19:43:25+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeldsRGxvWVk4T3RtNV80UXh0amVvbmVmTmhIRWV6dDBhcmNSRGo3Vk1IczRXcEczVGFKV3dwOW9MWXFfQ2VpOHNTNFhQeXdLdDZMYjdxdUg2ZDkzdlRTejF6RFhYdkZqbHR6X0tYTTRmcDNJbnkwSG05OHZHSy1vdDY0YkdJQW45R1B4R1AwXzNZc1BfMFJWTXRSSldRUQ",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI is boosting accuracy for clinicians, Philips North America CEO says - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMFljZ2sybkZLM1BDN0VKYUxPNjR5cUt4TDZsYmdkU2N3RlZxNFgzWUluamRBYWc5UEVHVEFsTUhIM1dudjRfNXl4M3RGcnAwQ2t4NmhmOVJmcEp1UEJzS1I5YnZaVG9tYkFsUU1oMHpwdUJycGVmSkszRlIzdDE1NXkwbE5mbzFUNDhGMEtzbzAyeWJxUTJFUlp3TWJhZmlSU1BMdjVQR2FraThmM082cnd3OHNtbmNHSkthalR5RjFVdkpEcjJEallwQjRicHUwYU9J?oc=5",
+          "summary": "The CEO of Philips North America states that artificial intelligence is improving accuracy for clinicians in healthcare settings, showcasing a real-world application of AI.",
+          "source": "Reuters AI",
+          "region": "US",
+          "published": "2026-06-09T19:02:10+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMFljZ2sybkZLM1BDN0VKYUxPNjR5cUt4TDZsYmdkU2N3RlZxNFgzWUluamRBYWc5UEVHVEFsTUhIM1dudjRfNXl4M3RGcnAwQ2t4NmhmOVJmcEp1UEJzS1I5YnZaVG9tYkFsUU1oMHpwdUJycGVmSkszRlIzdDE1NXkwbE5mbzFUNDhGMEtzbzAyeWJxUTJFUlp3TWJhZmlSU1BMdjVQR2FraThmM082cnd3OHNtbmNHSkthalR5RjFVdkpEcjJEallwQjRicHUwYU9J",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Some Interesting Papers on RLVR",
+          "url": "https://www.lesswrong.com/posts/tjwpdzpPcPbuwqmuP/some-interesting-papers-on-rlvr",
+          "summary": "A post discusses interesting papers on Reinforcement Learning from Vision and Language (RLVR), sharing conceptual ideas from a research project.",
+          "source": "LessWrong",
+          "region": "GLOBAL",
+          "published": "2026-06-09T19:00:33+00:00",
+          "canonical_url": "https://lesswrong.com/posts/tjwpdzpPcPbuwqmuP/some-interesting-papers-on-rlvr",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5: Anthropic releases a 'safe' version of Claude Mythos - Mashable",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNVpvQklzeUpyLS1vVHU3aE9HMEJ6THVtN3d0ZndIQ3d1NG5VOHUxRy0yUW9HWnNjNW4xTzdld2E2a04tUXJkcllzbGtUeS0xb1hZSTEweVB4YmJtQ0drUWRFLXp6MlRKSjdPM2EzN2x1cV9tYlNNXzNoWG9EX0U0OFd4N1JoRzFWa183RTR1RjhxMnM?oc=5",
+          "summary": "Claude Fable 5: Anthropic releases a 'safe' version of Claude Mythos Mashable",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T18:56:04+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNVpvQklzeUpyLS1vVHU3aE9HMEJ6THVtN3d0ZndIQ3d1NG5VOHUxRy0yUW9HWnNjNW4xTzdld2E2a04tUXJkcllzbGtUeS0xb1hZSTEweVB4YmJtQ0drUWRFLXp6MlRKSjdPM2EzN2x1cV9tYlNNXzNoWG9EX0U0OFd4N1JoRzFWa183RTR1RjhxMnM",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "A Mike's-Eye View of ARC's Research",
+          "url": "https://www.lesswrong.com/posts/M2tD23bvQLBqsEpqu/a-mike-s-eye-view-of-arc-s-research",
+          "summary": "An overview details the technical agenda and progress of the AI Alignment Research Center (ARC), including concepts like the Matching Sampling Principle.",
+          "source": "LessWrong",
+          "region": "GLOBAL",
+          "published": "2026-06-09T18:30:45+00:00",
+          "canonical_url": "https://lesswrong.com/posts/M2tD23bvQLBqsEpqu/a-mike-s-eye-view-of-arc-s-research",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "BT bolsters network security with Anthropic Claude Mythos AI - Telecoms Tech News",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcmVsS1FST3dZWXBTckNyTk9KQU1xaldzNWNPR0M2Vi1pNWNMLXRkc0tXbWsxU2hWWTJCZjRBSTV3S3BtdG1JZHU5a05BbmlTNmhJTHlIRjVxYUVvUTlHc29sZmlEbXRLaUtvYTZiSzQxUFdEQXVSVlM1OHBBbHRBUWN5SWw3SWpZdXNfaVFpNExXWjJx?oc=5",
+          "summary": "BT is enhancing its network security by integrating Anthropic's Claude Mythos AI.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T16:42:23+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcmVsS1FST3dZWXBTckNyTk9KQU1xaldzNWNPR0M2Vi1pNWNMLXRkc0tXbWsxU2hWWTJCZjRBSTV3S3BtdG1JZHU5a05BbmlTNmhJTHlIRjVxYUVvUTlHc29sZmlEbXRLaUtvYTZiSzQxUFdEQXVSVlM1OHBBbHRBUWN5SWw3SWpZdXNfaVFpNExXWjJx",
+          "category": "research",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "Show HN: AutoGPU – AI designs a real 7nm GPU, from Verilog to GDSII",
           "url": "https://github.com/npip99/autogpu",
@@ -14570,10 +15675,142 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 7
+      "new": 8
     },
     "legislation": {
       "items": [
+        {
+          "title": "Copyright whack-a-mole: Researchers say finetuning unlocks copyrighted books inside GPT-4o, Gemini and DeepSeek; Business users inherit new legal risk, publishers gain leverage - Mi-3.com.au",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONWJoR2Z4T1RUYzB4LUpkZVFYMDFBcGJiZVF1b0ZGam1qZ3RpMFFrVW9SMjRvT0NhWWgxdnBRTnJ3bkpMRUNLeWNoZXJYdnZaVWpCYlJOZWphVTFHbTNubExxcE5zTEhfM0kxRjZwQzdhZzRhNWxfVzF4Nk9zbXFTOERuNDdFczZSOEZtQk5yQmh1TkI4eDg5WGxuM2tHck9GV1pmaVY5ZXlfckFPZk95Z28tZDl0NVRmMmhybFc1SQ?oc=5",
+          "summary": "Researchers have found that finetuning AI models like GPT-4o, Gemini, and DeepSeek can unlock copyrighted books within them, leading to new legal risks for business users and increased leverage for publishers. This highlights copyright issues and legal implications in AI.",
+          "source": "DeepSeek",
+          "region": "CN",
+          "published": "2026-06-09T23:25:13+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONWJoR2Z4T1RUYzB4LUpkZVFYMDFBcGJiZVF1b0ZGam1qZ3RpMFFrVW9SMjRvT0NhWWgxdnBRTnJ3bkpMRUNLeWNoZXJYdnZaVWpCYlJOZWphVTFHbTNubExxcE5zTEhfM0kxRjZwQzdhZzRhNWxfVzF4Nk9zbXFTOERuNDdFczZSOEZtQk5yQmh1TkI4eDg5WGxuM2tHck9GV1pmaVY5ZXlfckFPZk95Z28tZDl0NVRmMmhybFc1SQ",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Judge kills entire case when both lawyers submit AI filings",
+          "url": "https://gizmodo.com/judge-cancels-whole-case-after-lawyers-admit-they-didnt-read-ai-generated-filings-2000769668",
+          "summary": "A judge dismissed an entire case after both lawyers admitted to submitting AI-generated filings without properly reviewing them. This highlights legal repercussions for improper AI use in court proceedings.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:34:35+00:00",
+          "canonical_url": "https://gizmodo.com/judge-cancels-whole-case-after-lawyers-admit-they-didnt-read-ai-generated-filings-2000769668",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Flathub disallows LLM-based submissions",
+          "url": "https://social.treehouse.systems/@barthalion/116657011366876079",
+          "summary": "Flathub, a software distribution platform, has implemented a policy disallowing submissions based on large language models (LLMs).",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:12:37+00:00",
+          "canonical_url": "https://social.treehouse.systems/@barthalion/116657011366876079",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "q.beyond Launches \"AI Act as a Service\" - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjN2cjV4WE5ST1Q4RTZ4M0dPWTV6V2Niby1mN3lHVjl2bm9yR1BEdk1OTVhMRS1UM0NrYU9KdkVHYkRFNENsZWc0RXVEYWZQRHVYaE0zbEVjcHhzWkQ5OXVXMUt3YkNmMWkxbnlINW1PTHpZeFJTNVBTRjlUd040bmM3VmVCQmVZS1BLaXlRWFpKNFp4RXhwcg?oc=5",
+          "summary": "q.beyond has launched an 'AI Act as a Service,' which aims to help companies comply with AI legislation, indicating a new service related to AI governance and compliance.",
+          "source": "EU AI Act",
+          "region": "EU",
+          "published": "2026-06-09T20:21:09+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjN2cjV4WE5ST1Q4RTZ4M0dPWTV6V2Niby1mN3lHVjl2bm9yR1BEdk1OTVhMRS1UM0NrYU9KdkVHYkRFNENsZWc0RXVEYWZQRHVYaE0zbEVjcHhzWkQ5OXVXMUt3YkNmMWkxbnlINW1PTHpZeFJTNVBTRjlUd040bmM3VmVCQmVZS1BLaXlRWFpKNFp4RXhwcg",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Musicians Sue Warner and Universal Over AI Settlement Money as Suno Ruling Nears - Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVEpoSkIzUGpycGhpTVNEaWd3R1dqcmpYblhYaF9KZkpmNFVDZVh5NkhTdFNuNEhfTHNzcUVBUnctMDVYVEFuenZPQUVvSklyQTMwR2gzcHRKTm5xSE1LRmJzaTB3Y3RFMWRab0w4REgwYklmdHFUbmlHMUtOS3RUWVFpUFkyaERIaE55bGttWG1RTmdJN2Q2aGJtMXk5Z2RFenh1dWlpY1hJSHBJc2o0UVhLelNpR3M2RXhyTU9UTFloRmNzZ2Ew?oc=5",
+          "summary": "Musicians are suing Warner and Universal regarding AI settlement money as a ruling concerning AI music generation company Suno approaches, addressing copyright and legal implications of AI.",
+          "source": "Suno / Udio",
+          "region": "US",
+          "published": "2026-06-09T19:52:05+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVEpoSkIzUGpycGhpTVNEaWd3R1dqcmpYblhYaF9KZkpmNFVDZVh5NkhTdFNuNEhfTHNzcUVBUnctMDVYVEFuenZPQUVvSklyQTMwR2gzcHRKTm5xSE1LRmJzaTB3Y3RFMWRab0w4REgwYklmdHFUbmlHMUtOS3RUWVFpUFkyaERIaE55bGttWG1RTmdJN2Q2aGJtMXk5Z2RFenh1dWlpY1hJSHBJc2o0UVhLelNpR3M2RXhyTU9UTFloRmNzZ2Ew",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Musicians Union Takes Warner and Universal to Court Over AI Training Rights - PYMNTS.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1Uwa3AwTUx1azNTaFlsTmJPZ0RvRjIzV3FVQVJVcDcweVRPUDl1bUJyanpMMzJNdVhPN0tXSGIwSUxwYnhITUVXaE1EYWNEbnR2NFFhSFExYkRheG14WnJPUk1GUjNkaW9GZWFnd3NyUWdHc05XSUlibFl3QXJsZ3lCeTcyOGtFSUtadmVtY1hLejFVVEJOUTM5aDRyOUpPTzFsenBjZndSY0FPSWc?oc=5",
+          "summary": "A Musicians Union initiates legal action against Warner and Universal regarding the rights for using musical works in AI training.",
+          "source": "Suno / Udio",
+          "region": "US",
+          "published": "2026-06-09T18:46:53+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1Uwa3AwTUx1azNTaFlsTmJPZ0RvRjIzV3FVQVJVcDcweVRPUDl1bUJyanpMMzJNdVhPN0tXSGIwSUxwYnhITUVXaE1EYWNEbnR2NFFhSFExYkRheG14WnJPUk1GUjNkaW9GZWFnd3NyUWdHc05XSUlibFl3QXJsZ3lCeTcyOGtFSUtadmVtY1hLejFVVEJOUTM5aDRyOUpPTzFsenBjZndSY0FPSWc",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Judge rules both sides in lawsuit misused AI, disqualifies lawyers - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTHl4ZXhjM29Zb3gwaDNhb0lFcEdsb1dqV182bEpwX2lWbUdCSWc2VmZOZy16bkd6VjRBeFQ0bDF4eUQwZ1dkTDZxTW1WbXJCLWRORXV5c0JlNDE1UGlqWWxIeWc4WGU1RFhTU2VkS0hpa0d3OXZ1bGdQMXp0NHVPMWdMZDhEdFRVblZ6aVJ6anZWdFBnNG9pNzBRQ0NuNE1iX3JRaElsYTNNZmVvMkVsUjNQSXRXZw?oc=5",
+          "summary": "A judge ruled that both sides in a lawsuit misused AI, leading to the disqualification of the involved lawyers.",
+          "source": "Reuters AI",
+          "region": "US",
+          "published": "2026-06-09T17:41:43+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTHl4ZXhjM29Zb3gwaDNhb0lFcEdsb1dqV182bEpwX2lWbUdCSWc2VmZOZy16bkd6VjRBeFQ0bDF4eUQwZ1dkTDZxTW1WbXJCLWRORXV5c0JlNDE1UGlqWWxIeWc4WGU1RFhTU2VkS0hpa0d3OXZ1bGdQMXp0NHVPMWdMZDhEdFRVblZ6aVJ6anZWdFBnNG9pNzBRQ0NuNE1iX3JRaElsYTNNZmVvMkVsUjNQSXRXZw",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Apple wants Europe to blink",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/947051/apple-europe-dma-siri-ai",
+          "summary": "Apple indicates that its new AI-powered Siri will not launch in Europe, blaming EU regulations for the delay and expressing a desire for the EU to yield.",
+          "source": "The Verge",
+          "region": "US",
+          "published": "2026-06-09T17:13:14+00:00",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/947051/apple-europe-dma-siri-ai",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Apple and Brussels Clash Over Siri AI Delay Under Digital Markets Act - EU Today",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE82cklfOS15VVBnRklqSVJUV0lDX29HMlhvVFRqdVFPd3lpNkJubnlNQTlZZm05Z1hJZ3R4eHpnT1g1anVObjRWOTZOcnR4T3AwemJDT1dyamhoYzcyYWZxc2hoSWkyNWZnaGZfRHJYSk9PUQ?oc=5",
+          "summary": "Apple and the European Union are in dispute over the delayed launch of Siri AI features in Europe due to the Digital Markets Act.",
+          "source": "EU AI Act",
+          "region": "EU",
+          "published": "2026-06-09T17:07:03+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE82cklfOS15VVBnRklqSVJUV0lDX29HMlhvVFRqdVFPd3lpNkJubnlNQTlZZm05Z1hJZ3R4eHpnT1g1anVObjRWOTZOcnR4T3AwemJDT1dyamhoYzcyYWZxc2hoSWkyNWZnaGZfRHJYSk9PUQ",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "The CNN-Perplexity Lawsuit Is Not Just Another AI Copyright Case - Center for Data Innovation",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUEhOSFo5MTY1VzZUNnJvOXcxLUV3bWtER3dYSWVTMk9FOUw4aXAyTXUyZUQtQ25wLVlyeElDUDVfdUZFUnJWQzc1NFVUaFhMbGdxMkQxZG9UNkR3enNFMG5fSUZqSFJpX005MjlLSVdWbUJaRk5aakZqZUlYc2NyVEZoc1h5V29OSl81RlAzT094dU1UbklKSTUwV2pqOWE4eWc?oc=5",
+          "summary": "A lawsuit between CNN and Perplexity is highlighted as a significant case concerning AI copyright issues.",
+          "source": "Perplexity AI",
+          "region": "US",
+          "published": "2026-06-09T16:49:40+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUEhOSFo5MTY1VzZUNnJvOXcxLUV3bWtER3dYSWVTMk9FOUw4aXAyTXUyZUQtQ25wLVlyeElDUDVfdUZFUnJWQzc1NFVUaFhMbGdxMkQxZG9UNkR3enNFMG5fSUZqSFJpX005MjlLSVdWbUJaRk5aakZqZUlYc2NyVEZoc1h5V29OSl81RlAzT094dU1UbklKSTUwV2pqOWE4eWc",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "EU orders Meta to open WhatsApp to rival AI chatbots",
+          "url": "https://www.bbc.com/news/articles/cn8qj8wjgxwo?at_medium=RSS&at_campaign=rss",
+          "summary": "The EU has ordered Meta to open its WhatsApp platform to rival AI chatbots, a decision Meta views as regulatory overreach.",
+          "source": "BBC Technology",
+          "region": "EU",
+          "published": "2026-06-09T16:16:12+00:00",
+          "canonical_url": "https://bbc.com/news/articles/cn8qj8wjgxwo?at_medium=RSS&at_campaign=rss",
+          "category": "legislation",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "Trump's new AI order – hallucinations aren't just for LLMs",
           "url": "https://www.computerworld.com/article/4182531/trumps-new-ai-order-hallucinations-arent-just-for-llms.html",
@@ -15838,10 +17075,118 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 9
+      "new": 11
     },
     "skcz": {
       "items": [
+        {
+          "title": "Podívejte se, jak vám AI z reálných věcí stvoří unikátní herní svět",
+          "url": "https://www.idnes.cz/technet/software/ai-umela-inteligence-virtualni-realny-svet-google-genie.A260609_102937_software_vse#utm_source=rss&utm_medium=feed&utm_campaign=technet&utm_content=main",
+          "summary": "Google unveiled Project Genie, an AI model capable of generating unique virtual game worlds from real-world objects, despite still being in a test phase.",
+          "source": "iDNES Technet",
+          "region": "CZ",
+          "published": "2026-06-09T22:00:00+00:00",
+          "canonical_url": "https://idnes.cz/technet/software/ai-umela-inteligence-virtualni-realny-svet-google-genie.A260609_102937_software_vse",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Starosta vítězného Prosetína se radí s AI a inspiraci hledá i v Africe. V obci postavil solární sušárnu kalů a biomilíř, se kterým ji vytápí",
+          "url": "https://archiv.hn.cz/c1-67887150-starosta-vitezneho-prosetina-se-radi-s-ai-a-inspiraci-hleda-i-v-africe-v-obci-postavil-solarni-susarnu-kalu-a-biomilir-se-kterym-ji-vytapi",
+          "summary": "The mayor of Prosetín, Czechia, consults AI as he implements innovative sustainability projects in his village, showcasing local Czech ingenuity.",
+          "source": "Hospodárske noviny CZ",
+          "region": "CZ",
+          "published": "2026-06-09T22:00:00+00:00",
+          "canonical_url": "https://archiv.hn.cz/c1-67887150-starosta-vitezneho-prosetina-se-radi-s-ai-a-inspiraci-hleda-i-v-africe-v-obci-postavil-solarni-susarnu-kalu-a-biomilir-se-kterym-ji-vytapi",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI práve prešla slávnym Turingovým testom prekvapivo presvedčivo. Ľudia ju považovali za človeka častejšie než reálnych účastníkov",
+          "url": "https://vosveteit.zoznam.sk/ai-prave-presla-slavnym-turingovym-testom-prekvapivo-presvedcivo-ludia-ju-povazovali-za-cloveka-castejsie-nez-realnych-ucastnikov/",
+          "summary": "A new study indicates that AI has passed the Turing test surprisingly convincingly, with people mistaking it for human more often than actual participants.",
+          "source": "Vosveteit.sk",
+          "region": "SK",
+          "published": "2026-06-09T17:45:35+00:00",
+          "canonical_url": "https://vosveteit.zoznam.sk/ai-prave-presla-slavnym-turingovym-testom-prekvapivo-presvedcivo-ludia-ju-povazovali-za-cloveka-castejsie-nez-realnych-ucastnikov",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Apple opět odkládá AI v EU. Google, ChatGPT i Claude přitom v Evropě fungují bez potíží",
+          "url": "https://mobilmania.zive.cz/clanky/apple-opet-odklada-ai-v-eu-google-chatgpt-i-claude-pritom-v-evrope-funguji-bez-potizi/sc-3-a-1364871/default.aspx",
+          "summary": "Apple has again delayed its AI features for EU users, citing the European DMA regulation, while other AI providers operate without issues.",
+          "source": "Zive.cz",
+          "region": "CZ",
+          "published": "2026-06-09T17:45:00+00:00",
+          "canonical_url": "https://mobilmania.zive.cz/clanky/apple-opet-odklada-ai-v-eu-google-chatgpt-i-claude-pritom-v-evrope-funguji-bez-potizi/sc-3-a-1364871/default.aspx",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Čína se bude zlobit. Tchaj-wan zvažuje, že omezí vývoz čipů přes úžinu",
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-trendy-analyzy-cina-se-bude-zlobit-tchaj-wan-zvazuje-ze-omezi-vyvoz-cipu-pres-uzinu-308167",
+          "summary": "Taiwan is considering a blanket ban on AI chip exports to China and imposing severe penalties in response to technology smuggling, as part of negotiations with the US.",
+          "source": "Seznam Zprávy",
+          "region": "CZ",
+          "published": "2026-06-09T17:30:00+00:00",
+          "canonical_url": "https://seznamzpravy.cz/clanek/ekonomika-byznys-trendy-analyzy-cina-se-bude-zlobit-tchaj-wan-zvazuje-ze-omezi-vyvoz-cipu-pres-uzinu-308167",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI agenti by neměli mít lidská práva, kritizuje filosof Harari nápad argentinského prezidenta",
+          "url": "https://forbes.cz/ai-agenti-by-nemeli-mit-lidska-prava-kritizuje-filosof-harari-napad-argentinskeho-prezidenta/",
+          "summary": "Philosopher Yuval Noah Harari criticizes Argentine President Javier Milei's proposal to grant legal personality to AI systems, arguing that AI agents should not have human rights.",
+          "source": "Forbes.cz",
+          "region": "CZ",
+          "published": "2026-06-09T17:08:19+00:00",
+          "canonical_url": "https://forbes.cz/ai-agenti-by-nemeli-mit-lidska-prava-kritizuje-filosof-harari-napad-argentinskeho-prezidenta",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "macOS 27 Golden Gate zkrotí tekuté sklo i zlobivé děti a kompletně prostoupí AI",
+          "url": "https://www.zive.cz/clanky/macos-27-golden-gate-novinky/sc-3-a-241613/default.aspx",
+          "summary": "The upcoming macOS 27 Golden Gate will feature extensive AI integration across all applications, as part of Apple's broader product strategy.",
+          "source": "Zive.cz",
+          "region": "CZ",
+          "published": "2026-06-09T16:45:00+00:00",
+          "canonical_url": "https://zive.cz/clanky/macos-27-golden-gate-novinky/sc-3-a-241613/default.aspx",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Brusel zatlačil na Metu. WhatsApp musí do piatich dní otvoriť dvere konkurenčným AI asistentom bez poplatkov",
+          "url": "https://www.aktuality.sk/clanok/JdKyth4/brusel-zatlacil-na-metu-whatsapp-musi-do-piatich-dni-otvorit-dvere-konkurencnym-ai-asistentom-bez-poplatkov/",
+          "summary": "Brussels has intensified pressure on Meta, ordering WhatsApp to allow free access for rival AI assistants within five days, with potential sanctions for non-compliance.",
+          "source": "Aktuality.sk",
+          "region": "SK",
+          "published": "2026-06-09T16:42:45+00:00",
+          "canonical_url": "https://aktuality.sk/clanok/JdKyth4/brusel-zatlacil-na-metu-whatsapp-musi-do-piatich-dni-otvorit-dvere-konkurencnym-ai-asistentom-bez-poplatkov",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "EK nařídila Metě obnovit bezplatný přístup AI konkurence k WhatsAppu",
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-ek-naridila-mete-obnovit-bezplatny-pristup-ai-konkurence-k-whatsappu-308189",
+          "summary": "The European Commission has ordered Meta to restore free access for competing AI assistants to WhatsApp, a decision Meta plans to appeal.",
+          "source": "Seznam Zprávy",
+          "region": "CZ",
+          "published": "2026-06-09T16:37:55+00:00",
+          "canonical_url": "https://seznamzpravy.cz/clanek/ekonomika-firmy-ek-naridila-mete-obnovit-bezplatny-pristup-ai-konkurence-k-whatsappu-308189",
+          "category": "skcz",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "Petr Čech radí nově i jako AI avatar. Chce oslovit milion budoucích lídrů",
           "url": "https://forbes.cz/petr-cech-radi-nove-i-jako-ai-avatar-chce-oslovit-milion-budoucich-lidru/",
@@ -16995,10 +18340,94 @@
           "added": "2026-05-31"
         }
       ],
-      "new": 8
+      "new": 9
     },
     "infra": {
       "items": [
+        {
+          "title": "China plans $295B AI data center buildout with domestic chips",
+          "url": "https://qz.com/china-ai-data-center-buildout-295-billion-huawei-chips-060926",
+          "summary": "China plans a $295 billion buildout of AI data centers, leveraging domestically produced chips. This significant investment focuses on expanding the country's AI compute infrastructure.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T23:07:05+00:00",
+          "canonical_url": "https://qz.com/china-ai-data-center-buildout-295-billion-huawei-chips-060926",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Entergy CEO pushes back on fears that AI data centers will drive up electricity bills",
+          "url": "https://www.cnbc.com/2026/06/09/entergy-ceo-pushes-back-fears-ai-data-centers-drive-up-electricity-bills.html",
+          "summary": "Entergy CEO Drew Marsh addressed concerns that AI data centers could increase electricity bills, arguing they could benefit local communities. This concerns the power and energy infrastructure required for AI.",
+          "source": "CNBC Tech",
+          "region": "US",
+          "published": "2026-06-09T22:49:27+00:00",
+          "canonical_url": "https://cnbc.com/2026/06/09/entergy-ceo-pushes-back-fears-ai-data-centers-drive-up-electricity-bills.html",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "NVIDIA Confidential Computing to Help Expand Apple’s Private Cloud Compute",
+          "url": "https://blogs.nvidia.com/blog/nvidia-confidential-computing-apple-private-cloud-compute/",
+          "summary": "NVIDIA GPUs with Confidential Computing are now being used for confidential AI inference in Apple’s Private Cloud Compute, which is expanding from Apple's own data centers to Google Cloud. This represents an expansion of AI compute infrastructure.",
+          "source": "Nvidia Blog",
+          "region": "US",
+          "published": "2026-06-09T22:34:27+00:00",
+          "canonical_url": "https://blogs.nvidia.com/blog/nvidia-confidential-computing-apple-private-cloud-compute",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "SpaceX aims to launch orbital AI computing tests by end of next year, sources say - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSEJ0VnJacU5WYTU0emFkOGlLVi0xQ0E2ckhETkM1SjdFSlgzQzkwSGsxdVNsOFhQN2hCbE5WVy1OOFBDVE9yUHJTU3BwalZsdVdPOWJQRjFGTDFGQmxobXJhX2VkLVFzdWVpZ04td29HeXcxQzdxYVhwNlhhV2JCTVRDYm4zWTdOVjFHTnNjZDl2MjdybUtndlMzSGc5UVRucmdSU3FSbEUtaEZHZVhkMEVDRzZNd3h0TDNHTVdfOEJTRTdqZnB5dzlqMXlTZw?oc=5",
+          "summary": "SpaceX reportedly plans to launch tests for orbital AI computing by the end of next year. These tests involve setting up compute infrastructure for AI in space.",
+          "source": "Reuters AI",
+          "region": "US",
+          "published": "2026-06-09T22:32:54+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSEJ0VnJacU5WYTU0emFkOGlLVi0xQ0E2ckhETkM1SjdFSlgzQzkwSGsxdVNsOFhQN2hCbE5WVy1OOFBDVE9yUHJTU3BwalZsdVdPOWJQRjFGTDFGQmxobXJhX2VkLVFzdWVpZ04td29HeXcxQzdxYVhwNlhhV2JCTVRDYm4zWTdOVjFHTnNjZDl2MjdybUtndlMzSGc5UVRucmdSU3FSbEUtaEZHZVhkMEVDRzZNd3h0TDNHTVdfOEJTRTdqZnB5dzlqMXlTZw",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "GM eyes new battery chemistry to grow AI data center, energy storage business",
+          "url": "https://www.cnbc.com/2026/06/09/gm-batteries-data-centers-energy-storage-business.html",
+          "summary": "GM is expanding its efforts in energy storage and battery chemistry to support the growing demand from AI data centers.",
+          "source": "CNBC Tech",
+          "region": "US",
+          "published": "2026-06-09T21:02:10+00:00",
+          "canonical_url": "https://cnbc.com/2026/06/09/gm-batteries-data-centers-energy-storage-business.html",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+          "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+          "summary": "GM proposes that electric vehicles and vehicle-to-grid technology can help mitigate the increasing electricity demand from AI data centers.",
+          "source": "The Verge",
+          "region": "US",
+          "published": "2026-06-09T21:00:00+00:00",
+          "canonical_url": "https://theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "US power use to beat record highs in 2026 and 2027 as AI use surges, EIA says - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcGtXeGdORTZSMS1SbFJhWlczMkVsdDNnNU9xYU5JMDBXZXRWM1FqUnBqN0E0aWdBdnlpQi14Nno1cTZYLWNOcG1XQ2RkNzFpZXRvYno4Zl8wSkRvU3ROcGMzci13QjdiWWw0alFmMXdIZGZmY1p6V0pqOTZROFpxdFJsVDQ2bGUxVHFzMjhqaEw2bndnTVY5OFBwd0RNdHpLcXZkUkNvcTBYR0hBZURROG1DVmFKZw?oc=5",
+          "summary": "The US Energy Information Administration (EIA) predicts that US power consumption will reach record highs in 2026 and 2027 due to surging AI use.",
+          "source": "Reuters AI",
+          "region": "US",
+          "published": "2026-06-09T20:24:57+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcGtXeGdORTZSMS1SbFJhWlczMkVsdDNnNU9xYU5JMDBXZXRWM1FqUnBqN0E0aWdBdnlpQi14Nno1cTZYLWNOcG1XQ2RkNzFpZXRvYno4Zl8wSkRvU3ROcGMzci13QjdiWWw0alFmMXdIZGZmY1p6V0pqOTZROFpxdFJsVDQ2bGUxVHFzMjhqaEw2bndnTVY5OFBwd0RNdHpLcXZkUkNvcTBYR0hBZURROG1DVmFKZw",
+          "category": "infra",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "SpaceX wants to put data centers in orbit, and Musk says it's no big deal",
           "url": "https://the-decoder.com/spacex-wants-to-put-data-centers-in-orbit-and-musk-says-its-no-big-deal/",
@@ -17786,10 +19215,70 @@
           "added": "2026-06-01"
         }
       ],
-      "new": 5
+      "new": 7
     },
     "agents": {
       "items": [
+        {
+          "title": "Why the AI race misses the point",
+          "url": "https://autonomousagents19.com/blog/organizational-intelligence/tool-that-executes-vs-system-that-learns",
+          "summary": "The article discusses the fundamental difference between AI as a mere execution tool and AI as a learning system, arguing that the current AI race overlooks the importance of developing truly autonomous, adaptive systems.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T23:42:07+00:00",
+          "canonical_url": "https://autonomousagents19.com/blog/organizational-intelligence/tool-that-executes-vs-system-that-learns",
+          "category": "agents",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Apple introduces Siri AI, a profoundly more capable and personal assistant",
+          "url": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/",
+          "summary": "Apple introduced an updated version of Siri, referred to as \"Siri AI,\" touting it as a significantly more capable and personalized assistant. This represents an advancement in consumer-facing AI agents.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:51:07+00:00",
+          "canonical_url": "https://apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant",
+          "category": "agents",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Nagent, a uniuqe LLM loop reference implementation",
+          "url": "https://github.com/macton/nagent",
+          "summary": "Nagent is introduced as a unique reference implementation for an LLM loop, suggesting a framework or tool for building agentic systems.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:21:13+00:00",
+          "canonical_url": "https://github.com/macton/nagent",
+          "category": "agents",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Show HN: AI agents join meetings with memory, calendar, and tasks",
+          "url": "https://meet.upilote.com",
+          "summary": "A new AI agent system is introduced that can join meetings, equipped with memory, calendar access, and task management capabilities.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:01:50+00:00",
+          "canonical_url": "https://meet.upilote.com",
+          "category": "agents",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Show HN: LocalCode – turn plain English into CLI commands with Apple's local AI",
+          "url": "https://github.com/localcodeai/localcode",
+          "summary": "LocalCode is presented as a new application that converts plain English commands into CLI commands using local AI, acting as a consumer bot or agent.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:04:24+00:00",
+          "canonical_url": "https://github.com/localcodeai/localcode",
+          "category": "agents",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "Build an agentic incident triage assistant with Amazon Quick and New Relic",
           "url": "https://aws.amazon.com/blogs/machine-learning/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic/",
@@ -19780,10 +21269,214 @@
           "added": "2026-06-01"
         }
       ],
-      "new": 20
+      "new": 5
     },
     "ethics": {
       "items": [
+        {
+          "title": "AI Will Not Start a Nuclear War, but Humans Might",
+          "url": "https://aifrontiersmedia.substack.com/p/ai-will-not-start-a-nuclear-war-but",
+          "summary": "The article presents a philosophical discussion suggesting that while AI itself may not initiate a nuclear war, human actions remain the primary risk factor. This explores ethical and societal considerations related to AI and global conflict.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T23:37:32+00:00",
+          "canonical_url": "https://aifrontiersmedia.substack.com/p/ai-will-not-start-a-nuclear-war-but",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5 and new AI safety fables",
+          "url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+          "summary": "The article discusses Claude Fable 5 in the context of new AI safety narratives and concerns. This primarily focuses on the ethical and safety aspects of AI models.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T23:16:13+00:00",
+          "canonical_url": "https://interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Harmfulness Directions in OLMo",
+          "url": "https://www.lesswrong.com/posts/nKfmimhTKCsDM2Hwh/harmfulness-directions-in-olmo-1",
+          "summary": "A technical report details research into \"Harmfulness Directions\" within the OLMo language model as part of the MARS 4.0 program. This work investigates how to identify and address harmful outputs generated by the AI model.",
+          "source": "LessWrong",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:39:54+00:00",
+          "canonical_url": "https://lesswrong.com/posts/nKfmimhTKCsDM2Hwh/harmfulness-directions-in-olmo-1",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI misidentification results in wrongful arrest; man seeks justice",
+          "url": "https://www.wsoctv.com/news/local/ai-misidentification-results-wrongful-arrest-man-seeks-justice/I7UQJWV33FBN3LMKHCSXI6FIVA/",
+          "summary": "An AI misidentification led to a man's wrongful arrest, prompting him to seek justice. This incident raises concerns about bias and fairness in AI systems and their real-world implications.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:37:49+00:00",
+          "canonical_url": "https://wsoctv.com/news/local/ai-misidentification-results-wrongful-arrest-man-seeks-justice/I7UQJWV33FBN3LMKHCSXI6FIVA",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "UN issues AI warning after new data reveals major impact on the planet",
+          "url": "https://www.the-independent.com/tech/ai-artificial-intelligence-un-electricity-water-sustainability-b2988832.html",
+          "summary": "The UN issued a warning regarding AI's significant impact on the planet, specifically concerning electricity, water, and sustainability, initiating a broader debate on AI's environmental ethics.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T22:16:33+00:00",
+          "canonical_url": "https://the-independent.com/tech/ai-artificial-intelligence-un-electricity-water-sustainability-b2988832.html",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Mythos/Fable intentionally hinders requests involving AI Research Development",
+          "url": "https://twitter.com/eliebakouch/status/2064399902684139852",
+          "summary": "It is reported that Anthropic's Mythos/Fable model intentionally obstructs requests pertinent to AI Research Development, raising concerns about its design and ethical implications.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:42:07+00:00",
+          "canonical_url": "https://twitter.com/eliebakouch/status/2064399902684139852",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Anthropic, which claimed AI model was too risky for public to use, releases ‘safe’ version - New York Post",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMWhydGZFQmdRUnpQM1NoeTNhTnBlblgya1RLNHZRWDZwcEdHaTNnNFNhVlU3RlB4U0FNUUFhUC1pSVhNLURQVjg5cWxIeUc3ajlDQ0otbW96YUdLcy1ieDdvUGtTVDBoMjB4X2xuUzdsbUEyMEtMOEprRXVSd1hSTnNUU0NPQ1R0WjJNelA2N18wS2RJLWRFMTJMQi1FVHFsTVlnS056M3RnMVFLa1pXeTRGTkluMmsyd2VzWXJQakJWczd3?oc=5",
+          "summary": "Anthropic released a 'safe' version of an AI model after previously stating it was too risky for public use, highlighting AI safety and risk management decisions.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T21:36:00+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMWhydGZFQmdRUnpQM1NoeTNhTnBlblgya1RLNHZRWDZwcEdHaTNnNFNhVlU3RlB4U0FNUUFhUC1pSVhNLURQVjg5cWxIeUc3ajlDQ0otbW96YUdLcy1ieDdvUGtTVDBoMjB4X2xuUzdsbUEyMEtMOEprRXVSd1hSTnNUU0NPQ1R0WjJNelA2N18wS2RJLWRFMTJMQi1FVHFsTVlnS056M3RnMVFLa1pXeTRGTkluMmsyd2VzWXJQakJWczd3",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "My side of the jqwik anti AI logging drama",
+          "url": "https://blog.johanneslink.net/2026/06/09/the-jqwik-anti-ai-affair/",
+          "summary": "An article discusses a controversy or 'drama' related to 'anti AI logging,' touching upon ethical considerations or policies regarding AI data usage.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:20:42+00:00",
+          "canonical_url": "https://blog.johanneslink.net/2026/06/09/the-jqwik-anti-ai-affair",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Claude Fable 5 will sabotage \"frontier LLM research\" tasks",
+          "url": "https://twitter.com/i/status/2064399902684139852",
+          "summary": "A discussion highlights concerns that Claude Fable 5, an AI model, intentionally hinders requests related to frontier LLM research, raising questions about alignment and safety.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T21:16:20+00:00",
+          "canonical_url": "https://twitter.com/i/status/2064399902684139852",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "AI is only as good as the person using it",
+          "url": "https://aifrog.substack.com/p/as-good-as",
+          "summary": "The article discusses the idea that the effectiveness of AI is ultimately limited by the skill and intent of the human user.",
+          "source": "Hacker News (AI)",
+          "region": "GLOBAL",
+          "published": "2026-06-09T20:54:37+00:00",
+          "canonical_url": "https://aifrog.substack.com/p/as-good-as",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Hey, Siri, here’s what I actually want from AI",
+          "url": "https://techcrunch.com/2026/06/09/hey-siri-heres-what-i-actually-want-from-ai/",
+          "summary": "The author reflects on the desire for a personal AI assistant like Siri and the potential societal implications of becoming overly reliant on such technology.",
+          "source": "TechCrunch AI",
+          "region": "US",
+          "published": "2026-06-09T20:50:17+00:00",
+          "canonical_url": "https://techcrunch.com/2026/06/09/hey-siri-heres-what-i-actually-want-from-ai",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "The consequences of relying on AI for accurate news",
+          "url": "https://news.mit.edu/2026/consequences-of-relying-on-ai-for-accurate-news-0609",
+          "summary": "A Media Lab study indicates that over-reliance on AI for news, similar to GPS for navigation, may diminish human ability to detect fake news.",
+          "source": "MIT News AI",
+          "region": "US",
+          "published": "2026-06-09T20:30:00+00:00",
+          "canonical_url": "https://news.mit.edu/2026/consequences-of-relying-on-ai-for-accurate-news-0609",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Microsoft AI head calls out Anthropic for acting like Claude is conscious",
+          "url": "https://www.theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious",
+          "summary": "Microsoft AI CEO Mustafa Suleyman criticizes Anthropic for speculating about Claude's consciousness, calling it dangerous and setting up unrealistic expectations.",
+          "source": "The Verge",
+          "region": "US",
+          "published": "2026-06-09T20:24:25+00:00",
+          "canonical_url": "https://theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "China Is Planning for AI’s Job Shock. America Isn’t - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdlNoLTR6UVhFaFlMaGNnOTdtdWFYRDFGQXBfS3gyUVUxUDZkX3Mzd1NfTUtYOW9CZUZFaXRKUG1wRU1SMERCZGc3dmszSmZKN3B0NUhaUnRBbHFzWDJXb3VwN28yY21OM2tQY2NkVnlEYXVrcHp0X3BNdUoxREFUbUtJSUJiUTJNRzI3cGs5eXV6eXNYVXFVdXNjM25VNnUwU3FHMG9vNA?oc=5",
+          "summary": "The article highlights China's strategic planning to address the potential impact of AI on jobs, contrasting it with a perceived lack of similar foresight in the United States.",
+          "source": "Bloomberg AI",
+          "region": "US",
+          "published": "2026-06-09T19:00:32+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdlNoLTR6UVhFaFlMaGNnOTdtdWFYRDFGQXBfS3gyUVUxUDZkX3Mzd1NfTUtYOW9CZUZFaXRKUG1wRU1SMERCZGc3dmszSmZKN3B0NUhaUnRBbHFzWDJXb3VwN28yY21OM2tQY2NkVnlEYXVrcHp0X3BNdUoxREFUbUtJSUJiUTJNRzI3cGs5eXV6eXNYVXFVdXNjM25VNnUwU3FHMG9vNA",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "An LLM Flagged My Paper About LLMs Flagging Things.",
+          "url": "https://www.lesswrong.com/posts/Wqd4fozK9KYFqgNmJ/an-llm-flagged-my-paper-about-llms-flagging-things",
+          "summary": "An anecdote highlights an issue where an LLM flagged a paper about LLMs flagging things, raising questions about AI judgment or bias.",
+          "source": "LessWrong",
+          "region": "GLOBAL",
+          "published": "2026-06-09T18:00:46+00:00",
+          "canonical_url": "https://lesswrong.com/posts/Wqd4fozK9KYFqgNmJ/an-llm-flagged-my-paper-about-llms-flagging-things",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Farage says Reform has contacted X 'to highest level' over fake AI ads",
+          "url": "https://www.bbc.com/news/articles/cewq1w7r0zgo?at_medium=RSS&at_campaign=rss",
+          "summary": "Nigel Farage's Reform party has contacted X (formerly Twitter) regarding fake AI-generated advertisements featuring the governor of the Bank of England, prompting public warnings from the Bank.",
+          "source": "BBC Technology",
+          "region": "EU",
+          "published": "2026-06-09T16:45:12+00:00",
+          "canonical_url": "https://bbc.com/news/articles/cewq1w7r0zgo?at_medium=RSS&at_campaign=rss",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "US workers are the world's biggest AI skeptics - and it's not just about job loss",
+          "url": "https://www.zdnet.com/article/us-workers-are-worlds-biggest-ai-skeptics/",
+          "summary": "Recent studies indicate that over half of US desk workers are skeptical of AI, while trust in AI is higher in emerging economies.",
+          "source": "ZDNet AI",
+          "region": "US",
+          "published": "2026-06-09T16:34:11+00:00",
+          "canonical_url": "https://zdnet.com/article/us-workers-are-worlds-biggest-ai-skeptics",
+          "category": "ethics",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "The Machines Lack Honour",
           "url": "https://www.lesswrong.com/posts/oiNaBc4MEAGhzhdXg/the-machines-lack-honour",
@@ -21306,7 +22999,7 @@
           "added": "2026-06-01"
         }
       ],
-      "new": 3
+      "new": 17
     },
     "gadgets": {
       "items": [
@@ -21458,6 +23151,30 @@
     },
     "benchmarks": {
       "items": [
+        {
+          "title": "Wharton Professor Tries Anthropic's Mythos AI, Calls It A Real Leap - Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FUXNEVDhJUEpRUElJa2JlTE5mYnNibXBsOHRUZ25hbmdYem5ROGxlNVJDRUF0TExZS0dsZ3hSS213anZCb054YU5XN2tBQ0gwb3VwUjBIeUcwS2prWWpfb2hIS3ZxcExRelNvQzdMWjVvNDlL?oc=5",
+          "summary": "A Wharton Professor evaluated Anthropic's Mythos AI model and described its capabilities as 'a real leap,' providing an assessment of its performance.",
+          "source": "Anthropic (Claude)",
+          "region": "US",
+          "published": "2026-06-09T22:12:10+00:00",
+          "canonical_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FUXNEVDhJUEpRUElJa2JlTE5mYnNibXBsOHRUZ25hbmdYem5ROGxlNVJDRUF0TExZS0dsZ3hSS213anZCb054YU5XN2tBQ0gwb3VwUjBIeUcwS2prWWpfb2hIS3ZxcExRelNvQzdMWjVvNDlL",
+          "category": "benchmarks",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
+        {
+          "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+          "summary": "The article explores whether voice agents can effectively handle bilingual customers, proposing a benchmark for evaluating frontier Automatic Speech Recognition (ASR) on code-switched speech.",
+          "source": "Hugging Face Blog",
+          "region": "US",
+          "published": "2026-06-09T19:38:28+00:00",
+          "canonical_url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+          "category": "benchmarks",
+          "added": "2026-06-09",
+          "run": "2026-06-09T23:48:00.850029+00:00"
+        },
         {
           "title": "The video generation AI 'Grok Imagine 1.5 Preview' has achieved the top 1 and 2 rankings in the world's video generation AI benchmark. - GIGAZINE",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRFBDRVI0cXU3WlhqZXVmd2ZGV0FNZ3UtdEVEbjJWUi1rSV9OUzFvSGtNdnd1OC1CUG9HQzdBQjhjdFNlZ1RaUFJYMkVrNkdtMWNqT2dfN1dKaHBjQmdGMldjTjQ3eWxBajA4bWFKWlNlY3doVE0zdDRPeDg3enRnbWZVeXNPVDJUaVJxcnMwVVVub2c0LTNISjdrMjI0ZzU2?oc=5",
@@ -22119,7 +23836,7 @@
           "added": "2026-06-01"
         }
       ],
-      "new": 0
+      "new": 2
     },
     "memory": {
       "items": [
