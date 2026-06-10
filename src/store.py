@@ -121,3 +121,47 @@ def _write_dashboard(archive, run_ts=None):
     # data.js — aby fungoval obyčajný dvojklik (file:// blokuje fetch JSON-u)
     with open(DASHBOARD_DATA.parent / "data.js", "w", encoding="utf-8") as f:
         f.write("window.AINM_DATA = " + json.dumps(payload, ensure_ascii=False) + ";")
+    _write_agent_feed(archive, run_ts)
+
+
+# malý feed pre Jarvis agenta — len posledné 2 dni, max 12 na kategóriu,
+# skrátené summary; aby sa zmestil do kontextu (data.json je priveľký).
+AGENT_DAYS = 2
+AGENT_PER_CAT = 12
+
+
+def _write_agent_feed(archive, run_ts=None):
+    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=AGENT_DAYS)
+
+    def recent(it):
+        try:
+            return dt.datetime.fromisoformat(it["published"]) >= cutoff
+        except Exception:
+            return False
+
+    cats = {}
+    for it in archive:
+        if not recent(it):
+            continue
+        c = it.get("category", "research")
+        cats.setdefault(c, {"items": [], "new": 0})
+        cats[c]["items"].append(it)
+    for c in cats:
+        items = sorted(cats[c]["items"], key=lambda x: x["published"], reverse=True)[:AGENT_PER_CAT]
+        cats[c]["new"] = sum(1 for it in items if run_ts and it.get("run") == run_ts)
+        cats[c]["items"] = [{
+            "title": it.get("title"), "category": it.get("category"),
+            "url": it.get("url"), "source": it.get("source"),
+            "published": it.get("published"), "added": it.get("added"),
+            "run": it.get("run"), "summary": (it.get("summary") or "")[:160],
+        } for it in items]
+    payload = {
+        "generated": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "today": dt.date.today().isoformat(),
+        "last_run": run_ts,
+        "window_days": AGENT_DAYS,
+        "sources_total": _sources_total(),
+        "categories": cats,
+    }
+    with open(DASHBOARD_DATA.parent / "feed-agent.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
